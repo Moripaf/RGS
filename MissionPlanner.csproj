@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <ProjectGuid>{A2E22272-95FE-47B6-B050-9AE7E2055BF5}</ProjectGuid>
-    <ApplicationIcon>mpdesktop.ico</ApplicationIcon>
-    <OutputType>Exe</OutputType>
+    <ApplicationIcon>RAYA.ico</ApplicationIcon>
+    <OutputType>WinExe</OutputType>
     <StartupObject>MissionPlanner.Program</StartupObject>
     <Authors>Michael Oborne</Authors>
     <Version>1.3.62.1</Version>
@@ -4861,6 +4861,10 @@
     <Content Include="quaternion.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="RAYA.ico" />
+    <None Include="Resources\scenario.jpg" />
+    <None Include="Resources\scenario1.png" />
+    <None Include="Resources\header.jpg" />
     <Content Include="rotmat.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
