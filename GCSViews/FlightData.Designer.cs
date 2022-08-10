@@ -34,29 +34,14 @@ namespace MissionPlanner.GCSViews
             this.contextMenuStripactionstab = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.customizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.multiLineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabQuick = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanelQuick = new System.Windows.Forms.TableLayoutPanel();
-            this.quickView6 = new MissionPlanner.Controls.QuickView();
-            this.contextMenuStripQuickView = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.setViewCountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.undockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bindingSourceQuickTab = new System.Windows.Forms.BindingSource(this.components);
-            this.quickView5 = new MissionPlanner.Controls.QuickView();
-            this.quickView4 = new MissionPlanner.Controls.QuickView();
-            this.quickView3 = new MissionPlanner.Controls.QuickView();
-            this.quickView2 = new MissionPlanner.Controls.QuickView();
-            this.quickView1 = new MissionPlanner.Controls.QuickView();
             this.tabActions = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.BUT_SendMSG = new MissionPlanner.Controls.MyButton();
             this.BUT_abortland = new MissionPlanner.Controls.MyButton();
-            this.modifyandSetLoiterRad = new MissionPlanner.Controls.ModifyandSet();
             this.BUT_clear_track = new MissionPlanner.Controls.MyButton();
             this.CMB_action = new System.Windows.Forms.ComboBox();
             this.BUTactiondo = new MissionPlanner.Controls.MyButton();
             this.BUT_resumemis = new MissionPlanner.Controls.MyButton();
-            this.modifyandSetAlt = new MissionPlanner.Controls.ModifyandSet();
-            this.modifyandSetSpeed = new MissionPlanner.Controls.ModifyandSet();
             this.CMB_setwp = new System.Windows.Forms.ComboBox();
             this.BUT_ARM = new MissionPlanner.Controls.MyButton();
             this.BUT_mountmode = new MissionPlanner.Controls.MyButton();
@@ -71,6 +56,9 @@ namespace MissionPlanner.GCSViews
             this.CMB_modes = new System.Windows.Forms.ComboBox();
             this.BUT_quickauto = new MissionPlanner.Controls.MyButton();
             this.BUT_setmode = new MissionPlanner.Controls.MyButton();
+            this.modifyandSetLoiterRad = new MissionPlanner.Controls.ModifyandSet();
+            this.modifyandSetAlt = new MissionPlanner.Controls.ModifyandSet();
+            this.modifyandSetSpeed = new MissionPlanner.Controls.ModifyandSet();
             this.tabPagemessages = new System.Windows.Forms.TabPage();
             this.txt_messagebox = new System.Windows.Forms.TextBox();
             this.tabActionsSimple = new System.Windows.Forms.TabPage();
@@ -80,11 +68,6 @@ namespace MissionPlanner.GCSViews
             this.tabPagePreFlight = new System.Windows.Forms.TabPage();
             this.checkListControl1 = new MissionPlanner.Controls.PreFlight.CheckListControl();
             this.tabGauges = new System.Windows.Forms.TabPage();
-            this.Gvspeed = new AGaugeApp.AGauge();
-            this.bindingSourceGaugesTab = new System.Windows.Forms.BindingSource(this.components);
-            this.Gheading = new MissionPlanner.Controls.HSI();
-            this.Galt = new AGaugeApp.AGauge();
-            this.Gspeed = new AGaugeApp.AGauge();
             this.tabTransponder = new System.Windows.Forms.TabPage();
             this.NACp_tb = new System.Windows.Forms.TextBox();
             this.NIC_tb = new System.Windows.Forms.TextBox();
@@ -170,6 +153,7 @@ namespace MissionPlanner.GCSViews
             this.but_bintolog = new MissionPlanner.Controls.MyButton();
             this.but_dflogtokml = new MissionPlanner.Controls.MyButton();
             this.BUT_loganalysis = new MissionPlanner.Controls.MyButton();
+            this.tabQuick = new System.Windows.Forms.TabPage();
             this.tableMap = new System.Windows.Forms.TableLayoutPanel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.zg1 = new ZedGraph.ZedGraphControl();
@@ -191,24 +175,42 @@ namespace MissionPlanner.GCSViews
             this.setHomeHereToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.takeOffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.onOffCameraOverlapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.but_disablejoystick = new MissionPlanner.Controls.MyButton();
-            this.distanceBar1 = new MissionPlanner.Controls.DistanceBar();
-            this.windDir1 = new MissionPlanner.Controls.WindDir();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.lbl_hdop = new MissionPlanner.Controls.MyLabel();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lbl_sats = new MissionPlanner.Controls.MyLabel();
             this.gMapControl1 = new MissionPlanner.Controls.myGMAP();
             this.TRK_zoom = new MissionPlanner.Controls.MyTrackBar();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.but_disablejoystick = new MissionPlanner.Controls.MyButton();
             this.coords1 = new MissionPlanner.Controls.Coords();
+            this.windDir1 = new MissionPlanner.Controls.WindDir();
+            this.distanceBar1 = new MissionPlanner.Controls.DistanceBar();
             this.Zoomlevel = new System.Windows.Forms.NumericUpDown();
             this.label1 = new MissionPlanner.Controls.MyLabel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.CHK_autopan = new System.Windows.Forms.CheckBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.CB_tuning = new System.Windows.Forms.CheckBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.mainContainer = new System.Windows.Forms.SplitContainer();
+            this.leftSplitter = new System.Windows.Forms.SplitContainer();
+            this.tableLayoutPanelQuick = new System.Windows.Forms.TableLayoutPanel();
+            this.quickView6 = new MissionPlanner.Controls.QuickView();
+            this.contextMenuStripQuickView = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.setViewCountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.undockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bindingSourceQuickTab = new System.Windows.Forms.BindingSource(this.components);
+            this.quickView1 = new MissionPlanner.Controls.QuickView();
+            this.quickView2 = new MissionPlanner.Controls.QuickView();
+            this.quickView5 = new MissionPlanner.Controls.QuickView();
+            this.quickView4 = new MissionPlanner.Controls.QuickView();
+            this.quickView3 = new MissionPlanner.Controls.QuickView();
+            this.Gheading = new MissionPlanner.Controls.HSI();
+            this.bindingSourceGaugesTab = new System.Windows.Forms.BindingSource(this.components);
+            this.Gvspeed = new AGaugeApp.AGauge();
+            this.Gspeed = new AGaugeApp.AGauge();
+            this.Galt = new AGaugeApp.AGauge();
             this.ZedGraphTimer = new System.Windows.Forms.Timer(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.openScriptDialog = new System.Windows.Forms.OpenFileDialog();
@@ -227,17 +229,11 @@ namespace MissionPlanner.GCSViews
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).BeginInit();
             this.tabControlactions.SuspendLayout();
             this.contextMenuStripactionstab.SuspendLayout();
-            this.tabQuick.SuspendLayout();
-            this.tableLayoutPanelQuick.SuspendLayout();
-            this.contextMenuStripQuickView.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).BeginInit();
             this.tabActions.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabPagemessages.SuspendLayout();
             this.tabActionsSimple.SuspendLayout();
             this.tabPagePreFlight.SuspendLayout();
-            this.tabGauges.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceGaugesTab)).BeginInit();
             this.tabTransponder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Squawk_nud)).BeginInit();
             this.tabServo.SuspendLayout();
@@ -267,6 +263,18 @@ namespace MissionPlanner.GCSViews
             ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Zoomlevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mainContainer)).BeginInit();
+            this.mainContainer.Panel1.SuspendLayout();
+            this.mainContainer.Panel2.SuspendLayout();
+            this.mainContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.leftSplitter)).BeginInit();
+            this.leftSplitter.Panel1.SuspendLayout();
+            this.leftSplitter.Panel2.SuspendLayout();
+            this.leftSplitter.SuspendLayout();
+            this.tableLayoutPanelQuick.SuspendLayout();
+            this.contextMenuStripQuickView.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceGaugesTab)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceStatusTab)).BeginInit();
             this.SuspendLayout();
             // 
@@ -280,10 +288,12 @@ namespace MissionPlanner.GCSViews
             // MainH.Panel1
             // 
             this.MainH.Panel1.Controls.Add(this.SubMainLeft);
+            resources.ApplyResources(this.MainH.Panel1, "MainH.Panel1");
             // 
             // MainH.Panel2
             // 
             this.MainH.Panel2.Controls.Add(this.tableMap);
+            resources.ApplyResources(this.MainH.Panel2, "MainH.Panel2");
             // 
             // SubMainLeft
             // 
@@ -294,10 +304,12 @@ namespace MissionPlanner.GCSViews
             // SubMainLeft.Panel1
             // 
             this.SubMainLeft.Panel1.Controls.Add(this.hud1);
+            resources.ApplyResources(this.SubMainLeft.Panel1, "SubMainLeft.Panel1");
             // 
             // SubMainLeft.Panel2
             // 
             this.SubMainLeft.Panel2.Controls.Add(this.tabControlactions);
+            resources.ApplyResources(this.SubMainLeft.Panel2, "SubMainLeft.Panel2");
             // 
             // hud1
             // 
@@ -308,7 +320,9 @@ namespace MissionPlanner.GCSViews
             this.hud1.BackColor = System.Drawing.Color.Black;
             this.hud1.batterycellcount = 4;
             this.hud1.batterylevel = 0F;
+            this.hud1.batterylevel2 = 0F;
             this.hud1.batteryremaining = 0F;
+            this.hud1.batteryremaining2 = 0F;
             this.hud1.bgimage = null;
             this.hud1.connected = false;
             this.hud1.ContextMenuStrip = this.contextMenuStripHud;
@@ -316,6 +330,7 @@ namespace MissionPlanner.GCSViews
             this.hud1.criticalvoltagealert = false;
             this.hud1.critSSA = 30F;
             this.hud1.current = 0F;
+            this.hud1.current2 = 0F;
             this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("airspeed", this.bindingSourceHud, "airspeed", true));
             this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("alt", this.bindingSourceHud, "alt", true));
             this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("batterylevel", this.bindingSourceHud, "battery_voltage", true));
@@ -414,6 +429,7 @@ namespace MissionPlanner.GCSViews
             // 
             // contextMenuStripHud
             // 
+            this.contextMenuStripHud.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripHud.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.videoToolStripMenuItem,
             this.setAspectRatioToolStripMenuItem,
@@ -531,7 +547,6 @@ namespace MissionPlanner.GCSViews
             // tabControlactions
             // 
             this.tabControlactions.ContextMenuStrip = this.contextMenuStripactionstab;
-            this.tabControlactions.Controls.Add(this.tabQuick);
             this.tabControlactions.Controls.Add(this.tabActions);
             this.tabControlactions.Controls.Add(this.tabPagemessages);
             this.tabControlactions.Controls.Add(this.tabActionsSimple);
@@ -544,6 +559,7 @@ namespace MissionPlanner.GCSViews
             this.tabControlactions.Controls.Add(this.tabPayload);
             this.tabControlactions.Controls.Add(this.tabTLogs);
             this.tabControlactions.Controls.Add(this.tablogbrowse);
+            this.tabControlactions.Controls.Add(this.tabQuick);
             resources.ApplyResources(this.tabControlactions, "tabControlactions");
             this.tabControlactions.Name = "tabControlactions";
             this.tabControlactions.SelectedIndex = 0;
@@ -552,6 +568,7 @@ namespace MissionPlanner.GCSViews
             // 
             // contextMenuStripactionstab
             // 
+            this.contextMenuStripactionstab.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripactionstab.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.customizeToolStripMenuItem,
             this.multiLineToolStripMenuItem});
@@ -570,128 +587,6 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.multiLineToolStripMenuItem, "multiLineToolStripMenuItem");
             this.multiLineToolStripMenuItem.Click += new System.EventHandler(this.multiLineToolStripMenuItem_Click);
             // 
-            // tabQuick
-            // 
-            resources.ApplyResources(this.tabQuick, "tabQuick");
-            this.tabQuick.Controls.Add(this.tableLayoutPanelQuick);
-            this.tabQuick.Name = "tabQuick";
-            this.tabQuick.UseVisualStyleBackColor = true;
-            this.tabQuick.Resize += new System.EventHandler(this.tabQuick_Resize);
-            // 
-            // tableLayoutPanelQuick
-            // 
-            resources.ApplyResources(this.tableLayoutPanelQuick, "tableLayoutPanelQuick");
-            this.tableLayoutPanelQuick.Controls.Add(this.quickView6, 1, 2);
-            this.tableLayoutPanelQuick.Controls.Add(this.quickView5, 0, 2);
-            this.tableLayoutPanelQuick.Controls.Add(this.quickView4, 1, 1);
-            this.tableLayoutPanelQuick.Controls.Add(this.quickView3, 0, 1);
-            this.tableLayoutPanelQuick.Controls.Add(this.quickView2, 1, 0);
-            this.tableLayoutPanelQuick.Controls.Add(this.quickView1, 0, 0);
-            this.tableLayoutPanelQuick.Name = "tableLayoutPanelQuick";
-            // 
-            // quickView6
-            // 
-            this.quickView6.ContextMenuStrip = this.contextMenuStripQuickView;
-            this.quickView6.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "DistToHome", true));
-            this.quickView6.desc = "DistToMAV";
-            resources.ApplyResources(this.quickView6, "quickView6");
-            this.quickView6.Name = "quickView6";
-            this.quickView6.number = 0D;
-            this.quickView6.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
-            this.quickView6.numberColorBackup = System.Drawing.Color.Empty;
-            this.quickView6.numberformat = "0.00";
-            this.quickView6.DoubleClick += new System.EventHandler(this.quickView_DoubleClick);
-            // 
-            // contextMenuStripQuickView
-            // 
-            this.contextMenuStripQuickView.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.setViewCountToolStripMenuItem,
-            this.undockToolStripMenuItem});
-            this.contextMenuStripQuickView.Name = "contextMenuStripQuickView";
-            resources.ApplyResources(this.contextMenuStripQuickView, "contextMenuStripQuickView");
-            // 
-            // setViewCountToolStripMenuItem
-            // 
-            this.setViewCountToolStripMenuItem.Name = "setViewCountToolStripMenuItem";
-            resources.ApplyResources(this.setViewCountToolStripMenuItem, "setViewCountToolStripMenuItem");
-            this.setViewCountToolStripMenuItem.Click += new System.EventHandler(this.setViewCountToolStripMenuItem_Click);
-            // 
-            // undockToolStripMenuItem
-            // 
-            this.undockToolStripMenuItem.Name = "undockToolStripMenuItem";
-            resources.ApplyResources(this.undockToolStripMenuItem, "undockToolStripMenuItem");
-            this.undockToolStripMenuItem.Click += new System.EventHandler(this.undockDockToolStripMenuItem_Click);
-            // 
-            // bindingSourceQuickTab
-            // 
-            this.bindingSourceQuickTab.DataSource = typeof(MissionPlanner.CurrentState);
-            // 
-            // quickView5
-            // 
-            this.quickView5.ContextMenuStrip = this.contextMenuStripQuickView;
-            this.quickView5.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "verticalspeed", true));
-            this.quickView5.desc = "verticalspeed";
-            resources.ApplyResources(this.quickView5, "quickView5");
-            this.quickView5.Name = "quickView5";
-            this.quickView5.number = 0D;
-            this.quickView5.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(86)))));
-            this.quickView5.numberColorBackup = System.Drawing.Color.Empty;
-            this.quickView5.numberformat = "0.00";
-            this.quickView5.DoubleClick += new System.EventHandler(this.quickView_DoubleClick);
-            // 
-            // quickView4
-            // 
-            this.quickView4.ContextMenuStrip = this.contextMenuStripQuickView;
-            this.quickView4.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "yaw", true));
-            this.quickView4.desc = "yaw";
-            resources.ApplyResources(this.quickView4, "quickView4");
-            this.quickView4.Name = "quickView4";
-            this.quickView4.number = 0D;
-            this.quickView4.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(83)))));
-            this.quickView4.numberColorBackup = System.Drawing.Color.Empty;
-            this.quickView4.numberformat = "0.00";
-            this.quickView4.DoubleClick += new System.EventHandler(this.quickView_DoubleClick);
-            // 
-            // quickView3
-            // 
-            this.quickView3.ContextMenuStrip = this.contextMenuStripQuickView;
-            this.quickView3.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "wp_dist", true));
-            this.quickView3.desc = "wp_dist";
-            resources.ApplyResources(this.quickView3, "quickView3");
-            this.quickView3.Name = "quickView3";
-            this.quickView3.number = 0D;
-            this.quickView3.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(96)))), ((int)(((byte)(91)))));
-            this.quickView3.numberColorBackup = System.Drawing.Color.Empty;
-            this.quickView3.numberformat = "0.00";
-            this.quickView3.DoubleClick += new System.EventHandler(this.quickView_DoubleClick);
-            // 
-            // quickView2
-            // 
-            this.quickView2.ContextMenuStrip = this.contextMenuStripQuickView;
-            this.quickView2.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "groundspeed", true));
-            this.quickView2.desc = "groundspeed";
-            resources.ApplyResources(this.quickView2, "quickView2");
-            this.quickView2.Name = "quickView2";
-            this.quickView2.number = 0D;
-            this.quickView2.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(132)))), ((int)(((byte)(46)))));
-            this.quickView2.numberColorBackup = System.Drawing.Color.Empty;
-            this.quickView2.numberformat = "0.00";
-            this.quickView2.DoubleClick += new System.EventHandler(this.quickView_DoubleClick);
-            // 
-            // quickView1
-            // 
-            this.quickView1.ContextMenuStrip = this.contextMenuStripQuickView;
-            this.quickView1.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "alt", true));
-            this.quickView1.desc = "alt";
-            resources.ApplyResources(this.quickView1, "quickView1");
-            this.quickView1.Name = "quickView1";
-            this.quickView1.number = 0D;
-            this.quickView1.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(151)))), ((int)(((byte)(248)))));
-            this.quickView1.numberColorBackup = System.Drawing.Color.Empty;
-            this.quickView1.numberformat = "0.00";
-            this.toolTip1.SetToolTip(this.quickView1, resources.GetString("quickView1.ToolTip"));
-            this.quickView1.DoubleClick += new System.EventHandler(this.quickView_DoubleClick);
-            // 
             // tabActions
             // 
             this.tabActions.Controls.Add(this.tableLayoutPanel1);
@@ -704,13 +599,10 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.BUT_SendMSG, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.BUT_abortland, 4, 4);
-            this.tableLayoutPanel1.Controls.Add(this.modifyandSetLoiterRad, 4, 2);
             this.tableLayoutPanel1.Controls.Add(this.BUT_clear_track, 4, 3);
             this.tableLayoutPanel1.Controls.Add(this.CMB_action, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.BUTactiondo, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.BUT_resumemis, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.modifyandSetAlt, 4, 1);
-            this.tableLayoutPanel1.Controls.Add(this.modifyandSetSpeed, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.CMB_setwp, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.BUT_ARM, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.BUT_mountmode, 1, 3);
@@ -725,6 +617,9 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel1.Controls.Add(this.CMB_modes, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.BUT_quickauto, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.BUT_setmode, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.modifyandSetLoiterRad, 4, 2);
+            this.tableLayoutPanel1.Controls.Add(this.modifyandSetAlt, 4, 1);
+            this.tableLayoutPanel1.Controls.Add(this.modifyandSetSpeed, 4, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // BUT_SendMSG
@@ -748,34 +643,6 @@ namespace MissionPlanner.GCSViews
             this.toolTip1.SetToolTip(this.BUT_abortland, resources.GetString("BUT_abortland.ToolTip"));
             this.BUT_abortland.UseVisualStyleBackColor = true;
             this.BUT_abortland.Click += new System.EventHandler(this.BUT_abortland_Click);
-            // 
-            // modifyandSetLoiterRad
-            // 
-            resources.ApplyResources(this.modifyandSetLoiterRad, "modifyandSetLoiterRad");
-            this.modifyandSetLoiterRad.ButtonText = "Set Loiter Rad";
-            this.modifyandSetLoiterRad.DecimalPlaces = 0;
-            this.modifyandSetLoiterRad.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.modifyandSetLoiterRad.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.modifyandSetLoiterRad.Minimum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            -2147483648});
-            this.modifyandSetLoiterRad.Name = "modifyandSetLoiterRad";
-            this.modifyandSetLoiterRad.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.modifyandSetLoiterRad.Click += new System.EventHandler(this.modifyandSetLoiterRad_Click);
             // 
             // BUT_clear_track
             // 
@@ -816,63 +683,6 @@ namespace MissionPlanner.GCSViews
             this.BUT_resumemis.Name = "BUT_resumemis";
             this.BUT_resumemis.UseVisualStyleBackColor = true;
             this.BUT_resumemis.Click += new System.EventHandler(this.BUT_resumemis_Click);
-            // 
-            // modifyandSetAlt
-            // 
-            resources.ApplyResources(this.modifyandSetAlt, "modifyandSetAlt");
-            this.modifyandSetAlt.ButtonText = "Change Alt";
-            this.modifyandSetAlt.DecimalPlaces = 1;
-            this.modifyandSetAlt.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.modifyandSetAlt.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.modifyandSetAlt.Minimum = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.modifyandSetAlt.Name = "modifyandSetAlt";
-            this.modifyandSetAlt.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.modifyandSetAlt.Click += new System.EventHandler(this.modifyandSetAlt_Click);
-            // 
-            // modifyandSetSpeed
-            // 
-            resources.ApplyResources(this.modifyandSetSpeed, "modifyandSetSpeed");
-            this.modifyandSetSpeed.ButtonText = "Change Speed";
-            this.modifyandSetSpeed.DecimalPlaces = 1;
-            this.modifyandSetSpeed.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.modifyandSetSpeed.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.modifyandSetSpeed.Minimum = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.modifyandSetSpeed.Name = "modifyandSetSpeed";
-            this.modifyandSetSpeed.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.modifyandSetSpeed.Click += new System.EventHandler(this.modifyandSetSpeed_Click);
-            this.modifyandSetSpeed.ParentChanged += new System.EventHandler(this.modifyandSetSpeed_ParentChanged);
             // 
             // CMB_setwp
             // 
@@ -1023,6 +833,91 @@ namespace MissionPlanner.GCSViews
             this.BUT_setmode.UseVisualStyleBackColor = true;
             this.BUT_setmode.Click += new System.EventHandler(this.BUT_setmode_Click);
             // 
+            // modifyandSetLoiterRad
+            // 
+            resources.ApplyResources(this.modifyandSetLoiterRad, "modifyandSetLoiterRad");
+            this.modifyandSetLoiterRad.ButtonText = "Set Loiter Rad";
+            this.modifyandSetLoiterRad.DecimalPlaces = 0;
+            this.modifyandSetLoiterRad.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.modifyandSetLoiterRad.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.modifyandSetLoiterRad.Minimum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            -2147483648});
+            this.modifyandSetLoiterRad.Name = "modifyandSetLoiterRad";
+            this.modifyandSetLoiterRad.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.modifyandSetLoiterRad.Click += new System.EventHandler(this.modifyandSetLoiterRad_Click);
+            // 
+            // modifyandSetAlt
+            // 
+            resources.ApplyResources(this.modifyandSetAlt, "modifyandSetAlt");
+            this.modifyandSetAlt.ButtonText = "Change Alt";
+            this.modifyandSetAlt.DecimalPlaces = 1;
+            this.modifyandSetAlt.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.modifyandSetAlt.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.modifyandSetAlt.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.modifyandSetAlt.Name = "modifyandSetAlt";
+            this.modifyandSetAlt.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.modifyandSetAlt.Click += new System.EventHandler(this.modifyandSetAlt_Click);
+            // 
+            // modifyandSetSpeed
+            // 
+            resources.ApplyResources(this.modifyandSetSpeed, "modifyandSetSpeed");
+            this.modifyandSetSpeed.ButtonText = "Change Speed";
+            this.modifyandSetSpeed.DecimalPlaces = 1;
+            this.modifyandSetSpeed.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.modifyandSetSpeed.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.modifyandSetSpeed.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.modifyandSetSpeed.Name = "modifyandSetSpeed";
+            this.modifyandSetSpeed.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.modifyandSetSpeed.Click += new System.EventHandler(this.modifyandSetSpeed_Click);
+            this.modifyandSetSpeed.ParentChanged += new System.EventHandler(this.modifyandSetSpeed_ParentChanged);
+            // 
             // tabPagemessages
             // 
             this.tabPagemessages.Controls.Add(this.txt_messagebox);
@@ -1091,459 +986,10 @@ namespace MissionPlanner.GCSViews
             // 
             // tabGauges
             // 
-            this.tabGauges.Controls.Add(this.Gvspeed);
-            this.tabGauges.Controls.Add(this.Gheading);
-            this.tabGauges.Controls.Add(this.Galt);
-            this.tabGauges.Controls.Add(this.Gspeed);
             resources.ApplyResources(this.tabGauges, "tabGauges");
             this.tabGauges.Name = "tabGauges";
             this.tabGauges.UseVisualStyleBackColor = true;
             this.tabGauges.Resize += new System.EventHandler(this.tabPage1_Resize);
-            // 
-            // Gvspeed
-            // 
-            this.Gvspeed.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.Gvspeed, "Gvspeed");
-            this.Gvspeed.BaseArcColor = System.Drawing.Color.Transparent;
-            this.Gvspeed.BaseArcRadius = 60;
-            this.Gvspeed.BaseArcStart = 20;
-            this.Gvspeed.BaseArcSweep = 320;
-            this.Gvspeed.BaseArcWidth = 2;
-            this.Gvspeed.Cap_Idx = ((byte)(0));
-            this.Gvspeed.CapColor = System.Drawing.Color.White;
-            this.Gvspeed.CapColors = new System.Drawing.Color[] {
-        System.Drawing.Color.White,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black};
-            this.Gvspeed.CapPosition = new System.Drawing.Point(65, 85);
-            this.Gvspeed.CapsPosition = new System.Drawing.Point[] {
-        new System.Drawing.Point(65, 85),
-        new System.Drawing.Point(30, 55),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10)};
-            this.Gvspeed.CapsText = new string[] {
-        "VSI",
-        "",
-        "",
-        "",
-        ""};
-            this.Gvspeed.CapText = "VSI";
-            this.Gvspeed.Center = new System.Drawing.Point(75, 75);
-            this.Gvspeed.DataBindings.Add(new System.Windows.Forms.Binding("Value0", this.bindingSourceGaugesTab, "verticalspeed", true));
-            this.Gvspeed.MaxValue = 10F;
-            this.Gvspeed.MinValue = -10F;
-            this.Gvspeed.Name = "Gvspeed";
-            this.Gvspeed.Need_Idx = ((byte)(3));
-            this.Gvspeed.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
-            this.Gvspeed.NeedleColor2 = System.Drawing.Color.White;
-            this.Gvspeed.NeedleEnabled = false;
-            this.Gvspeed.NeedleRadius = 80;
-            this.Gvspeed.NeedlesColor1 = new AGaugeApp.AGauge.NeedleColorEnum[] {
-        AGaugeApp.AGauge.NeedleColorEnum.Gray,
-        AGaugeApp.AGauge.NeedleColorEnum.Gray,
-        AGaugeApp.AGauge.NeedleColorEnum.Gray,
-        AGaugeApp.AGauge.NeedleColorEnum.Gray};
-            this.Gvspeed.NeedlesColor2 = new System.Drawing.Color[] {
-        System.Drawing.Color.White,
-        System.Drawing.Color.White,
-        System.Drawing.Color.White,
-        System.Drawing.Color.White};
-            this.Gvspeed.NeedlesEnabled = new bool[] {
-        true,
-        false,
-        false,
-        false};
-            this.Gvspeed.NeedlesRadius = new int[] {
-        50,
-        30,
-        50,
-        80};
-            this.Gvspeed.NeedlesType = new int[] {
-        0,
-        0,
-        0,
-        0};
-            this.Gvspeed.NeedlesWidth = new int[] {
-        2,
-        2,
-        2,
-        2};
-            this.Gvspeed.NeedleType = 0;
-            this.Gvspeed.NeedleWidth = 2;
-            this.Gvspeed.Range_Idx = ((byte)(0));
-            this.Gvspeed.RangeColor = System.Drawing.Color.LightGreen;
-            this.Gvspeed.RangeEnabled = false;
-            this.Gvspeed.RangeEndValue = 360F;
-            this.Gvspeed.RangeInnerRadius = 1;
-            this.Gvspeed.RangeOuterRadius = 60;
-            this.Gvspeed.RangesColor = new System.Drawing.Color[] {
-        System.Drawing.Color.LightGreen,
-        System.Drawing.Color.Red,
-        System.Drawing.Color.Orange,
-        System.Drawing.SystemColors.Control,
-        System.Drawing.SystemColors.Control};
-            this.Gvspeed.RangesEnabled = new bool[] {
-        false,
-        false,
-        false,
-        false,
-        false};
-            this.Gvspeed.RangesEndValue = new float[] {
-        360F,
-        200F,
-        150F,
-        0F,
-        0F};
-            this.Gvspeed.RangesInnerRadius = new int[] {
-        1,
-        1,
-        1,
-        70,
-        70};
-            this.Gvspeed.RangesOuterRadius = new int[] {
-        60,
-        60,
-        60,
-        80,
-        80};
-            this.Gvspeed.RangesStartValue = new float[] {
-        0F,
-        150F,
-        75F,
-        0F,
-        0F};
-            this.Gvspeed.RangeStartValue = 0F;
-            this.Gvspeed.ScaleLinesInterColor = System.Drawing.Color.White;
-            this.Gvspeed.ScaleLinesInterInnerRadius = 52;
-            this.Gvspeed.ScaleLinesInterOuterRadius = 60;
-            this.Gvspeed.ScaleLinesInterWidth = 1;
-            this.Gvspeed.ScaleLinesMajorColor = System.Drawing.Color.White;
-            this.Gvspeed.ScaleLinesMajorInnerRadius = 50;
-            this.Gvspeed.ScaleLinesMajorOuterRadius = 60;
-            this.Gvspeed.ScaleLinesMajorStepValue = 2F;
-            this.Gvspeed.ScaleLinesMajorWidth = 2;
-            this.Gvspeed.ScaleLinesMinorColor = System.Drawing.Color.White;
-            this.Gvspeed.ScaleLinesMinorInnerRadius = 55;
-            this.Gvspeed.ScaleLinesMinorNumOf = 9;
-            this.Gvspeed.ScaleLinesMinorOuterRadius = 60;
-            this.Gvspeed.ScaleLinesMinorWidth = 1;
-            this.Gvspeed.ScaleNumbersColor = System.Drawing.Color.White;
-            this.Gvspeed.ScaleNumbersFormat = "";
-            this.Gvspeed.ScaleNumbersRadius = 42;
-            this.Gvspeed.ScaleNumbersRotation = 0;
-            this.Gvspeed.ScaleNumbersStartScaleLine = 1;
-            this.Gvspeed.ScaleNumbersStepScaleLines = 1;
-            this.Gvspeed.Value = 0F;
-            this.Gvspeed.Value0 = 0F;
-            this.Gvspeed.Value1 = 0F;
-            this.Gvspeed.Value2 = 0F;
-            this.Gvspeed.Value3 = 0F;
-            // 
-            // bindingSourceGaugesTab
-            // 
-            this.bindingSourceGaugesTab.DataSource = typeof(MissionPlanner.CurrentState);
-            // 
-            // Gheading
-            // 
-            this.Gheading.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.Gheading, "Gheading");
-            this.Gheading.DataBindings.Add(new System.Windows.Forms.Binding("Heading", this.bindingSourceGaugesTab, "yaw", true));
-            this.Gheading.DataBindings.Add(new System.Windows.Forms.Binding("NavHeading", this.bindingSourceGaugesTab, "nav_bearing", true));
-            this.Gheading.Heading = 0;
-            this.Gheading.Name = "Gheading";
-            this.Gheading.NavHeading = 0;
-            // 
-            // Galt
-            // 
-            this.Galt.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.Galt, "Galt");
-            this.Galt.BaseArcColor = System.Drawing.Color.Transparent;
-            this.Galt.BaseArcRadius = 60;
-            this.Galt.BaseArcStart = 270;
-            this.Galt.BaseArcSweep = 360;
-            this.Galt.BaseArcWidth = 2;
-            this.Galt.Cap_Idx = ((byte)(0));
-            this.Galt.CapColor = System.Drawing.Color.White;
-            this.Galt.CapColors = new System.Drawing.Color[] {
-        System.Drawing.Color.White,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black};
-            this.Galt.CapPosition = new System.Drawing.Point(68, 85);
-            this.Galt.CapsPosition = new System.Drawing.Point[] {
-        new System.Drawing.Point(68, 85),
-        new System.Drawing.Point(30, 55),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10)};
-            this.Galt.CapsText = new string[] {
-        "Alt",
-        "",
-        "",
-        "",
-        ""};
-            this.Galt.CapText = "Alt";
-            this.Galt.Center = new System.Drawing.Point(75, 75);
-            this.Galt.DataBindings.Add(new System.Windows.Forms.Binding("Value0", this.bindingSourceGaugesTab, "altd100", true));
-            this.Galt.DataBindings.Add(new System.Windows.Forms.Binding("Value1", this.bindingSourceGaugesTab, "altd1000", true));
-            this.Galt.DataBindings.Add(new System.Windows.Forms.Binding("Value2", this.bindingSourceGaugesTab, "targetaltd100", true));
-            this.Galt.MaxValue = 9.99F;
-            this.Galt.MinValue = 0F;
-            this.Galt.Name = "Galt";
-            this.Galt.Need_Idx = ((byte)(3));
-            this.Galt.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
-            this.Galt.NeedleColor2 = System.Drawing.Color.White;
-            this.Galt.NeedleEnabled = false;
-            this.Galt.NeedleRadius = 80;
-            this.Galt.NeedlesColor1 = new AGaugeApp.AGauge.NeedleColorEnum[] {
-        AGaugeApp.AGauge.NeedleColorEnum.Gray,
-        AGaugeApp.AGauge.NeedleColorEnum.Gray,
-        AGaugeApp.AGauge.NeedleColorEnum.Red,
-        AGaugeApp.AGauge.NeedleColorEnum.Gray};
-            this.Galt.NeedlesColor2 = new System.Drawing.Color[] {
-        System.Drawing.Color.White,
-        System.Drawing.Color.White,
-        System.Drawing.Color.White,
-        System.Drawing.Color.White};
-            this.Galt.NeedlesEnabled = new bool[] {
-        true,
-        true,
-        true,
-        false};
-            this.Galt.NeedlesRadius = new int[] {
-        50,
-        30,
-        50,
-        80};
-            this.Galt.NeedlesType = new int[] {
-        0,
-        0,
-        0,
-        0};
-            this.Galt.NeedlesWidth = new int[] {
-        2,
-        2,
-        2,
-        2};
-            this.Galt.NeedleType = 0;
-            this.Galt.NeedleWidth = 2;
-            this.Galt.Range_Idx = ((byte)(0));
-            this.Galt.RangeColor = System.Drawing.Color.LightGreen;
-            this.Galt.RangeEnabled = false;
-            this.Galt.RangeEndValue = 360F;
-            this.Galt.RangeInnerRadius = 1;
-            this.Galt.RangeOuterRadius = 60;
-            this.Galt.RangesColor = new System.Drawing.Color[] {
-        System.Drawing.Color.LightGreen,
-        System.Drawing.Color.Red,
-        System.Drawing.Color.Orange,
-        System.Drawing.SystemColors.Control,
-        System.Drawing.SystemColors.Control};
-            this.Galt.RangesEnabled = new bool[] {
-        false,
-        false,
-        false,
-        false,
-        false};
-            this.Galt.RangesEndValue = new float[] {
-        360F,
-        200F,
-        150F,
-        0F,
-        0F};
-            this.Galt.RangesInnerRadius = new int[] {
-        1,
-        1,
-        1,
-        70,
-        70};
-            this.Galt.RangesOuterRadius = new int[] {
-        60,
-        60,
-        60,
-        80,
-        80};
-            this.Galt.RangesStartValue = new float[] {
-        0F,
-        150F,
-        75F,
-        0F,
-        0F};
-            this.Galt.RangeStartValue = 0F;
-            this.Galt.ScaleLinesInterColor = System.Drawing.Color.White;
-            this.Galt.ScaleLinesInterInnerRadius = 52;
-            this.Galt.ScaleLinesInterOuterRadius = 60;
-            this.Galt.ScaleLinesInterWidth = 1;
-            this.Galt.ScaleLinesMajorColor = System.Drawing.Color.White;
-            this.Galt.ScaleLinesMajorInnerRadius = 50;
-            this.Galt.ScaleLinesMajorOuterRadius = 60;
-            this.Galt.ScaleLinesMajorStepValue = 1F;
-            this.Galt.ScaleLinesMajorWidth = 2;
-            this.Galt.ScaleLinesMinorColor = System.Drawing.Color.White;
-            this.Galt.ScaleLinesMinorInnerRadius = 55;
-            this.Galt.ScaleLinesMinorNumOf = 9;
-            this.Galt.ScaleLinesMinorOuterRadius = 60;
-            this.Galt.ScaleLinesMinorWidth = 1;
-            this.Galt.ScaleNumbersColor = System.Drawing.Color.White;
-            this.Galt.ScaleNumbersFormat = "";
-            this.Galt.ScaleNumbersRadius = 42;
-            this.Galt.ScaleNumbersRotation = 0;
-            this.Galt.ScaleNumbersStartScaleLine = 1;
-            this.Galt.ScaleNumbersStepScaleLines = 1;
-            this.Galt.Value = 0F;
-            this.Galt.Value0 = 0F;
-            this.Galt.Value1 = 0F;
-            this.Galt.Value2 = 0F;
-            this.Galt.Value3 = 0F;
-            // 
-            // Gspeed
-            // 
-            this.Gspeed.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.Gspeed, "Gspeed");
-            this.Gspeed.BaseArcColor = System.Drawing.Color.Transparent;
-            this.Gspeed.BaseArcRadius = 70;
-            this.Gspeed.BaseArcStart = 135;
-            this.Gspeed.BaseArcSweep = 270;
-            this.Gspeed.BaseArcWidth = 2;
-            this.Gspeed.Cap_Idx = ((byte)(0));
-            this.Gspeed.CapColor = System.Drawing.Color.White;
-            this.Gspeed.CapColors = new System.Drawing.Color[] {
-        System.Drawing.Color.White,
-        System.Drawing.Color.White,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black};
-            this.Gspeed.CapPosition = new System.Drawing.Point(58, 85);
-            this.Gspeed.CapsPosition = new System.Drawing.Point[] {
-        new System.Drawing.Point(58, 85),
-        new System.Drawing.Point(50, 110),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10)};
-            this.Gspeed.CapsText = new string[] {
-        "Speed",
-        "",
-        "",
-        "",
-        ""};
-            this.Gspeed.CapText = "Speed";
-            this.Gspeed.Center = new System.Drawing.Point(75, 75);
-            this.Gspeed.DataBindings.Add(new System.Windows.Forms.Binding("Value0", this.bindingSourceGaugesTab, "airspeed", true));
-            this.Gspeed.DataBindings.Add(new System.Windows.Forms.Binding("Value1", this.bindingSourceGaugesTab, "groundspeed", true));
-            this.Gspeed.MaxValue = 60F;
-            this.Gspeed.MinValue = 0F;
-            this.Gspeed.Name = "Gspeed";
-            this.Gspeed.Need_Idx = ((byte)(3));
-            this.Gspeed.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
-            this.Gspeed.NeedleColor2 = System.Drawing.Color.Brown;
-            this.Gspeed.NeedleEnabled = false;
-            this.Gspeed.NeedleRadius = 70;
-            this.Gspeed.NeedlesColor1 = new AGaugeApp.AGauge.NeedleColorEnum[] {
-        AGaugeApp.AGauge.NeedleColorEnum.Gray,
-        AGaugeApp.AGauge.NeedleColorEnum.Red,
-        AGaugeApp.AGauge.NeedleColorEnum.Blue,
-        AGaugeApp.AGauge.NeedleColorEnum.Gray};
-            this.Gspeed.NeedlesColor2 = new System.Drawing.Color[] {
-        System.Drawing.Color.White,
-        System.Drawing.Color.White,
-        System.Drawing.Color.White,
-        System.Drawing.Color.Brown};
-            this.Gspeed.NeedlesEnabled = new bool[] {
-        true,
-        true,
-        false,
-        false};
-            this.Gspeed.NeedlesRadius = new int[] {
-        50,
-        50,
-        70,
-        70};
-            this.Gspeed.NeedlesType = new int[] {
-        0,
-        0,
-        0,
-        0};
-            this.Gspeed.NeedlesWidth = new int[] {
-        2,
-        1,
-        2,
-        2};
-            this.Gspeed.NeedleType = 0;
-            this.Gspeed.NeedleWidth = 2;
-            this.Gspeed.Range_Idx = ((byte)(2));
-            this.Gspeed.RangeColor = System.Drawing.Color.Orange;
-            this.Gspeed.RangeEnabled = false;
-            this.Gspeed.RangeEndValue = 50F;
-            this.Gspeed.RangeInnerRadius = 1;
-            this.Gspeed.RangeOuterRadius = 70;
-            this.Gspeed.RangesColor = new System.Drawing.Color[] {
-        System.Drawing.Color.LightGreen,
-        System.Drawing.Color.Red,
-        System.Drawing.Color.Orange,
-        System.Drawing.SystemColors.Control,
-        System.Drawing.SystemColors.Control};
-            this.Gspeed.RangesEnabled = new bool[] {
-        false,
-        false,
-        false,
-        false,
-        false};
-            this.Gspeed.RangesEndValue = new float[] {
-        35F,
-        60F,
-        50F,
-        0F,
-        0F};
-            this.Gspeed.RangesInnerRadius = new int[] {
-        1,
-        1,
-        1,
-        70,
-        70};
-            this.Gspeed.RangesOuterRadius = new int[] {
-        70,
-        70,
-        70,
-        80,
-        80};
-            this.Gspeed.RangesStartValue = new float[] {
-        0F,
-        50F,
-        35F,
-        0F,
-        0F};
-            this.Gspeed.RangeStartValue = 35F;
-            this.Gspeed.ScaleLinesInterColor = System.Drawing.Color.White;
-            this.Gspeed.ScaleLinesInterInnerRadius = 52;
-            this.Gspeed.ScaleLinesInterOuterRadius = 60;
-            this.Gspeed.ScaleLinesInterWidth = 1;
-            this.Gspeed.ScaleLinesMajorColor = System.Drawing.Color.White;
-            this.Gspeed.ScaleLinesMajorInnerRadius = 50;
-            this.Gspeed.ScaleLinesMajorOuterRadius = 60;
-            this.Gspeed.ScaleLinesMajorStepValue = 10F;
-            this.Gspeed.ScaleLinesMajorWidth = 2;
-            this.Gspeed.ScaleLinesMinorColor = System.Drawing.Color.White;
-            this.Gspeed.ScaleLinesMinorInnerRadius = 55;
-            this.Gspeed.ScaleLinesMinorNumOf = 9;
-            this.Gspeed.ScaleLinesMinorOuterRadius = 60;
-            this.Gspeed.ScaleLinesMinorWidth = 1;
-            this.Gspeed.ScaleNumbersColor = System.Drawing.Color.White;
-            this.Gspeed.ScaleNumbersFormat = null;
-            this.Gspeed.ScaleNumbersRadius = 42;
-            this.Gspeed.ScaleNumbersRotation = 0;
-            this.Gspeed.ScaleNumbersStartScaleLine = 1;
-            this.Gspeed.ScaleNumbersStepScaleLines = 1;
-            this.toolTip1.SetToolTip(this.Gspeed, resources.GetString("Gspeed.ToolTip"));
-            this.Gspeed.Value = 0F;
-            this.Gspeed.Value0 = 0F;
-            this.Gspeed.Value1 = 0F;
-            this.Gspeed.Value2 = 0F;
-            this.Gspeed.Value3 = 0F;
-            this.Gspeed.DoubleClick += new System.EventHandler(this.Gspeed_DoubleClick);
             // 
             // tabTransponder
             // 
@@ -2252,6 +1698,12 @@ namespace MissionPlanner.GCSViews
             this.BUT_loganalysis.UseVisualStyleBackColor = true;
             this.BUT_loganalysis.Click += new System.EventHandler(this.BUT_loganalysis_Click);
             // 
+            // tabQuick
+            // 
+            resources.ApplyResources(this.tabQuick, "tabQuick");
+            this.tabQuick.Name = "tabQuick";
+            this.tabQuick.UseVisualStyleBackColor = true;
+            // 
             // tableMap
             // 
             resources.ApplyResources(this.tableMap, "tableMap");
@@ -2267,21 +1719,16 @@ namespace MissionPlanner.GCSViews
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this.zg1);
+            resources.ApplyResources(this.splitContainer1.Panel1, "splitContainer1.Panel1");
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.ContextMenuStrip = this.contextMenuStripMap;
-            this.splitContainer1.Panel2.Controls.Add(this.but_disablejoystick);
-            this.splitContainer1.Panel2.Controls.Add(this.distanceBar1);
-            this.splitContainer1.Panel2.Controls.Add(this.windDir1);
-            this.splitContainer1.Panel2.Controls.Add(this.label6);
-            this.splitContainer1.Panel2.Controls.Add(this.label5);
-            this.splitContainer1.Panel2.Controls.Add(this.label3);
-            this.splitContainer1.Panel2.Controls.Add(this.label4);
             this.splitContainer1.Panel2.Controls.Add(this.lbl_hdop);
             this.splitContainer1.Panel2.Controls.Add(this.lbl_sats);
             this.splitContainer1.Panel2.Controls.Add(this.gMapControl1);
             this.splitContainer1.Panel2.Controls.Add(this.TRK_zoom);
+            resources.ApplyResources(this.splitContainer1.Panel2, "splitContainer1.Panel2");
             // 
             // zg1
             // 
@@ -2298,6 +1745,7 @@ namespace MissionPlanner.GCSViews
             // 
             // contextMenuStripMap
             // 
+            this.contextMenuStripMap.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripMap.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.goHereToolStripMenuItem,
             this.flyToHereAltToolStripMenuItem,
@@ -2423,67 +1871,6 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.onOffCameraOverlapToolStripMenuItem, "onOffCameraOverlapToolStripMenuItem");
             this.onOffCameraOverlapToolStripMenuItem.Click += new System.EventHandler(this.onOffCameraOverlapToolStripMenuItem_Click);
             // 
-            // but_disablejoystick
-            // 
-            this.but_disablejoystick.ColorMouseDown = System.Drawing.Color.Empty;
-            this.but_disablejoystick.ColorMouseOver = System.Drawing.Color.Empty;
-            this.but_disablejoystick.ColorNotEnabled = System.Drawing.Color.Empty;
-            resources.ApplyResources(this.but_disablejoystick, "but_disablejoystick");
-            this.but_disablejoystick.Name = "but_disablejoystick";
-            this.but_disablejoystick.UseVisualStyleBackColor = true;
-            this.but_disablejoystick.Click += new System.EventHandler(this.but_disablejoystick_Click);
-            // 
-            // distanceBar1
-            // 
-            resources.ApplyResources(this.distanceBar1, "distanceBar1");
-            this.distanceBar1.BackColor = System.Drawing.Color.Transparent;
-            this.distanceBar1.Name = "distanceBar1";
-            this.distanceBar1.totaldist = 100F;
-            this.distanceBar1.traveleddist = 0F;
-            // 
-            // windDir1
-            // 
-            this.windDir1.BackColor = System.Drawing.Color.Transparent;
-            this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 360D;
-            resources.ApplyResources(this.windDir1, "windDir1");
-            this.windDir1.Name = "windDir1";
-            this.windDir1.Speed = 0D;
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = typeof(MissionPlanner.CurrentState);
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.BackColor = System.Drawing.Color.Black;
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Name = "label6";
-            this.label6.Tag = "custom";
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.ForeColor = System.Drawing.Color.Green;
-            this.label5.Name = "label5";
-            this.label5.Tag = "custom";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label3.Name = "label3";
-            this.label3.Tag = "custom";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Name = "label4";
-            this.label4.Tag = "custom";
-            // 
             // lbl_hdop
             // 
             resources.ApplyResources(this.lbl_hdop, "lbl_hdop");
@@ -2491,6 +1878,10 @@ namespace MissionPlanner.GCSViews
             this.lbl_hdop.Name = "lbl_hdop";
             this.lbl_hdop.resize = true;
             this.toolTip1.SetToolTip(this.lbl_hdop, resources.GetString("lbl_hdop.ToolTip"));
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(MissionPlanner.CurrentState);
             // 
             // lbl_sats
             // 
@@ -2548,12 +1939,29 @@ namespace MissionPlanner.GCSViews
             // panel1
             // 
             resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Controls.Add(this.but_disablejoystick);
             this.panel1.Controls.Add(this.coords1);
+            this.panel1.Controls.Add(this.windDir1);
+            this.panel1.Controls.Add(this.distanceBar1);
             this.panel1.Controls.Add(this.Zoomlevel);
             this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.CHK_autopan);
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.CB_tuning);
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Name = "panel1";
+            // 
+            // but_disablejoystick
+            // 
+            this.but_disablejoystick.ColorMouseDown = System.Drawing.Color.Empty;
+            this.but_disablejoystick.ColorMouseOver = System.Drawing.Color.Empty;
+            this.but_disablejoystick.ColorNotEnabled = System.Drawing.Color.Empty;
+            resources.ApplyResources(this.but_disablejoystick, "but_disablejoystick");
+            this.but_disablejoystick.Name = "but_disablejoystick";
+            this.but_disablejoystick.UseVisualStyleBackColor = true;
+            this.but_disablejoystick.Click += new System.EventHandler(this.but_disablejoystick_Click);
             // 
             // coords1
             // 
@@ -2568,6 +1976,24 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.coords1, "coords1");
             this.coords1.Name = "coords1";
             this.coords1.Vertical = false;
+            // 
+            // windDir1
+            // 
+            this.windDir1.BackColor = System.Drawing.Color.Transparent;
+            this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.windDir1.Direction = 360D;
+            resources.ApplyResources(this.windDir1, "windDir1");
+            this.windDir1.Name = "windDir1";
+            this.windDir1.Speed = 0D;
+            // 
+            // distanceBar1
+            // 
+            resources.ApplyResources(this.distanceBar1, "distanceBar1");
+            this.distanceBar1.BackColor = System.Drawing.Color.Transparent;
+            this.distanceBar1.Name = "distanceBar1";
+            this.distanceBar1.totaldist = 100F;
+            this.distanceBar1.traveleddist = 0F;
             // 
             // Zoomlevel
             // 
@@ -2603,6 +2029,21 @@ namespace MissionPlanner.GCSViews
             this.label1.Name = "label1";
             this.label1.resize = false;
             // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label3.Name = "label3";
+            this.label3.Tag = "custom";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.BackColor = System.Drawing.Color.Black;
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Name = "label6";
+            this.label6.Tag = "custom";
+            // 
             // CHK_autopan
             // 
             resources.ApplyResources(this.CHK_autopan, "CHK_autopan");
@@ -2613,6 +2054,13 @@ namespace MissionPlanner.GCSViews
             this.CHK_autopan.UseVisualStyleBackColor = true;
             this.CHK_autopan.CheckedChanged += new System.EventHandler(this.CHK_autopan_CheckedChanged);
             // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.ForeColor = System.Drawing.Color.Green;
+            this.label5.Name = "label5";
+            this.label5.Tag = "custom";
+            // 
             // CB_tuning
             // 
             resources.ApplyResources(this.CB_tuning, "CB_tuning");
@@ -2620,6 +2068,607 @@ namespace MissionPlanner.GCSViews
             this.toolTip1.SetToolTip(this.CB_tuning, resources.GetString("CB_tuning.ToolTip"));
             this.CB_tuning.UseVisualStyleBackColor = true;
             this.CB_tuning.CheckedChanged += new System.EventHandler(this.CB_tuning_CheckedChanged);
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Name = "label4";
+            this.label4.Tag = "custom";
+            // 
+            // mainContainer
+            // 
+            resources.ApplyResources(this.mainContainer, "mainContainer");
+            this.mainContainer.Name = "mainContainer";
+            // 
+            // mainContainer.Panel1
+            // 
+            this.mainContainer.Panel1.Controls.Add(this.MainH);
+            resources.ApplyResources(this.mainContainer.Panel1, "mainContainer.Panel1");
+            // 
+            // mainContainer.Panel2
+            // 
+            this.mainContainer.Panel2.Controls.Add(this.leftSplitter);
+            resources.ApplyResources(this.mainContainer.Panel2, "mainContainer.Panel2");
+            // 
+            // leftSplitter
+            // 
+            resources.ApplyResources(this.leftSplitter, "leftSplitter");
+            this.leftSplitter.Name = "leftSplitter";
+            // 
+            // leftSplitter.Panel1
+            // 
+            this.leftSplitter.Panel1.Controls.Add(this.tableLayoutPanelQuick);
+            resources.ApplyResources(this.leftSplitter.Panel1, "leftSplitter.Panel1");
+            // 
+            // leftSplitter.Panel2
+            // 
+            this.leftSplitter.Panel2.Controls.Add(this.Gheading);
+            this.leftSplitter.Panel2.Controls.Add(this.Gvspeed);
+            this.leftSplitter.Panel2.Controls.Add(this.Gspeed);
+            this.leftSplitter.Panel2.Controls.Add(this.Galt);
+            resources.ApplyResources(this.leftSplitter.Panel2, "leftSplitter.Panel2");
+            this.leftSplitter.Panel2.Resize += new System.EventHandler(this.leftSplitter_Panel2_Resize);
+            // 
+            // tableLayoutPanelQuick
+            // 
+            resources.ApplyResources(this.tableLayoutPanelQuick, "tableLayoutPanelQuick");
+            this.tableLayoutPanelQuick.Controls.Add(this.quickView6, 1, 2);
+            this.tableLayoutPanelQuick.Controls.Add(this.quickView1, 0, 0);
+            this.tableLayoutPanelQuick.Controls.Add(this.quickView2, 1, 0);
+            this.tableLayoutPanelQuick.Controls.Add(this.quickView5, 0, 2);
+            this.tableLayoutPanelQuick.Controls.Add(this.quickView4, 1, 1);
+            this.tableLayoutPanelQuick.Controls.Add(this.quickView3, 0, 1);
+            this.tableLayoutPanelQuick.Name = "tableLayoutPanelQuick";
+            // 
+            // quickView6
+            // 
+            this.quickView6.ContextMenuStrip = this.contextMenuStripQuickView;
+            this.quickView6.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "DistToHome", true));
+            this.quickView6.desc = "DistToMAV";
+            resources.ApplyResources(this.quickView6, "quickView6");
+            this.quickView6.Name = "quickView6";
+            this.quickView6.number = 0D;
+            this.quickView6.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.quickView6.numberColorBackup = System.Drawing.Color.Empty;
+            this.quickView6.numberformat = "0.00";
+            this.quickView6.DoubleClick += new System.EventHandler(this.quickView_DoubleClick);
+            // 
+            // contextMenuStripQuickView
+            // 
+            this.contextMenuStripQuickView.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStripQuickView.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.setViewCountToolStripMenuItem,
+            this.undockToolStripMenuItem});
+            this.contextMenuStripQuickView.Name = "contextMenuStripQuickView";
+            resources.ApplyResources(this.contextMenuStripQuickView, "contextMenuStripQuickView");
+            // 
+            // setViewCountToolStripMenuItem
+            // 
+            this.setViewCountToolStripMenuItem.Name = "setViewCountToolStripMenuItem";
+            resources.ApplyResources(this.setViewCountToolStripMenuItem, "setViewCountToolStripMenuItem");
+            this.setViewCountToolStripMenuItem.Click += new System.EventHandler(this.setViewCountToolStripMenuItem_Click);
+            // 
+            // undockToolStripMenuItem
+            // 
+            this.undockToolStripMenuItem.Name = "undockToolStripMenuItem";
+            resources.ApplyResources(this.undockToolStripMenuItem, "undockToolStripMenuItem");
+            this.undockToolStripMenuItem.Click += new System.EventHandler(this.undockDockToolStripMenuItem_Click);
+            // 
+            // bindingSourceQuickTab
+            // 
+            this.bindingSourceQuickTab.DataSource = typeof(MissionPlanner.CurrentState);
+            // 
+            // quickView1
+            // 
+            this.quickView1.ContextMenuStrip = this.contextMenuStripQuickView;
+            this.quickView1.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "alt", true));
+            this.quickView1.desc = "alt";
+            resources.ApplyResources(this.quickView1, "quickView1");
+            this.quickView1.Name = "quickView1";
+            this.quickView1.number = 0D;
+            this.quickView1.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(151)))), ((int)(((byte)(248)))));
+            this.quickView1.numberColorBackup = System.Drawing.Color.Empty;
+            this.quickView1.numberformat = "0.00";
+            this.toolTip1.SetToolTip(this.quickView1, resources.GetString("quickView1.ToolTip"));
+            this.quickView1.DoubleClick += new System.EventHandler(this.quickView_DoubleClick);
+            // 
+            // quickView2
+            // 
+            this.quickView2.ContextMenuStrip = this.contextMenuStripQuickView;
+            this.quickView2.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "groundspeed", true));
+            this.quickView2.desc = "groundspeed";
+            resources.ApplyResources(this.quickView2, "quickView2");
+            this.quickView2.Name = "quickView2";
+            this.quickView2.number = 0D;
+            this.quickView2.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(132)))), ((int)(((byte)(46)))));
+            this.quickView2.numberColorBackup = System.Drawing.Color.Empty;
+            this.quickView2.numberformat = "0.00";
+            this.quickView2.DoubleClick += new System.EventHandler(this.quickView_DoubleClick);
+            // 
+            // quickView5
+            // 
+            this.quickView5.ContextMenuStrip = this.contextMenuStripQuickView;
+            this.quickView5.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "verticalspeed", true));
+            this.quickView5.desc = "verticalspeed";
+            resources.ApplyResources(this.quickView5, "quickView5");
+            this.quickView5.Name = "quickView5";
+            this.quickView5.number = 0D;
+            this.quickView5.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(86)))));
+            this.quickView5.numberColorBackup = System.Drawing.Color.Empty;
+            this.quickView5.numberformat = "0.00";
+            this.quickView5.DoubleClick += new System.EventHandler(this.quickView_DoubleClick);
+            // 
+            // quickView4
+            // 
+            this.quickView4.ContextMenuStrip = this.contextMenuStripQuickView;
+            this.quickView4.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "yaw", true));
+            this.quickView4.desc = "yaw";
+            resources.ApplyResources(this.quickView4, "quickView4");
+            this.quickView4.Name = "quickView4";
+            this.quickView4.number = 0D;
+            this.quickView4.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(83)))));
+            this.quickView4.numberColorBackup = System.Drawing.Color.Empty;
+            this.quickView4.numberformat = "0.00";
+            this.quickView4.DoubleClick += new System.EventHandler(this.quickView_DoubleClick);
+            // 
+            // quickView3
+            // 
+            this.quickView3.ContextMenuStrip = this.contextMenuStripQuickView;
+            this.quickView3.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "wp_dist", true));
+            this.quickView3.desc = "wp_dist";
+            resources.ApplyResources(this.quickView3, "quickView3");
+            this.quickView3.Name = "quickView3";
+            this.quickView3.number = 0D;
+            this.quickView3.numberColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(96)))), ((int)(((byte)(91)))));
+            this.quickView3.numberColorBackup = System.Drawing.Color.Empty;
+            this.quickView3.numberformat = "0.00";
+            this.quickView3.DoubleClick += new System.EventHandler(this.quickView_DoubleClick);
+            // 
+            // Gheading
+            // 
+            this.Gheading.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.Gheading, "Gheading");
+            this.Gheading.DataBindings.Add(new System.Windows.Forms.Binding("Heading", this.bindingSourceGaugesTab, "yaw", true));
+            this.Gheading.DataBindings.Add(new System.Windows.Forms.Binding("NavHeading", this.bindingSourceGaugesTab, "nav_bearing", true));
+            this.Gheading.Heading = 0;
+            this.Gheading.Name = "Gheading";
+            this.Gheading.NavHeading = 0;
+            // 
+            // bindingSourceGaugesTab
+            // 
+            this.bindingSourceGaugesTab.DataSource = typeof(MissionPlanner.CurrentState);
+            // 
+            // Gvspeed
+            // 
+            this.Gvspeed.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.Gvspeed, "Gvspeed");
+            this.Gvspeed.BaseArcColor = System.Drawing.Color.Transparent;
+            this.Gvspeed.BaseArcRadius = 60;
+            this.Gvspeed.BaseArcStart = 20;
+            this.Gvspeed.BaseArcSweep = 320;
+            this.Gvspeed.BaseArcWidth = 2;
+            this.Gvspeed.Cap_Idx = ((byte)(0));
+            this.Gvspeed.CapColor = System.Drawing.Color.White;
+            this.Gvspeed.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.White,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.Gvspeed.CapPosition = new System.Drawing.Point(65, 85);
+            this.Gvspeed.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(65, 85),
+        new System.Drawing.Point(30, 55),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.Gvspeed.CapsText = new string[] {
+        "VSI",
+        "",
+        "",
+        "",
+        ""};
+            this.Gvspeed.CapText = "VSI";
+            this.Gvspeed.Center = new System.Drawing.Point(75, 75);
+            this.Gvspeed.DataBindings.Add(new System.Windows.Forms.Binding("Value0", this.bindingSourceGaugesTab, "verticalspeed", true));
+            this.Gvspeed.MaxValue = 10F;
+            this.Gvspeed.MinValue = -10F;
+            this.Gvspeed.Name = "Gvspeed";
+            this.Gvspeed.Need_Idx = ((byte)(3));
+            this.Gvspeed.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.Gvspeed.NeedleColor2 = System.Drawing.Color.White;
+            this.Gvspeed.NeedleEnabled = false;
+            this.Gvspeed.NeedleRadius = 80;
+            this.Gvspeed.NeedlesColor1 = new AGaugeApp.AGauge.NeedleColorEnum[] {
+        AGaugeApp.AGauge.NeedleColorEnum.Gray,
+        AGaugeApp.AGauge.NeedleColorEnum.Gray,
+        AGaugeApp.AGauge.NeedleColorEnum.Gray,
+        AGaugeApp.AGauge.NeedleColorEnum.Gray};
+            this.Gvspeed.NeedlesColor2 = new System.Drawing.Color[] {
+        System.Drawing.Color.White,
+        System.Drawing.Color.White,
+        System.Drawing.Color.White,
+        System.Drawing.Color.White};
+            this.Gvspeed.NeedlesEnabled = new bool[] {
+        true,
+        false,
+        false,
+        false};
+            this.Gvspeed.NeedlesRadius = new int[] {
+        50,
+        30,
+        50,
+        80};
+            this.Gvspeed.NeedlesType = new int[] {
+        0,
+        0,
+        0,
+        0};
+            this.Gvspeed.NeedlesWidth = new int[] {
+        2,
+        2,
+        2,
+        2};
+            this.Gvspeed.NeedleType = 0;
+            this.Gvspeed.NeedleWidth = 2;
+            this.Gvspeed.Range_Idx = ((byte)(0));
+            this.Gvspeed.RangeColor = System.Drawing.Color.LightGreen;
+            this.Gvspeed.RangeEnabled = false;
+            this.Gvspeed.RangeEndValue = 360F;
+            this.Gvspeed.RangeInnerRadius = 1;
+            this.Gvspeed.RangeOuterRadius = 60;
+            this.Gvspeed.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.LightGreen,
+        System.Drawing.Color.Red,
+        System.Drawing.Color.Orange,
+        System.Drawing.SystemColors.Control,
+        System.Drawing.SystemColors.Control};
+            this.Gvspeed.RangesEnabled = new bool[] {
+        false,
+        false,
+        false,
+        false,
+        false};
+            this.Gvspeed.RangesEndValue = new float[] {
+        360F,
+        200F,
+        150F,
+        0F,
+        0F};
+            this.Gvspeed.RangesInnerRadius = new int[] {
+        1,
+        1,
+        1,
+        70,
+        70};
+            this.Gvspeed.RangesOuterRadius = new int[] {
+        60,
+        60,
+        60,
+        80,
+        80};
+            this.Gvspeed.RangesStartValue = new float[] {
+        0F,
+        150F,
+        75F,
+        0F,
+        0F};
+            this.Gvspeed.RangeStartValue = 0F;
+            this.Gvspeed.ScaleLinesInterColor = System.Drawing.Color.White;
+            this.Gvspeed.ScaleLinesInterInnerRadius = 52;
+            this.Gvspeed.ScaleLinesInterOuterRadius = 60;
+            this.Gvspeed.ScaleLinesInterWidth = 1;
+            this.Gvspeed.ScaleLinesMajorColor = System.Drawing.Color.White;
+            this.Gvspeed.ScaleLinesMajorInnerRadius = 50;
+            this.Gvspeed.ScaleLinesMajorOuterRadius = 60;
+            this.Gvspeed.ScaleLinesMajorStepValue = 2F;
+            this.Gvspeed.ScaleLinesMajorWidth = 2;
+            this.Gvspeed.ScaleLinesMinorColor = System.Drawing.Color.White;
+            this.Gvspeed.ScaleLinesMinorInnerRadius = 55;
+            this.Gvspeed.ScaleLinesMinorNumOf = 9;
+            this.Gvspeed.ScaleLinesMinorOuterRadius = 60;
+            this.Gvspeed.ScaleLinesMinorWidth = 1;
+            this.Gvspeed.ScaleNumbersColor = System.Drawing.Color.White;
+            this.Gvspeed.ScaleNumbersFormat = "";
+            this.Gvspeed.ScaleNumbersRadius = 42;
+            this.Gvspeed.ScaleNumbersRotation = 0;
+            this.Gvspeed.ScaleNumbersStartScaleLine = 1;
+            this.Gvspeed.ScaleNumbersStepScaleLines = 1;
+            this.Gvspeed.Value = 0F;
+            this.Gvspeed.Value0 = 0F;
+            this.Gvspeed.Value1 = 0F;
+            this.Gvspeed.Value2 = 0F;
+            this.Gvspeed.Value3 = 0F;
+            // 
+            // Gspeed
+            // 
+            this.Gspeed.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.Gspeed, "Gspeed");
+            this.Gspeed.BaseArcColor = System.Drawing.Color.Transparent;
+            this.Gspeed.BaseArcRadius = 70;
+            this.Gspeed.BaseArcStart = 135;
+            this.Gspeed.BaseArcSweep = 270;
+            this.Gspeed.BaseArcWidth = 2;
+            this.Gspeed.Cap_Idx = ((byte)(0));
+            this.Gspeed.CapColor = System.Drawing.Color.White;
+            this.Gspeed.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.White,
+        System.Drawing.Color.White,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.Gspeed.CapPosition = new System.Drawing.Point(58, 85);
+            this.Gspeed.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(58, 85),
+        new System.Drawing.Point(50, 110),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.Gspeed.CapsText = new string[] {
+        "Speed",
+        "",
+        "",
+        "",
+        ""};
+            this.Gspeed.CapText = "Speed";
+            this.Gspeed.Center = new System.Drawing.Point(75, 75);
+            this.Gspeed.DataBindings.Add(new System.Windows.Forms.Binding("Value0", this.bindingSourceGaugesTab, "airspeed", true));
+            this.Gspeed.DataBindings.Add(new System.Windows.Forms.Binding("Value1", this.bindingSourceGaugesTab, "groundspeed", true));
+            this.Gspeed.MaxValue = 60F;
+            this.Gspeed.MinValue = 0F;
+            this.Gspeed.Name = "Gspeed";
+            this.Gspeed.Need_Idx = ((byte)(3));
+            this.Gspeed.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.Gspeed.NeedleColor2 = System.Drawing.Color.Brown;
+            this.Gspeed.NeedleEnabled = false;
+            this.Gspeed.NeedleRadius = 70;
+            this.Gspeed.NeedlesColor1 = new AGaugeApp.AGauge.NeedleColorEnum[] {
+        AGaugeApp.AGauge.NeedleColorEnum.Gray,
+        AGaugeApp.AGauge.NeedleColorEnum.Red,
+        AGaugeApp.AGauge.NeedleColorEnum.Blue,
+        AGaugeApp.AGauge.NeedleColorEnum.Gray};
+            this.Gspeed.NeedlesColor2 = new System.Drawing.Color[] {
+        System.Drawing.Color.White,
+        System.Drawing.Color.White,
+        System.Drawing.Color.White,
+        System.Drawing.Color.Brown};
+            this.Gspeed.NeedlesEnabled = new bool[] {
+        true,
+        true,
+        false,
+        false};
+            this.Gspeed.NeedlesRadius = new int[] {
+        50,
+        50,
+        70,
+        70};
+            this.Gspeed.NeedlesType = new int[] {
+        0,
+        0,
+        0,
+        0};
+            this.Gspeed.NeedlesWidth = new int[] {
+        2,
+        1,
+        2,
+        2};
+            this.Gspeed.NeedleType = 0;
+            this.Gspeed.NeedleWidth = 2;
+            this.Gspeed.Range_Idx = ((byte)(2));
+            this.Gspeed.RangeColor = System.Drawing.Color.Orange;
+            this.Gspeed.RangeEnabled = false;
+            this.Gspeed.RangeEndValue = 50F;
+            this.Gspeed.RangeInnerRadius = 1;
+            this.Gspeed.RangeOuterRadius = 70;
+            this.Gspeed.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.LightGreen,
+        System.Drawing.Color.Red,
+        System.Drawing.Color.Orange,
+        System.Drawing.SystemColors.Control,
+        System.Drawing.SystemColors.Control};
+            this.Gspeed.RangesEnabled = new bool[] {
+        false,
+        false,
+        false,
+        false,
+        false};
+            this.Gspeed.RangesEndValue = new float[] {
+        35F,
+        60F,
+        50F,
+        0F,
+        0F};
+            this.Gspeed.RangesInnerRadius = new int[] {
+        1,
+        1,
+        1,
+        70,
+        70};
+            this.Gspeed.RangesOuterRadius = new int[] {
+        70,
+        70,
+        70,
+        80,
+        80};
+            this.Gspeed.RangesStartValue = new float[] {
+        0F,
+        50F,
+        35F,
+        0F,
+        0F};
+            this.Gspeed.RangeStartValue = 35F;
+            this.Gspeed.ScaleLinesInterColor = System.Drawing.Color.White;
+            this.Gspeed.ScaleLinesInterInnerRadius = 52;
+            this.Gspeed.ScaleLinesInterOuterRadius = 60;
+            this.Gspeed.ScaleLinesInterWidth = 1;
+            this.Gspeed.ScaleLinesMajorColor = System.Drawing.Color.White;
+            this.Gspeed.ScaleLinesMajorInnerRadius = 50;
+            this.Gspeed.ScaleLinesMajorOuterRadius = 60;
+            this.Gspeed.ScaleLinesMajorStepValue = 10F;
+            this.Gspeed.ScaleLinesMajorWidth = 2;
+            this.Gspeed.ScaleLinesMinorColor = System.Drawing.Color.White;
+            this.Gspeed.ScaleLinesMinorInnerRadius = 55;
+            this.Gspeed.ScaleLinesMinorNumOf = 9;
+            this.Gspeed.ScaleLinesMinorOuterRadius = 60;
+            this.Gspeed.ScaleLinesMinorWidth = 1;
+            this.Gspeed.ScaleNumbersColor = System.Drawing.Color.White;
+            this.Gspeed.ScaleNumbersFormat = null;
+            this.Gspeed.ScaleNumbersRadius = 42;
+            this.Gspeed.ScaleNumbersRotation = 0;
+            this.Gspeed.ScaleNumbersStartScaleLine = 1;
+            this.Gspeed.ScaleNumbersStepScaleLines = 1;
+            this.toolTip1.SetToolTip(this.Gspeed, resources.GetString("Gspeed.ToolTip"));
+            this.Gspeed.Value = 0F;
+            this.Gspeed.Value0 = 0F;
+            this.Gspeed.Value1 = 0F;
+            this.Gspeed.Value2 = 0F;
+            this.Gspeed.Value3 = 0F;
+            this.Gspeed.DoubleClick += new System.EventHandler(this.Gspeed_DoubleClick);
+            // 
+            // Galt
+            // 
+            this.Galt.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.Galt, "Galt");
+            this.Galt.BaseArcColor = System.Drawing.Color.Transparent;
+            this.Galt.BaseArcRadius = 60;
+            this.Galt.BaseArcStart = 270;
+            this.Galt.BaseArcSweep = 360;
+            this.Galt.BaseArcWidth = 2;
+            this.Galt.Cap_Idx = ((byte)(0));
+            this.Galt.CapColor = System.Drawing.Color.White;
+            this.Galt.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.White,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.Galt.CapPosition = new System.Drawing.Point(68, 85);
+            this.Galt.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(68, 85),
+        new System.Drawing.Point(30, 55),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.Galt.CapsText = new string[] {
+        "Alt",
+        "",
+        "",
+        "",
+        ""};
+            this.Galt.CapText = "Alt";
+            this.Galt.Center = new System.Drawing.Point(75, 75);
+            this.Galt.DataBindings.Add(new System.Windows.Forms.Binding("Value0", this.bindingSourceGaugesTab, "altd100", true));
+            this.Galt.DataBindings.Add(new System.Windows.Forms.Binding("Value1", this.bindingSourceGaugesTab, "altd1000", true));
+            this.Galt.DataBindings.Add(new System.Windows.Forms.Binding("Value2", this.bindingSourceGaugesTab, "targetaltd100", true));
+            this.Galt.MaxValue = 9.99F;
+            this.Galt.MinValue = 0F;
+            this.Galt.Name = "Galt";
+            this.Galt.Need_Idx = ((byte)(3));
+            this.Galt.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.Galt.NeedleColor2 = System.Drawing.Color.White;
+            this.Galt.NeedleEnabled = false;
+            this.Galt.NeedleRadius = 80;
+            this.Galt.NeedlesColor1 = new AGaugeApp.AGauge.NeedleColorEnum[] {
+        AGaugeApp.AGauge.NeedleColorEnum.Gray,
+        AGaugeApp.AGauge.NeedleColorEnum.Gray,
+        AGaugeApp.AGauge.NeedleColorEnum.Red,
+        AGaugeApp.AGauge.NeedleColorEnum.Gray};
+            this.Galt.NeedlesColor2 = new System.Drawing.Color[] {
+        System.Drawing.Color.White,
+        System.Drawing.Color.White,
+        System.Drawing.Color.White,
+        System.Drawing.Color.White};
+            this.Galt.NeedlesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        false};
+            this.Galt.NeedlesRadius = new int[] {
+        50,
+        30,
+        50,
+        80};
+            this.Galt.NeedlesType = new int[] {
+        0,
+        0,
+        0,
+        0};
+            this.Galt.NeedlesWidth = new int[] {
+        2,
+        2,
+        2,
+        2};
+            this.Galt.NeedleType = 0;
+            this.Galt.NeedleWidth = 2;
+            this.Galt.Range_Idx = ((byte)(0));
+            this.Galt.RangeColor = System.Drawing.Color.LightGreen;
+            this.Galt.RangeEnabled = false;
+            this.Galt.RangeEndValue = 360F;
+            this.Galt.RangeInnerRadius = 1;
+            this.Galt.RangeOuterRadius = 60;
+            this.Galt.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.LightGreen,
+        System.Drawing.Color.Red,
+        System.Drawing.Color.Orange,
+        System.Drawing.SystemColors.Control,
+        System.Drawing.SystemColors.Control};
+            this.Galt.RangesEnabled = new bool[] {
+        false,
+        false,
+        false,
+        false,
+        false};
+            this.Galt.RangesEndValue = new float[] {
+        360F,
+        200F,
+        150F,
+        0F,
+        0F};
+            this.Galt.RangesInnerRadius = new int[] {
+        1,
+        1,
+        1,
+        70,
+        70};
+            this.Galt.RangesOuterRadius = new int[] {
+        60,
+        60,
+        60,
+        80,
+        80};
+            this.Galt.RangesStartValue = new float[] {
+        0F,
+        150F,
+        75F,
+        0F,
+        0F};
+            this.Galt.RangeStartValue = 0F;
+            this.Galt.ScaleLinesInterColor = System.Drawing.Color.White;
+            this.Galt.ScaleLinesInterInnerRadius = 52;
+            this.Galt.ScaleLinesInterOuterRadius = 60;
+            this.Galt.ScaleLinesInterWidth = 1;
+            this.Galt.ScaleLinesMajorColor = System.Drawing.Color.White;
+            this.Galt.ScaleLinesMajorInnerRadius = 50;
+            this.Galt.ScaleLinesMajorOuterRadius = 60;
+            this.Galt.ScaleLinesMajorStepValue = 1F;
+            this.Galt.ScaleLinesMajorWidth = 2;
+            this.Galt.ScaleLinesMinorColor = System.Drawing.Color.White;
+            this.Galt.ScaleLinesMinorInnerRadius = 55;
+            this.Galt.ScaleLinesMinorNumOf = 9;
+            this.Galt.ScaleLinesMinorOuterRadius = 60;
+            this.Galt.ScaleLinesMinorWidth = 1;
+            this.Galt.ScaleNumbersColor = System.Drawing.Color.White;
+            this.Galt.ScaleNumbersFormat = "";
+            this.Galt.ScaleNumbersRadius = 42;
+            this.Galt.ScaleNumbersRotation = 0;
+            this.Galt.ScaleNumbersStartScaleLine = 1;
+            this.Galt.ScaleNumbersStepScaleLines = 1;
+            this.Galt.Value = 0F;
+            this.Galt.Value0 = 0F;
+            this.Galt.Value1 = 0F;
+            this.Galt.Value2 = 0F;
+            this.Galt.Value3 = 0F;
             // 
             // ZedGraphTimer
             // 
@@ -2649,7 +2698,7 @@ namespace MissionPlanner.GCSViews
             // 
             // FlightData
             // 
-            this.Controls.Add(this.MainH);
+            this.Controls.Add(this.mainContainer);
             resources.ApplyResources(this, "$this");
             this.Name = "FlightData";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FlightData_FormClosing);
@@ -2668,10 +2717,6 @@ namespace MissionPlanner.GCSViews
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).EndInit();
             this.tabControlactions.ResumeLayout(false);
             this.contextMenuStripactionstab.ResumeLayout(false);
-            this.tabQuick.ResumeLayout(false);
-            this.tableLayoutPanelQuick.ResumeLayout(false);
-            this.contextMenuStripQuickView.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).EndInit();
             this.tabActions.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -2679,8 +2724,6 @@ namespace MissionPlanner.GCSViews
             this.tabPagemessages.PerformLayout();
             this.tabActionsSimple.ResumeLayout(false);
             this.tabPagePreFlight.ResumeLayout(false);
-            this.tabGauges.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceGaugesTab)).EndInit();
             this.tabTransponder.ResumeLayout(false);
             this.tabTransponder.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Squawk_nud)).EndInit();
@@ -2720,6 +2763,18 @@ namespace MissionPlanner.GCSViews
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Zoomlevel)).EndInit();
+            this.mainContainer.Panel1.ResumeLayout(false);
+            this.mainContainer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.mainContainer)).EndInit();
+            this.mainContainer.ResumeLayout(false);
+            this.leftSplitter.Panel1.ResumeLayout(false);
+            this.leftSplitter.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.leftSplitter)).EndInit();
+            this.leftSplitter.ResumeLayout(false);
+            this.tableLayoutPanelQuick.ResumeLayout(false);
+            this.contextMenuStripQuickView.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceGaugesTab)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceStatusTab)).EndInit();
             this.ResumeLayout(false);
 
@@ -2776,7 +2831,6 @@ namespace MissionPlanner.GCSViews
         private Controls.HSI Gheading;
         private Label lbl_playbackspeed;
         private System.Windows.Forms.ToolStripMenuItem setAspectRatioToolStripMenuItem;
-        public System.Windows.Forms.TabPage tabQuick;
         private Controls.QuickView quickView3;
         private Controls.QuickView quickView2;
         private Controls.QuickView quickView1;
@@ -2933,5 +2987,8 @@ namespace MissionPlanner.GCSViews
         private ToolStripMenuItem showIconsToolStripMenuItem;
         private ToolStripMenuItem multiLineToolStripMenuItem;
         private Controls.MyButton BUT_SendMSG;
+        private SplitContainer mainContainer;
+        private SplitContainer leftSplitter;
+        public TabPage tabQuick;
     }
 }

@@ -4600,66 +4600,7 @@ namespace MissionPlanner.GCSViews
 
         private void tabPage1_Resize(object sender, EventArgs e)
         {
-            int mywidth, myheight;
-
-            // localize it
-            Control tabGauges = sender as Control;
-
-            float scale = tabGauges.Width / (float) tabGauges.Height;
-
-            if (scale > 0.5 && scale < 1.9)
-            {
-                // square
-                Gvspeed.Visible = true;
-
-                if (tabGauges.Height < tabGauges.Width)
-                    myheight = tabGauges.Height / 2;
-                else
-                    myheight = tabGauges.Width / 2;
-
-                Gvspeed.Height = myheight;
-                Gspeed.Height = myheight;
-                Galt.Height = myheight;
-                Gheading.Height = myheight;
-
-                Gvspeed.Location = new Point(0, 0);
-                Gspeed.Location = new Point(Gvspeed.Right, 0);
-
-
-                Galt.Location = new Point(0, Gspeed.Bottom);
-                Gheading.Location = new Point(Galt.Right, Gspeed.Bottom);
-
-                return;
-            }
-
-            if (tabGauges.Width < 500)
-            {
-                Gvspeed.Visible = false;
-                mywidth = tabGauges.Width / 3;
-
-                Gspeed.Height = mywidth;
-                Galt.Height = mywidth;
-                Gheading.Height = mywidth;
-
-                Gspeed.Location = new Point(0, 0);
-            }
-            else
-            {
-                Gvspeed.Visible = true;
-                mywidth = tabGauges.Width / 4;
-
-                Gvspeed.Height = mywidth;
-                Gspeed.Height = mywidth;
-                Galt.Height = mywidth;
-                Gheading.Height = mywidth;
-
-                Gvspeed.Location = new Point(0, 0);
-                Gspeed.Location = new Point(Gvspeed.Right, 0);
-            }
-
-            Galt.Location = new Point(Gspeed.Right, 0);
-            Gheading.Location = new Point(Galt.Right, 0);
-        }
+         }
 
         private void tabQuick_Resize(object sender, EventArgs e)
         {
@@ -5787,5 +5728,25 @@ namespace MissionPlanner.GCSViews
             tabControlactions.Multiline = !tabControlactions.Multiline;
             Settings.Instance["tabControlactions_Multiline"] = tabControlactions.Multiline.ToString();
         }
+
+        private void leftSplitter_Panel2_Resize(object sender, EventArgs e)
+        {
+            int myheight;
+
+            Gvspeed.Visible = true;
+            myheight = leftSplitter.Panel2.Height / 4;
+            leftSplitter.SplitterDistance = leftSplitter.Width - myheight;
+            mainContainer.SplitterDistance = mainContainer.Width - (leftSplitter.Panel2.Width * 2) + 2;
+            Gvspeed.Height = myheight;
+            Gspeed.Height = myheight;
+            Galt.Height = myheight;
+            Gheading.Height = myheight;
+
+            Gvspeed.Location = new Point(0, 0);
+            Gspeed.Location = new Point(0, Gvspeed.Bottom);
+            Galt.Location = new Point(0, Gspeed.Bottom);
+            Gheading.Location = new Point(0, Galt.Bottom);
+        }
+
     }
 }
