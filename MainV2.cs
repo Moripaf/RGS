@@ -185,7 +185,7 @@ namespace MissionPlanner
                     if (File.Exists($"{running_directory}light_icon_background.png"))
                         return Image.FromFile($"{running_directory}light_icon_background.png");
                     else
-                        return global::MissionPlanner.Properties.Resources.bgdark;
+                        return global::MissionPlanner.Properties.Resources.bg;
                 }
             }
 
@@ -1254,18 +1254,12 @@ namespace MissionPlanner
 
             MenuFlightData.Image = displayicons.fd;
             MenuFlightPlanner.Image = displayicons.fp;
-            MenuInitConfig.Image = displayicons.initsetup;
-            MenuSimulation.Image = displayicons.sim;
-            MenuConfigTune.Image = displayicons.config_tuning;
             MenuConnect.Image = displayicons.connect;
             MenuHelp.Image = displayicons.help;
 
 
             MenuFlightData.ForeColor = ThemeManager.TextColor;
             MenuFlightPlanner.ForeColor = ThemeManager.TextColor;
-            MenuInitConfig.ForeColor = ThemeManager.TextColor;
-            MenuSimulation.ForeColor = ThemeManager.TextColor;
-            MenuConfigTune.ForeColor = ThemeManager.TextColor;
             MenuConnect.ForeColor = ThemeManager.TextColor;
             MenuHelp.ForeColor = ThemeManager.TextColor;
         }
