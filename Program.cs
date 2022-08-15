@@ -176,8 +176,8 @@ namespace MissionPlanner
                 return;
             }
 
-            name = "Mission Planner";
-
+            name = Application.ProductName + "[Delta]";
+        
             try
             {
                 if (File.Exists(Settings.GetRunningDirectory() + "logo.txt"))

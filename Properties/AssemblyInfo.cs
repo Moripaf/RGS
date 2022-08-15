@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Ropco ground control station [Delta version]")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("RopCo")]
-[assembly: AssemblyProduct("")]
+[assembly: AssemblyProduct("Ropco Ground Control")]
 [assembly: AssemblyCopyright("Copyright ©  2010-2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -30,5 +30,5 @@ using System.Runtime.InteropServices;
 //      Revision
 //
 [assembly: AssemblyVersion("1.0.2")]
-[assembly: AssemblyFileVersion("1.3.77.1")]
+[assembly: AssemblyFileVersion("1.1.2.1")]
 [assembly: NeutralResourcesLanguage("fa")]
