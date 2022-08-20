@@ -39,6 +39,7 @@ namespace MissionPlanner.GCSViews
 {
     public partial class FlightData : MyUserControl, IActivate, IDeactivate
     {
+        MissionPlanner.Controls.HUD mb;
         public static FlightData instance;
         public static GMapOverlay kmlpolygons;
         public static HUD myhud;
@@ -406,7 +407,7 @@ namespace MissionPlanner.GCSViews
                     if (ctls.Length > 0)
                     {
                         QuickView QV = (QuickView) ctls[0];
-                        
+                 
                         // set description and unit
                         string desc = Settings.Instance["quickView" + f];
                         if (QV.Tag == null)
@@ -427,7 +428,7 @@ namespace MissionPlanner.GCSViews
                         catch (Exception ex)
                         {
                             log.Debug(ex);
-                        }
+                        }                     
                     }
                 }
                 else
@@ -442,14 +443,16 @@ namespace MissionPlanner.GCSViews
                             string desc = QV.desc;
                             if (QV.Tag == null)
                                 QV.Tag = desc;
-                            QV.desc = MainV2.comPort.MAV.cs.GetNameandUnit(QV.Tag.ToString());
+                            QV.desc = MainV2.comPort.MAV.cs.GetNameandUnit(QV.Tag.ToString());                            
                         }
                     }
                     catch (Exception ex)
                     {
                         log.Debug(ex);
                     }
+                    
                 }
+                
             }
 
             CheckBatteryShow();
@@ -485,7 +488,7 @@ namespace MissionPlanner.GCSViews
                 }
             }
 
-            hud1.doResize();
+           // hud1.doResize();
         }
 
         public void BUT_playlog_Click(object sender, EventArgs e)
@@ -2233,13 +2236,7 @@ namespace MissionPlanner.GCSViews
 
         void dropout_FormClosed(object sender, FormClosedEventArgs e)
         {
-            (sender as Form).SaveStartupLocation();
-            //GetFormFromGuid(GetOrCreateGuid("fd_hud_guid")).Controls.Add(hud1);
-            ((sender as Form).Tag as Control).Controls.Add(hud1);
-            //SubMainLeft.Panel1.Controls.Add(hud1);
-            if (hud1.Parent == SubMainLeft.Panel1)
-                SubMainLeft.Panel1Collapsed = false;
-            huddropout = false;
+           
         }
 
         void dropout_Resize(object sender, EventArgs e)
@@ -2848,22 +2845,6 @@ namespace MissionPlanner.GCSViews
 
         private void hud1_DoubleClick(object sender, EventArgs e)
         {
-            if (huddropout)
-                return;
-
-            if(hud1.Parent == SubMainLeft.Panel1)
-                SubMainLeft.Panel1Collapsed = true;
-            Form dropout = new Form();
-            dropout.Text = "HUD Dropout";
-            dropout.Size = new Size(hud1.Width, hud1.Height + 20);
-            dropout.Tag = hud1.Parent;
-            SubMainLeft.Panel1.Controls.Remove(hud1);
-            dropout.Controls.Add(hud1);
-            dropout.Resize += dropout_Resize;
-            dropout.FormClosed += dropout_FormClosed;
-            dropout.RestoreStartupLocation();
-            dropout.Show();
-            huddropout = true;
         }
 
         private void hud1_ekfclick(object sender, EventArgs e)
@@ -2879,11 +2860,11 @@ namespace MissionPlanner.GCSViews
         {
             Console.WriteLine("HUD resize " + hud1.Width + " " + hud1.Height); // +"\n"+ System.Environment.StackTrace);
 
-            if (hud1.Parent == this.SubMainLeft.Panel1)
+            if (hud1.Parent == this.hudPanel)
             {
-                var ht = SubMainLeft.SplitterDistance;
+                var ht = hudPanel.Height;
                 if (ht >= hud1.Height + 5 || ht <= hud1.Height - 5)
-                    SubMainLeft.SplitterDistance = hud1.Height;
+                    hudPanel.Height = hud1.Height;
             }
         }
 
@@ -4521,25 +4502,6 @@ namespace MissionPlanner.GCSViews
 
         private void SwapHud1AndMap()
         {
-            if (this.huddropout)
-                return;
-
-            MainH.Panel2.SuspendLayout();
-
-            if (this.SubMainLeft.Panel1.Controls.Contains(hud1))
-            {
-                Settings.Instance["HudSwap"] = "true";
-                MainH.Panel2.Controls.Add(hud1);
-                SubMainLeft.Panel1.Controls.Add(tableMap);
-            }
-            else
-            {
-                Settings.Instance["HudSwap"] = "false";
-                MainH.Panel2.Controls.Add(tableMap);
-                SubMainLeft.Panel1.Controls.Add(hud1);
-            }
-
-            MainH.Panel2.ResumeLayout();
         }
 
         private void swapWithMapToolStripMenuItem_Click(object sender, EventArgs e)
@@ -5728,25 +5690,44 @@ namespace MissionPlanner.GCSViews
             tabControlactions.Multiline = !tabControlactions.Multiline;
             Settings.Instance["tabControlactions_Multiline"] = tabControlactions.Multiline.ToString();
         }
-
-        private void leftSplitter_Panel2_Resize(object sender, EventArgs e)
+        private void coords1_Load(object sender, EventArgs e)
         {
-            int myheight;
 
+        }
+
+        private void tableMap_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void hudPanel_Resize(object sender, EventArgs e)
+        {
+            int guageHeight = leftGuagePanel.Height / 2;
+            leftGuagePanel.Width = guageHeight;
+            rightGuagePanel.Width = guageHeight;
+
+            fixHudPanelSize();
+            fixGuageLocations(guageHeight);
+           
+        }
+        private void fixGuageLocations(int height)
+        {
             Gvspeed.Visible = true;
-            myheight = leftSplitter.Panel2.Height / 4;
-            leftSplitter.SplitterDistance = leftSplitter.Width - myheight;
-            mainContainer.SplitterDistance = mainContainer.Width - (leftSplitter.Panel2.Width * 2) + 2;
-            Gvspeed.Height = myheight;
-            Gspeed.Height = myheight;
-            Galt.Height = myheight;
-            Gheading.Height = myheight;
+            Gvspeed.Height = height;
+            Gspeed.Height = height;
+            Galt.Height = height;
+            Gheading.Height = height;
 
             Gvspeed.Location = new Point(0, 0);
             Gspeed.Location = new Point(0, Gvspeed.Bottom);
-            Galt.Location = new Point(0, Gspeed.Bottom);
+            Galt.Location = new Point(0, 0);
             Gheading.Location = new Point(0, Galt.Bottom);
         }
-
+        private void fixHudPanelSize()
+        {
+            hudPanel.Location = new Point(leftGuagePanel.Right, 0);
+            hudPanel.Height = leftGuagePanel.Height;
+            hudPanel.Width = midSplitter.Panel1.Width - rightGuagePanel.Width - leftGuagePanel.Width;     
+        }
     }
 }

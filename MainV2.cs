@@ -4612,18 +4612,12 @@ namespace MissionPlanner
             {
                 if (e.ClickedItem == item)
                 {
-                    item.BackColor = ThemeManager.ControlBGColor;
+                    item.BackColor = Color.Blue;
                 }
                 else
-                {
-                    try
-                    {
+                {                  
                         item.BackColor = Color.Transparent;
-                        item.BackgroundImage = displayicons.bg; //.BackColor = Color.Black;
-                    }
-                    catch
-                    {
-                    }
+                  
                 }
             }
             //MainMenu.BackColor = Color.Black;
@@ -4803,6 +4797,11 @@ namespace MissionPlanner
                     break;
                 }
             }
+        }
+
+        private void ConnecttionControl_Click(object sender, EventArgs e)
+        {
+            toolStripConnectionControl.Visible = !toolStripConnectionControl.Visible;
         }
     }
 }
