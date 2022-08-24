@@ -4346,17 +4346,23 @@ namespace MissionPlanner.GCSViews
 
         private void setQuickViewRowsCols(string cols, string rows)
         {
+            cols = "1";
+            rows = "7";
             tableLayoutPanelQuick.PerformLayout();
             tableLayoutPanelQuick.SuspendLayout();
             tableLayoutPanelQuick.ColumnCount = Math.Max(1, int.Parse(cols));
             tableLayoutPanelQuick.RowCount = Math.Max(1, int.Parse(rows));
+            quickViewRight.PerformLayout();
+            quickViewRight.SuspendLayout();
+            quickViewRight.ColumnCount = Math.Max(1, int.Parse(cols));
+            quickViewRight.RowCount = Math.Max(1, int.Parse(rows));
 
             Settings.Instance["quickViewRows"] = tableLayoutPanelQuick.RowCount.ToString();
             Settings.Instance["quickViewCols"] = tableLayoutPanelQuick.ColumnCount.ToString();
 
-            int total = tableLayoutPanelQuick.ColumnCount * tableLayoutPanelQuick.RowCount;
+            int total = tableLayoutPanelQuick.ColumnCount * tableLayoutPanelQuick.RowCount * 2;
 
-            // clean up extra
+            // clean up extra for left
             var ctls = tableLayoutPanelQuick.Controls.Select(a => (Control) a).ToList();
             // remove those in row/cols outside our selection
             ctls.Select(a =>
@@ -4383,24 +4389,72 @@ namespace MissionPlanner.GCSViews
                     return default(TableLayoutPanelCellPosition);
                 }
             }).ToList();
+            // clean up extra for right
+            var ctlsR = quickViewRight.Controls.Select(a => (Control)a).ToList();
+            // remove those in row/cols outside our selection
+            ctlsR.Select(a =>
+            {
+                try
+                {
+                    if (a == null)
+                        return default(TableLayoutPanelCellPosition);
+                    var pos = quickViewRight.GetPositionFromControl((Control)a);
+                    if (pos.Column >= quickViewRight.ColumnCount)
+                    {
+                        quickViewRight.Controls.Remove((Control)a);
+                    }
+                    else if (pos.Row >= quickViewRight.RowCount)
+                    {
+                        quickViewRight.Controls.Remove((Control)a);
+                    }
+
+                    return pos;
+                }
+                catch (Exception ex)
+                {
+                    log.Error(ex);
+                    return default(TableLayoutPanelCellPosition);
+                }
+            }).ToList();
 
             // add extra
-            while (total > tableLayoutPanelQuick.Controls.Count)
+            int qvCount = tableLayoutPanelQuick.Controls.Count;
+            while (total/2 > qvCount)
             {
-                var QV = new QuickView()
+                var QVL = new QuickView()
                 {
-                    Name = "quickView" + (tableLayoutPanelQuick.Controls.Count + 1)
+                    Name = "quickView" + (qvCount + 1)
                 };
                 if (!MainV2.DisplayConfiguration.lockQuickView)
-                    QV.DoubleClick += quickView_DoubleClick;
-                QV.ContextMenuStrip = contextMenuStripQuickView;
-                QV.Dock = DockStyle.Fill;
-                QV.numberColor = ThemeManager.getQvNumberColor();
-                QV.numberColorBackup = QV.numberColor;
-                QV.number = 0;
+                    QVL.DoubleClick += quickView_DoubleClick;
+                QVL.ContextMenuStrip = contextMenuStripQuickView;
+                QVL.Dock = DockStyle.Fill;
+                QVL.numberColor = ThemeManager.getQvNumberColor();
+                QVL.numberColorBackup = QVL.numberColor;
+                QVL.number = total;
 
-                tableLayoutPanelQuick.Controls.Add(QV);
-                QV.Invalidate();
+                tableLayoutPanelQuick.Controls.Add(QVL);
+                qvCount++;
+                QVL.Invalidate();
+            }
+            for (int i=total/2; i<total; i++)
+            {
+                var QVR = new QuickView()
+                {
+                    Name = "quickView" + (i + 1)
+                };
+                if (!MainV2.DisplayConfiguration.lockQuickView)
+                    QVR.DoubleClick += quickView_DoubleClick;
+                QVR.ContextMenuStrip = contextMenuStripQuickView;
+                QVR.Dock = DockStyle.Fill;
+                QVR.numberColor = ThemeManager.getQvNumberColor();
+                QVR.numberColorBackup = QVR.numberColor;
+                QVR.number = i;
+
+
+                //quickViewRight.Controls.Add(QVR);
+                qvCount++;
+                QVR.Invalidate();
             }
 
             for (int i = 0; i < tableLayoutPanelQuick.ColumnCount; i++)
@@ -4410,6 +4464,13 @@ namespace MissionPlanner.GCSViews
                 tableLayoutPanelQuick.ColumnStyles[i].SizeType = SizeType.Percent;
                 tableLayoutPanelQuick.ColumnStyles[i].Width = 100.0f / tableLayoutPanelQuick.ColumnCount;
             }
+            for (int i = 0; i < quickViewRight.ColumnCount; i++)
+            {
+                if (quickViewRight.ColumnStyles.Count <= i)
+                    quickViewRight.ColumnStyles.Add(new ColumnStyle());
+                quickViewRight.ColumnStyles[i].SizeType = SizeType.Percent;
+                quickViewRight.ColumnStyles[i].Width = 100.0f / quickViewRight.ColumnCount;
+            }
 
             for (int j = 0; j < tableLayoutPanelQuick.RowCount; j++)
             {
@@ -4418,12 +4479,20 @@ namespace MissionPlanner.GCSViews
                 tableLayoutPanelQuick.RowStyles[j].SizeType = SizeType.Percent;
                 tableLayoutPanelQuick.RowStyles[j].Height = 100.0f / tableLayoutPanelQuick.RowCount;
             }
+            for (int j = 0; j < quickViewRight.RowCount; j++)
+            {
+                if (quickViewRight.RowStyles.Count <= j)
+                    quickViewRight.RowStyles.Add(new RowStyle());
+                quickViewRight.RowStyles[j].SizeType = SizeType.Percent;
+                quickViewRight.RowStyles[j].Height = 100.0f / quickViewRight.RowCount;
+            }
 
             tableLayoutPanelQuick.Controls.ForEach(a => ((Control) a).Invalidate());
+            quickViewRight.Controls.ForEach(a => ((Control)a).Invalidate());
 
             tableLayoutPanelQuick.ResumeLayout(true);
+            quickViewRight.ResumeLayout(true);
         }
-
         bool setupPropertyInfo(ref PropertyInfo input, string name, object source)
         {
             Type test = source.GetType();
@@ -4442,16 +4511,13 @@ namespace MissionPlanner.GCSViews
 
         private void setViewCountToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string cols = "2", rows = "3";
+            string cols = "1", rows = "7";
 
             if (Settings.Instance["quickViewRows"] != null)
             {
                 rows = Settings.Instance["quickViewRows"];
                 cols = Settings.Instance["quickViewCols"];
             }
-
-            if (InputBox.Show("Columns", "Enter number of columns to have.", ref cols) == DialogResult.OK)
-            {
                 if (InputBox.Show("Rows", "Enter number of rows to have.", ref rows) == DialogResult.OK)
                 {
                     if (rows.IsNumber() && cols.IsNumber())
@@ -4459,7 +4525,7 @@ namespace MissionPlanner.GCSViews
 
                     Activate();
                 }
-            }
+            
         }
 
         private void startCameraToolStripMenuItem_Click(object sender, EventArgs e)
@@ -4566,8 +4632,7 @@ namespace MissionPlanner.GCSViews
 
         private void tabQuick_Resize(object sender, EventArgs e)
         {
-            tableLayoutPanelQuick.Width = tabQuick.Width;
-            tableLayoutPanelQuick.AutoScroll = false;
+            
         }
 
         void tabStatus_Resize(object sender, EventArgs e)
@@ -5701,12 +5766,11 @@ namespace MissionPlanner.GCSViews
         }
 
         private void hudPanel_Resize(object sender, EventArgs e)
-        {
+        {      
             int guageHeight = leftGuagePanel.Height / 2;
             leftGuagePanel.Width = guageHeight;
             rightGuagePanel.Width = guageHeight;
-
-            fixHudPanelSize();
+            
             fixGuageLocations(guageHeight);
            
         }
@@ -5719,15 +5783,25 @@ namespace MissionPlanner.GCSViews
             Gheading.Height = height;
 
             Gvspeed.Location = new Point(0, 0);
-            Gspeed.Location = new Point(0, Gvspeed.Bottom);
+            Gspeed.Location = new Point(0, Gvspeed.Bottom + 1);
             Galt.Location = new Point(0, 0);
-            Gheading.Location = new Point(0, Galt.Bottom);
+            Gheading.Location = new Point(0, Galt.Bottom + 1);
+        }
+
+        private void midSplitter_Panel1_Resize(object sender, EventArgs e)
+        {        
+            leftGuagePanel.Width = 150;
+            rightGuagePanel.Width = 150;
+            controlTableRIght.Width = rightGuagePanel.Width;
+            tableLayoutPanel1.Width = leftGuagePanel.Width;
+            fixHudPanelSize();
+
         }
         private void fixHudPanelSize()
         {
             hudPanel.Location = new Point(leftGuagePanel.Right, 0);
             hudPanel.Height = leftGuagePanel.Height;
-            hudPanel.Width = midSplitter.Panel1.Width - rightGuagePanel.Width - leftGuagePanel.Width;     
+            hudPanel.Width = midSplitter.Panel1.Width - (rightGuagePanel.Width + leftGuagePanel.Width + 2);
         }
     }
 }

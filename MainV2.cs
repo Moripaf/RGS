@@ -4610,14 +4610,17 @@ namespace MissionPlanner
         {
             foreach (ToolStripItem item in MainMenu.Items)
             {
-                if (e.ClickedItem == item)
+                if (item.ToolTipText != "Connection Control")
                 {
-                    item.BackColor = Color.Blue;
-                }
-                else
-                {                  
+                    if (e.ClickedItem == item)
+                    {
+                        item.BackColor = Color.Blue;
+                    }
+                    else
+                    {
                         item.BackColor = Color.Transparent;
-                  
+
+                    }
                 }
             }
             //MainMenu.BackColor = Color.Black;
@@ -4798,10 +4801,10 @@ namespace MissionPlanner
                 }
             }
         }
-
         private void ConnecttionControl_Click(object sender, EventArgs e)
         {
             toolStripConnectionControl.Visible = !toolStripConnectionControl.Visible;
+            ConnecttionControl.BackColor = (ConnecttionControl.BackColor == Color.Transparent) ? Color.Blue : Color.Transparent;
         }
     }
 }
