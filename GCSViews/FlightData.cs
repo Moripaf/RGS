@@ -5799,7 +5799,7 @@ namespace MissionPlanner.GCSViews
         }
         private void fixHudPanelSize()
         {
-            hudPanel.Location = new Point(leftGuagePanel.Right, 0);
+            hudPanel.Location = new Point(leftGuagePanel.Right + 1, 0);
             hudPanel.Height = leftGuagePanel.Height;
             hudPanel.Width = midSplitter.Panel1.Width - (rightGuagePanel.Width + leftGuagePanel.Width + 2);
         }
