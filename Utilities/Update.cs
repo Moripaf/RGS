@@ -118,7 +118,7 @@ namespace MissionPlanner.Utilities
 
             if (dobeta)
                 baseurl = ConfigurationManager.AppSettings["BetaUpdateLocationVersion"];
-
+            baseurl = null;  //disable update-check
             if (baseurl == "" || baseurl == null)
                 return;
 

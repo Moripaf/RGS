@@ -4431,7 +4431,7 @@ namespace MissionPlanner.GCSViews
                 QVL.Dock = DockStyle.Fill;
                 QVL.numberColor = ThemeManager.getQvNumberColor();
                 QVL.numberColorBackup = QVL.numberColor;
-                QVL.number = total;
+                QVL.number = 0;
 
                 tableLayoutPanelQuick.Controls.Add(QVL);
                 qvCount++;
@@ -4449,10 +4449,10 @@ namespace MissionPlanner.GCSViews
                 QVR.Dock = DockStyle.Fill;
                 QVR.numberColor = ThemeManager.getQvNumberColor();
                 QVR.numberColorBackup = QVR.numberColor;
-                QVR.number = i;
+                QVR.number = 0;
 
 
-                //quickViewRight.Controls.Add(QVR);
+                quickViewRight.Controls.Add(QVR);
                 qvCount++;
                 QVR.Invalidate();
             }

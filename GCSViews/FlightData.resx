@@ -124,6 +124,10 @@
   <data name="MainH.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MainH.IsSplitterFixed" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="MainH.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -134,222 +138,8 @@
   <data name="quickViewRight.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="quickViewRight.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
-  </data>
-  <metadata name="contextMenuStripQuickView.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>696, 57</value>
-  </metadata>
-  <data name="setViewCountToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 24</value>
-  </data>
-  <data name="setViewCountToolStripMenuItem.Text" xml:space="preserve">
-    <value>Set View Count</value>
-  </data>
-  <data name="undockToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 24</value>
-  </data>
-  <data name="undockToolStripMenuItem.Text" xml:space="preserve">
-    <value>Undock</value>
-  </data>
-  <data name="contextMenuStripQuickView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 52</value>
-  </data>
-  <data name="&gt;&gt;contextMenuStripQuickView.Name" xml:space="preserve">
-    <value>contextMenuStripQuickView</value>
-  </data>
-  <data name="&gt;&gt;contextMenuStripQuickView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <metadata name="bindingSourceQuickTab.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1162, 18</value>
-  </metadata>
-  <data name="quickView7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="quickView7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="quickView7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 428</value>
-  </data>
-  <data name="quickView7.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>100, 27</value>
-  </data>
-  <data name="quickView7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 53</value>
-  </data>
-  <data name="quickView7.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;quickView7.Name" xml:space="preserve">
-    <value>quickView7</value>
-  </data>
-  <data name="&gt;&gt;quickView7.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.QuickView, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;quickView7.Parent" xml:space="preserve">
-    <value>quickViewRight</value>
-  </data>
-  <data name="&gt;&gt;quickView7.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="quickView8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="quickView8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="quickView8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="quickView8.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>100, 27</value>
-  </data>
-  <data name="quickView8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 41</value>
-  </data>
-  <data name="quickView8.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>617, 17</value>
-  </metadata>
-  <data name="quickView8.ToolTip" xml:space="preserve">
-    <value>Double Click me to change</value>
-  </data>
-  <data name="&gt;&gt;quickView8.Name" xml:space="preserve">
-    <value>quickView8</value>
-  </data>
-  <data name="&gt;&gt;quickView8.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.QuickView, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;quickView8.Parent" xml:space="preserve">
-    <value>quickViewRight</value>
-  </data>
-  <data name="&gt;&gt;quickView8.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="quickView9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="quickView9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="quickView9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 50</value>
-  </data>
-  <data name="quickView9.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>100, 27</value>
-  </data>
-  <data name="quickView9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 110</value>
-  </data>
-  <data name="quickView9.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;quickView9.Name" xml:space="preserve">
-    <value>quickView9</value>
-  </data>
-  <data name="&gt;&gt;quickView9.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.QuickView, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;quickView9.Parent" xml:space="preserve">
-    <value>quickViewRight</value>
-  </data>
-  <data name="&gt;&gt;quickView9.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="quickView10.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="quickView10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="quickView10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 358</value>
-  </data>
-  <data name="quickView10.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>100, 27</value>
-  </data>
-  <data name="quickView10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 64</value>
-  </data>
-  <data name="quickView10.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;quickView10.Name" xml:space="preserve">
-    <value>quickView10</value>
-  </data>
-  <data name="&gt;&gt;quickView10.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.QuickView, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;quickView10.Parent" xml:space="preserve">
-    <value>quickViewRight</value>
-  </data>
-  <data name="&gt;&gt;quickView10.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="quickView11.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="quickView11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="quickView11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 282</value>
-  </data>
-  <data name="quickView11.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>100, 27</value>
-  </data>
-  <data name="quickView11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 70</value>
-  </data>
-  <data name="quickView11.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;quickView11.Name" xml:space="preserve">
-    <value>quickView11</value>
-  </data>
-  <data name="&gt;&gt;quickView11.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.QuickView, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;quickView11.Parent" xml:space="preserve">
-    <value>quickViewRight</value>
-  </data>
-  <data name="&gt;&gt;quickView11.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="quickView12.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="quickView12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="quickView12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 166</value>
-  </data>
-  <data name="quickView12.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>100, 27</value>
-  </data>
-  <data name="quickView12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 110</value>
-  </data>
-  <data name="quickView12.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;quickView12.Name" xml:space="preserve">
-    <value>quickView12</value>
-  </data>
-  <data name="&gt;&gt;quickView12.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.QuickView, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;quickView12.Parent" xml:space="preserve">
-    <value>quickViewRight</value>
-  </data>
-  <data name="&gt;&gt;quickView12.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="quickViewRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -358,7 +148,7 @@
     <value>0, 0</value>
   </data>
   <data name="quickViewRight.RowCount" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="quickViewRight.Size" type="System.Drawing.Size, System.Drawing">
     <value>206, 603</value>
@@ -379,7 +169,7 @@
     <value>0</value>
   </data>
   <data name="quickViewRight.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="quickView7" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="quickView8" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="quickView9" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="quickView10" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="quickView11" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="quickView12" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,17.04981,Percent,41.57706,Percent,41.57706,Absolute,76,Absolute,70,Absolute,59,Absolute,118" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls /&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,17.04981,Percent,41.57706,Percent,41.57706,Absolute,76,Absolute,70,Absolute,59,Absolute,118,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="MainH.Panel1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
@@ -401,6 +191,9 @@
   </data>
   <data name="midSplitter.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
+  </data>
+  <data name="midSplitter.IsSplitterFixed" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="midSplitter.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -435,6 +228,9 @@
   <data name="BUT_quickauto.Text" xml:space="preserve">
     <value>Auto</value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>617, 17</value>
+  </metadata>
   <data name="BUT_quickauto.ToolTip" xml:space="preserve">
     <value>Change mode to Auto</value>
   </data>
@@ -9596,7 +9392,133 @@
     <value>1</value>
   </data>
   <data name="controlTableRIght.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>B Yekan, 12pt</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 0</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 34</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>فلر 1</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>controlTableRIght</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="servoOptions2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="servoOptions2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>B Yekan, 7.8pt</value>
+  </data>
+  <data name="servoOptions2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="servoOptions2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 28</value>
+  </data>
+  <data name="servoOptions2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;servoOptions2.Name" xml:space="preserve">
+    <value>servoOptions2</value>
+  </data>
+  <data name="&gt;&gt;servoOptions2.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;servoOptions2.Parent" xml:space="preserve">
+    <value>controlTableRIght</value>
+  </data>
+  <data name="&gt;&gt;servoOptions2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>B Yekan, 12pt</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 34</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 33</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>81</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>فلر 2</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>controlTableRIght</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="servoOptions1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="servoOptions1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="servoOptions1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 37</value>
+  </data>
+  <data name="servoOptions1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 27</value>
+  </data>
+  <data name="servoOptions1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;servoOptions1.Name" xml:space="preserve">
+    <value>servoOptions1</value>
+  </data>
+  <data name="&gt;&gt;servoOptions1.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;servoOptions1.Parent" xml:space="preserve">
+    <value>controlTableRIght</value>
+  </data>
+  <data name="&gt;&gt;servoOptions1.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="BUT_ARM.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -9605,10 +9527,10 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_ARM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 140</value>
+    <value>3, 70</value>
   </data>
   <data name="BUT_ARM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 44</value>
+    <value>204, 47</value>
   </data>
   <data name="BUT_ARM.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
@@ -9629,132 +9551,6 @@
     <value>controlTableRIght</value>
   </data>
   <data name="&gt;&gt;BUT_ARM.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="servoOptions3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="servoOptions3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>B Yekan, 7.8pt</value>
-  </data>
-  <data name="servoOptions3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 32</value>
-  </data>
-  <data name="servoOptions3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 22</value>
-  </data>
-  <data name="servoOptions3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;servoOptions3.Name" xml:space="preserve">
-    <value>servoOptions3</value>
-  </data>
-  <data name="&gt;&gt;servoOptions3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;servoOptions3.Parent" xml:space="preserve">
-    <value>controlTableRIght</value>
-  </data>
-  <data name="&gt;&gt;servoOptions3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="servoOptions2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="servoOptions2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>B Yekan, 7.8pt</value>
-  </data>
-  <data name="servoOptions2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 97</value>
-  </data>
-  <data name="servoOptions2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 37</value>
-  </data>
-  <data name="servoOptions2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;servoOptions2.Name" xml:space="preserve">
-    <value>servoOptions2</value>
-  </data>
-  <data name="&gt;&gt;servoOptions2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;servoOptions2.Parent" xml:space="preserve">
-    <value>controlTableRIght</value>
-  </data>
-  <data name="&gt;&gt;servoOptions2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>B Yekan, 12pt</value>
-  </data>
-  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 0</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 29</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>80</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>فلر 1</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>controlTableRIght</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>B Yekan, 12pt</value>
-  </data>
-  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 57</value>
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 37</value>
-  </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>81</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>فلر 2</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>controlTableRIght</value>
-  </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="controlTableRIght.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -9767,10 +9563,10 @@
     <value>No</value>
   </data>
   <data name="controlTableRIght.RowCount" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="controlTableRIght.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 187</value>
+    <value>210, 120</value>
   </data>
   <data name="controlTableRIght.TabIndex" type="System.Int32, mscorlib">
     <value>85</value>
@@ -9788,16 +9584,16 @@
     <value>0</value>
   </data>
   <data name="controlTableRIght.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="BUT_ARM" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="servoOptions3" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="servoOptions2" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50.87719,Percent,49.12281,Absolute,37,Absolute,43,Absolute,49,Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label7" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="servoOptions2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="servoOptions1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="BUT_ARM" Row="2" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,51.25,Percent,48.75,Absolute,52,Absolute,65,Absolute,49,Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="subMainRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
   </data>
   <data name="subMainRight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>767, 0</value>
+    <value>707, 0</value>
   </data>
   <data name="subMainRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 301</value>
+    <value>210, 301</value>
   </data>
   <data name="subMainRight.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -9838,6 +9634,30 @@
   <data name="panel1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="servoOptions3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>B Yekan, 7.8pt</value>
+  </data>
+  <data name="servoOptions3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>751, -2</value>
+  </data>
+  <data name="servoOptions3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
+  </data>
+  <data name="servoOptions3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;servoOptions3.Name" xml:space="preserve">
+    <value>servoOptions3</value>
+  </data>
+  <data name="&gt;&gt;servoOptions3.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;servoOptions3.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;servoOptions3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="distanceBar1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
@@ -9860,7 +9680,37 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;distanceBar1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
+  </data>
+  <data name="but_disablejoystick.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="but_disablejoystick.Location" type="System.Drawing.Point, System.Drawing">
+    <value>588, -1</value>
+  </data>
+  <data name="but_disablejoystick.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 23</value>
+  </data>
+  <data name="but_disablejoystick.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="but_disablejoystick.Text" xml:space="preserve">
+    <value>Disable Joystick</value>
+  </data>
+  <data name="but_disablejoystick.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;but_disablejoystick.Name" xml:space="preserve">
+    <value>but_disablejoystick</value>
+  </data>
+  <data name="&gt;&gt;but_disablejoystick.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;but_disablejoystick.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;but_disablejoystick.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <metadata name="contextMenuStripactionstab.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>491, 57</value>
@@ -10499,7 +10349,7 @@
     <value>4, 44</value>
   </data>
   <data name="tabActions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 36</value>
+    <value>302, 70</value>
   </data>
   <data name="tabActions.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -10532,7 +10382,7 @@
     <value>Vertical</value>
   </data>
   <data name="txt_messagebox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>296, 30</value>
+    <value>296, 64</value>
   </data>
   <data name="txt_messagebox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -10556,7 +10406,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPagemessages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 36</value>
+    <value>302, 70</value>
   </data>
   <data name="tabPagemessages.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -10670,7 +10520,7 @@
     <value>4, 44</value>
   </data>
   <data name="tabActionsSimple.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 36</value>
+    <value>302, 70</value>
   </data>
   <data name="tabActionsSimple.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -10697,7 +10547,7 @@
     <value>3, 3</value>
   </data>
   <data name="checkListControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>296, 30</value>
+    <value>296, 64</value>
   </data>
   <data name="checkListControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -10721,7 +10571,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPagePreFlight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 36</value>
+    <value>302, 70</value>
   </data>
   <data name="tabPagePreFlight.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -10748,7 +10598,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabGauges.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 36</value>
+    <value>302, 70</value>
   </data>
   <data name="tabGauges.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -11231,7 +11081,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabTransponder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 36</value>
+    <value>302, 70</value>
   </data>
   <data name="tabTransponder.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -11261,7 +11111,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 36</value>
+    <value>302, 70</value>
   </data>
   <data name="tabStatus.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -11284,29 +11134,8 @@
   <data name="flowLayoutPanelServos.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="servoOptions1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="servoOptions1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 27</value>
-  </data>
-  <data name="servoOptions1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;servoOptions1.Name" xml:space="preserve">
-    <value>servoOptions1</value>
-  </data>
-  <data name="&gt;&gt;servoOptions1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;servoOptions1.Parent" xml:space="preserve">
-    <value>flowLayoutPanelServos</value>
-  </data>
-  <data name="&gt;&gt;servoOptions1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="servoOptions4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 36</value>
+    <value>3, 3</value>
   </data>
   <data name="servoOptions4.Size" type="System.Drawing.Size, System.Drawing">
     <value>315, 27</value>
@@ -11324,10 +11153,10 @@
     <value>flowLayoutPanelServos</value>
   </data>
   <data name="&gt;&gt;servoOptions4.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="servoOptions5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 69</value>
+    <value>3, 36</value>
   </data>
   <data name="servoOptions5.Size" type="System.Drawing.Size, System.Drawing">
     <value>315, 27</value>
@@ -11345,10 +11174,10 @@
     <value>flowLayoutPanelServos</value>
   </data>
   <data name="&gt;&gt;servoOptions5.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="servoOptions6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 102</value>
+    <value>3, 69</value>
   </data>
   <data name="servoOptions6.Size" type="System.Drawing.Size, System.Drawing">
     <value>315, 27</value>
@@ -11366,10 +11195,10 @@
     <value>flowLayoutPanelServos</value>
   </data>
   <data name="&gt;&gt;servoOptions6.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="servoOptions7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 135</value>
+    <value>3, 102</value>
   </data>
   <data name="servoOptions7.Size" type="System.Drawing.Size, System.Drawing">
     <value>315, 27</value>
@@ -11387,10 +11216,10 @@
     <value>flowLayoutPanelServos</value>
   </data>
   <data name="&gt;&gt;servoOptions7.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="servoOptions8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 168</value>
+    <value>23, 135</value>
   </data>
   <data name="servoOptions8.Size" type="System.Drawing.Size, System.Drawing">
     <value>295, 24</value>
@@ -11408,10 +11237,10 @@
     <value>flowLayoutPanelServos</value>
   </data>
   <data name="&gt;&gt;servoOptions8.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="servoOptions9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 198</value>
+    <value>23, 165</value>
   </data>
   <data name="servoOptions9.Size" type="System.Drawing.Size, System.Drawing">
     <value>295, 24</value>
@@ -11429,10 +11258,10 @@
     <value>flowLayoutPanelServos</value>
   </data>
   <data name="&gt;&gt;servoOptions9.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="servoOptions10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 228</value>
+    <value>23, 195</value>
   </data>
   <data name="servoOptions10.Size" type="System.Drawing.Size, System.Drawing">
     <value>295, 24</value>
@@ -11450,10 +11279,10 @@
     <value>flowLayoutPanelServos</value>
   </data>
   <data name="&gt;&gt;servoOptions10.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="servoOptions11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 258</value>
+    <value>23, 225</value>
   </data>
   <data name="servoOptions11.Size" type="System.Drawing.Size, System.Drawing">
     <value>295, 22</value>
@@ -11471,10 +11300,10 @@
     <value>flowLayoutPanelServos</value>
   </data>
   <data name="&gt;&gt;servoOptions11.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="servoOptions12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 286</value>
+    <value>23, 253</value>
   </data>
   <data name="servoOptions12.Size" type="System.Drawing.Size, System.Drawing">
     <value>295, 22</value>
@@ -11492,10 +11321,10 @@
     <value>flowLayoutPanelServos</value>
   </data>
   <data name="&gt;&gt;servoOptions12.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="relayOptions1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 314</value>
+    <value>120, 281</value>
   </data>
   <data name="relayOptions1.Size" type="System.Drawing.Size, System.Drawing">
     <value>198, 22</value>
@@ -11513,10 +11342,10 @@
     <value>flowLayoutPanelServos</value>
   </data>
   <data name="&gt;&gt;relayOptions1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="relayOptions2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 342</value>
+    <value>120, 309</value>
   </data>
   <data name="relayOptions2.Size" type="System.Drawing.Size, System.Drawing">
     <value>198, 22</value>
@@ -11534,10 +11363,10 @@
     <value>flowLayoutPanelServos</value>
   </data>
   <data name="&gt;&gt;relayOptions2.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="relayOptions3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 370</value>
+    <value>120, 337</value>
   </data>
   <data name="relayOptions3.Size" type="System.Drawing.Size, System.Drawing">
     <value>198, 22</value>
@@ -11555,10 +11384,10 @@
     <value>flowLayoutPanelServos</value>
   </data>
   <data name="&gt;&gt;relayOptions3.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="relayOptions4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 398</value>
+    <value>120, 365</value>
   </data>
   <data name="relayOptions4.Size" type="System.Drawing.Size, System.Drawing">
     <value>198, 22</value>
@@ -11576,10 +11405,10 @@
     <value>flowLayoutPanelServos</value>
   </data>
   <data name="&gt;&gt;relayOptions4.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>12</value>
   </data>
   <data name="relayOptions5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 426</value>
+    <value>23, 393</value>
   </data>
   <data name="relayOptions5.Size" type="System.Drawing.Size, System.Drawing">
     <value>295, 22</value>
@@ -11597,10 +11426,10 @@
     <value>flowLayoutPanelServos</value>
   </data>
   <data name="&gt;&gt;relayOptions5.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>13</value>
   </data>
   <data name="relayOptions6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 454</value>
+    <value>23, 421</value>
   </data>
   <data name="relayOptions6.Size" type="System.Drawing.Size, System.Drawing">
     <value>295, 22</value>
@@ -11618,7 +11447,7 @@
     <value>flowLayoutPanelServos</value>
   </data>
   <data name="&gt;&gt;relayOptions6.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>14</value>
   </data>
   <data name="flowLayoutPanelServos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -11630,7 +11459,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="flowLayoutPanelServos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>296, 30</value>
+    <value>296, 64</value>
   </data>
   <data name="flowLayoutPanelServos.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -11654,7 +11483,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabServo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 36</value>
+    <value>302, 70</value>
   </data>
   <data name="tabServo.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -11888,7 +11717,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabScripts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 36</value>
+    <value>302, 70</value>
   </data>
   <data name="tabScripts.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -12191,7 +12020,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPayload.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 36</value>
+    <value>302, 70</value>
   </data>
   <data name="tabPayload.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -12668,7 +12497,7 @@
     <value>3</value>
   </data>
   <data name="tableLayoutPaneltlogs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 36</value>
+    <value>302, 70</value>
   </data>
   <data name="tableLayoutPaneltlogs.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
@@ -12692,7 +12521,7 @@
     <value>4, 44</value>
   </data>
   <data name="tabTLogs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 36</value>
+    <value>302, 70</value>
   </data>
   <data name="tabTLogs.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -12938,7 +12767,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tablogbrowse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 36</value>
+    <value>302, 70</value>
   </data>
   <data name="tablogbrowse.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -12965,7 +12794,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabQuick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 36</value>
+    <value>302, 70</value>
   </data>
   <data name="tabQuick.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -12989,7 +12818,7 @@
     <value>42, 40</value>
   </data>
   <data name="tabControlactions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 8</value>
+    <value>111, 4</value>
   </data>
   <data name="tabControlactions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -12998,7 +12827,7 @@
     <value>0, 0</value>
   </data>
   <data name="tabControlactions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>310, 84</value>
+    <value>310, 118</value>
   </data>
   <data name="tabControlactions.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
@@ -13016,37 +12845,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;tabControlactions.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="but_disablejoystick.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="but_disablejoystick.Location" type="System.Drawing.Point, System.Drawing">
-    <value>588, -1</value>
-  </data>
-  <data name="but_disablejoystick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 23</value>
-  </data>
-  <data name="but_disablejoystick.TabIndex" type="System.Int32, mscorlib">
-    <value>77</value>
-  </data>
-  <data name="but_disablejoystick.Text" xml:space="preserve">
-    <value>Disable Joystick</value>
-  </data>
-  <data name="but_disablejoystick.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;but_disablejoystick.Name" xml:space="preserve">
-    <value>but_disablejoystick</value>
-  </data>
-  <data name="&gt;&gt;but_disablejoystick.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;but_disablejoystick.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;but_disablejoystick.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <metadata name="bindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>307, 17</value>
@@ -13070,7 +12869,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;coords1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="windDir1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -13094,7 +12893,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;windDir1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="Zoomlevel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -13121,7 +12920,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Zoomlevel.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -13151,7 +12950,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -13184,7 +12983,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="label6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -13217,7 +13016,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="CHK_autopan.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -13253,7 +13052,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;CHK_autopan.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -13286,7 +13085,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="CB_tuning.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -13322,7 +13121,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;CB_tuning.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -13355,7 +13154,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -13819,6 +13618,9 @@
   <data name="mainContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="mainContainer.IsSplitterFixed" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="mainContainer.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -13843,6 +13645,33 @@
   <data name="tableLayoutPanelQuick.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <metadata name="contextMenuStripQuickView.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>696, 57</value>
+  </metadata>
+  <data name="setViewCountToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 24</value>
+  </data>
+  <data name="setViewCountToolStripMenuItem.Text" xml:space="preserve">
+    <value>Set View Count</value>
+  </data>
+  <data name="undockToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 24</value>
+  </data>
+  <data name="undockToolStripMenuItem.Text" xml:space="preserve">
+    <value>Undock</value>
+  </data>
+  <data name="contextMenuStripQuickView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 52</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStripQuickView.Name" xml:space="preserve">
+    <value>contextMenuStripQuickView</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStripQuickView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="bindingSourceQuickTab.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1162, 18</value>
+  </metadata>
   <data name="quickView6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -14125,24 +13954,6 @@
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>1331, 605</value>
   </data>
-  <data name="&gt;&gt;setViewCountToolStripMenuItem.Name" xml:space="preserve">
-    <value>setViewCountToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;setViewCountToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;undockToolStripMenuItem.Name" xml:space="preserve">
-    <value>undockToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;undockToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bindingSourceQuickTab.Name" xml:space="preserve">
-    <value>bindingSourceQuickTab</value>
-  </data>
-  <data name="&gt;&gt;bindingSourceQuickTab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;videoToolStripMenuItem.Name" xml:space="preserve">
     <value>videoToolStripMenuItem</value>
   </data>
@@ -14370,6 +14181,24 @@
   </data>
   <data name="&gt;&gt;onOffCameraOverlapToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;setViewCountToolStripMenuItem.Name" xml:space="preserve">
+    <value>setViewCountToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;setViewCountToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;undockToolStripMenuItem.Name" xml:space="preserve">
+    <value>undockToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;undockToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingSourceQuickTab.Name" xml:space="preserve">
+    <value>bindingSourceQuickTab</value>
+  </data>
+  <data name="&gt;&gt;bindingSourceQuickTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ZedGraphTimer.Name" xml:space="preserve">
     <value>ZedGraphTimer</value>

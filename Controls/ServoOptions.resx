@@ -140,7 +140,7 @@
     <value>3, 4</value>
   </data>
   <data name="BUT_Low.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 21</value>
+    <value>45, 21</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BUT_Low.TabIndex" type="System.Int32, mscorlib">
@@ -162,10 +162,10 @@
     <value>7</value>
   </data>
   <data name="BUT_High.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 4</value>
+    <value>55, 4</value>
   </data>
   <data name="BUT_High.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 21</value>
+    <value>45, 21</value>
   </data>
   <data name="BUT_High.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -275,11 +275,14 @@
   <data name="&gt;&gt;BUT_Repeat.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="TXT_rcchannel.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="TXT_rcchannel.Location" type="System.Drawing.Point, System.Drawing">
     <value>90, 4</value>
   </data>
   <data name="TXT_rcchannel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 21</value>
+    <value>0, 21</value>
   </data>
   <data name="TXT_rcchannel.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -289,6 +292,9 @@
   </data>
   <data name="TXT_rcchannel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
+  </data>
+  <data name="TXT_rcchannel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;TXT_rcchannel.Name" xml:space="preserve">
     <value>TXT_rcchannel</value>
@@ -340,7 +346,7 @@
     <value>True</value>
   </metadata>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 31</value>
+    <value>100, 30</value>
   </data>
   <data name="&gt;&gt;renameToolStripMenuItem.Name" xml:space="preserve">
     <value>renameToolStripMenuItem</value>
