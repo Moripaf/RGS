@@ -19,7 +19,7 @@ namespace MissionPlanner {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Strings {
@@ -61,7 +61,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Advanced Params.
+        ///   Looks up a localized string similar to پارامترهای پیشرفته.
         /// </summary>
         public static string AdvancedParams {
             get {
@@ -70,7 +70,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Are you sure you want to upload .
+        ///   Looks up a localized string similar to آیا مطمئن هستید که می خواهید آپلود کنید؟ .
         /// </summary>
         public static string AreYouSureYouWantToUpload {
             get {
@@ -79,7 +79,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Auto WP.
+        ///   Looks up a localized string similar to پرواز خودکار.
         /// </summary>
         public static string AutoWP {
             get {
@@ -124,7 +124,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bad Vision Position.
+        ///   Looks up a localized string similar to وضعیت دید نامناسب.
         /// </summary>
         public static string Bad_Vision_Position {
             get {
@@ -133,7 +133,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bad Accel Health.
+        ///   Looks up a localized string similar to خطا در سنسور شتاب سنج پهپاد.
         /// </summary>
         public static string BadAccelHealth {
             get {
@@ -142,7 +142,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unhealthy AHRS.
+        ///   Looks up a localized string similar to خطا در ای.اچ.آر.اس پهپاد.
         /// </summary>
         public static string BadAHRS {
             get {
@@ -151,7 +151,16 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bad Baro Health.
+        ///   Looks up a localized string similar to Unhealthy Airspeed.
+        /// </summary>
+        public static string BadAirspeed {
+            get {
+                return ResourceManager.GetString("BadAirspeed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to خطا در سنسور فشارهوا پهپاد.
         /// </summary>
         public static string BadBaroHealth {
             get {
@@ -160,7 +169,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bad Compass Health.
+        ///   Looks up a localized string similar to خطا در سنسور قطب نما پهپاد.
         /// </summary>
         public static string BadCompassHealth {
             get {
@@ -178,7 +187,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unhealthy GPS Signal.
+        ///   Looks up a localized string similar to داده های جی پی اس با اختلال همراه است.
         /// </summary>
         public static string BadGPSHealth {
             get {
@@ -187,16 +196,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to unhealthy airspeed.
-        /// </summary>
-        public static string BadAirspeed {
-            get {
-                return ResourceManager.GetString("BadAirspeed", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Bad Gyro Health.
+        ///   Looks up a localized string similar to خطا در سنسور ژیروسکوپ پهپاد.
         /// </summary>
         public static string BadGyroHealth {
             get {
@@ -205,7 +205,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bad LiDAR Health.
+        ///   Looks up a localized string similar to خطا در سنسور رادار پهپاد.
         /// </summary>
         public static string BadLiDARHealth {
             get {
@@ -223,7 +223,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bad OptFlow Health.
+        ///   Looks up a localized string similar to خطا در سنسور رادار خطی پهپاد.
         /// </summary>
         public static string BadOptFlowHealth {
             get {
@@ -232,7 +232,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bad or No Terrain Data.
+        ///   Looks up a localized string similar to عدم وجود داده های زمین شناسی .
         /// </summary>
         public static string BadorNoTerrainData {
             get {
@@ -241,7 +241,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Basic Tuning.
+        ///   Looks up a localized string similar to تنظیم اولیه.
         /// </summary>
         public static string BasicTuning {
             get {
@@ -250,7 +250,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Beta.
+        ///   Looks up a localized string similar to بتا.
         /// </summary>
         public static string Beta {
             get {
@@ -259,7 +259,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to These are beta firmware, use at your own risk!!!.
+        ///   Looks up a localized string similar to اینها سیستم عامل بتا هستند، با مسئولیت خود استفاده کنید!!!.
         /// </summary>
         public static string BetaWarning {
             get {
@@ -268,16 +268,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cancel.
-        /// </summary>
-        public static string Cancel {
-            get {
-                return ResourceManager.GetString("Cancel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Can not connect to com port and detect board type.
+        ///   Looks up a localized string similar to نمی توان به پورت com متصل شد و نوع برد را تشخیص داد.
         /// </summary>
         public static string CanNotConnectToComPortAnd {
             get {
@@ -286,7 +277,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cannot graph this field.
+        ///   Looks up a localized string similar to این فیلد را نمی توان نمودار کرد.
         /// </summary>
         public static string CannotGraphField {
             get {
@@ -295,7 +286,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cant detect your Board version. Please check your cabling.
+        ///   Looks up a localized string similar to نمی‌توان نسخه برد شما را شناسایی کرد. لطفا کابل کشی خود را بررسی کنید.
         /// </summary>
         public static string CantDetectBoardVersion {
             get {
@@ -304,7 +295,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Change Throttle.
+        ///   Looks up a localized string similar to تغییر سرعت.
         /// </summary>
         public static string ChangeThrottle {
             get {
@@ -313,7 +304,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Checking .
+        ///   Looks up a localized string similar to درحال بررسی کردن .
         /// </summary>
         public static string Checking {
             get {
@@ -322,7 +313,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Check port settings or Port in use?.
+        ///   Looks up a localized string similar to تنظیمات پورت اتصال را بررسی کنید.
         /// </summary>
         public static string CheckPortSettingsOr {
             get {
@@ -331,7 +322,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Click when Done.
+        ///   Looks up a localized string similar to هنگامی که انجام شد کلیک کنید.
         /// </summary>
         public static string Click_when_Done {
             get {
@@ -340,7 +331,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The Command failed to execute
+        ///   Looks up a localized string similar to فرمان اجرا نشد
         ///.
         /// </summary>
         public static string CommandFailed {
@@ -350,7 +341,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Communication Error - no connection.
+        ///   Looks up a localized string similar to خطای ارتباط – اتصال انجام نشد.
         /// </summary>
         public static string CommunicationErrorNoConnection {
             get {
@@ -359,7 +350,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to compass variance.
+        ///   Looks up a localized string similar to واریانس قطب نما.
         /// </summary>
         public static string compass_variance {
             get {
@@ -368,7 +359,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Completed.
+        ///   Looks up a localized string similar to تکمیل شد.
         /// </summary>
         public static string Completed {
             get {
@@ -377,7 +368,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Connect.
+        ///   Looks up a localized string similar to اتصال.
         /// </summary>
         public static string Connect {
             get {
@@ -386,7 +377,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CONNECT.
+        ///   Looks up a localized string similar to اتصال.
         /// </summary>
         public static string CONNECTc {
             get {
@@ -395,7 +386,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Connect Failed.
+        ///   Looks up a localized string similar to اتصال به پهپاد ناموفق بود.
         /// </summary>
         public static string ConnectFailed {
             get {
@@ -404,7 +395,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Connecting Mavlink.
+        ///   Looks up a localized string similar to در حال اتصال به پهپاد.
         /// </summary>
         public static string ConnectingMavlink {
             get {
@@ -413,7 +404,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Continue.
+        ///   Looks up a localized string similar to ادامه .
         /// </summary>
         public static string Continue {
             get {
@@ -431,7 +422,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Description: .
+        ///   Looks up a localized string similar to شرح: .
         /// </summary>
         public static string Desc {
             get {
@@ -440,7 +431,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Detected a .
+        ///   Looks up a localized string similar to شناسایی شده است .
         /// </summary>
         public static string DetectedA {
             get {
@@ -449,7 +440,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Detecting Board Version.
+        ///   Looks up a localized string similar to تشخیص نسخه برد.
         /// </summary>
         public static string DetectingBoardVersion {
             get {
@@ -458,7 +449,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Disconnect.
+        ///   Looks up a localized string similar to قطع اتصال.
         /// </summary>
         public static string Disconnect {
             get {
@@ -467,7 +458,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DISCONNECT.
+        ///   Looks up a localized string similar to عدم اتصال.
         /// </summary>
         public static string DISCONNECTc {
             get {
@@ -476,7 +467,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Do you want to load this into the flight data screen?.
+        ///   Looks up a localized string similar to آیا می خواهید این را در صفحه داده های پرواز بارگیری کنید؟.
         /// </summary>
         public static string Do_you_want_to_load_this_into_the_flight_data_screen {
             get {
@@ -485,7 +476,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Done.
+        ///   Looks up a localized string similar to انجام شد.
         /// </summary>
         public static string Done {
             get {
@@ -494,7 +485,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Downloaded from internet.
+        ///   Looks up a localized string similar to از اینترنت دانلود شده.
         /// </summary>
         public static string DownloadedFromInternet {
             get {
@@ -503,7 +494,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Downloading from Internet.
+        ///   Looks up a localized string similar to دانلود از اینترنت.
         /// </summary>
         public static string DownloadingFromInternet {
             get {
@@ -512,7 +503,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ensure your props are not on the Plane/Quad.
+        ///   Looks up a localized string similar to اطمینان حاصل کنید ملخ ها به پهپاد متصل نمی باشد.
         /// </summary>
         public static string EnsurePropsNotOn {
             get {
@@ -521,8 +512,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Epprom changed, all your setting will be lost during the update,
-        ///Do you wish to continue?.
+        ///   Looks up a localized string similar to تمام تنظیمات شما در طول به روز رسانی از بین می رود، آیا می خواهید ادامه دهید؟.
         /// </summary>
         public static string EppromChanged {
             get {
@@ -540,7 +530,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error.
+        ///   Looks up a localized string similar to خطا.
         /// </summary>
         public static string ERROR {
             get {
@@ -549,7 +539,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error binding.
+        ///   Looks up a localized string similar to خطا در اتصال.
         /// </summary>
         public static string Error_binding {
             get {
@@ -558,7 +548,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error closing log files.
+        ///   Looks up a localized string similar to خطا در بستن فایل های گزارش.
         /// </summary>
         public static string ErrorClosingLogFile {
             get {
@@ -567,7 +557,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error communicating with the autopilot.
+        ///   Looks up a localized string similar to خطا در برقراری ارتباط با خلبان خودکار.
         /// </summary>
         public static string ErrorCommunicating {
             get {
@@ -576,7 +566,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error Connecting
+        ///   Looks up a localized string similar to خطا در اتصال
         ///.
         /// </summary>
         public static string ErrorConnecting {
@@ -586,7 +576,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This feature is not enabled in your firmware..
+        ///   Looks up a localized string similar to این ویژگی در سیستم خلبان خودکار شما فعال نیست.
         /// </summary>
         public static string ErrorFeatureNotEnabled {
             get {
@@ -595,7 +585,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error loading firmware file.
+        ///   Looks up a localized string similar to خطا در بارگیری فایل سیستم عامل.
         /// </summary>
         public static string ErrorFirmwareFile {
             get {
@@ -604,7 +594,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error receiving log list.
+        ///   Looks up a localized string similar to خطا در دریافت لیست گزارش.
         /// </summary>
         public static string ErrorLogList {
             get {
@@ -613,7 +603,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error: no responce from MAV.
+        ///   Looks up a localized string similar to خطا: پاسخی از تلمتری لینک پهپاد دریافت نشد.
         /// </summary>
         public static string ErrorNoResponce {
             get {
@@ -622,7 +612,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You are not connected..
+        ///   Looks up a localized string similar to شما متصل نمی باشید.
         /// </summary>
         public static string ErrorNotConnected {
             get {
@@ -631,7 +621,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error receiving list
+        ///   Looks up a localized string similar to خطا در دریافت لیست
         ///.
         /// </summary>
         public static string ErrorReceivingParams {
@@ -641,7 +631,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error: command rejected by MAV.
+        ///   Looks up a localized string similar to خطا: دستور توسط پهپاد دریافت نشد.
         /// </summary>
         public static string ErrorRejectedByMAV {
             get {
@@ -650,7 +640,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error renaming file.
+        ///   Looks up a localized string similar to خطا در تغییر نام فایل.
         /// </summary>
         public static string ErrorRenameFile {
             get {
@@ -659,7 +649,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error setting parameter .
+        ///   Looks up a localized string similar to خطا در تنظیم پارامترها .
         /// </summary>
         public static string ErrorSettingParameter {
             get {
@@ -668,7 +658,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Set {0} Failed.
+        ///   Looks up a localized string similar to با خطا مواجه شد {0} تنظیم.
         /// </summary>
         public static string ErrorSetValueFailed {
             get {
@@ -677,7 +667,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error uploading firmware.
+        ///   Looks up a localized string similar to خطا در آپلود سیستم عامل.
         /// </summary>
         public static string ErrorUploadingFirmware {
             get {
@@ -686,7 +676,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Extended Tuning.
+        ///   Looks up a localized string similar to تنظیمات تکمیلی.
         /// </summary>
         public static string ExtendedTuning {
             get {
@@ -695,7 +685,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Failed to create ground station log - wont log this session.
+        ///   Looks up a localized string similar to ثبت گزارش ایجاد نشد.
         /// </summary>
         public static string Failclog {
             get {
@@ -722,7 +712,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Failed download.
+        ///   Looks up a localized string similar to دانلود انجام نشد.
         /// </summary>
         public static string FailedDownload {
             get {
@@ -731,7 +721,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Failed read HEX.
+        ///   Looks up a localized string similar to HEX خوانده نشد.
         /// </summary>
         public static string FailedReadHEX {
             get {
@@ -740,7 +730,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Failed to read firmware.hex :.
+        ///   Looks up a localized string similar to Firmware.hex خوانده نشد:.
         /// </summary>
         public static string FailedToReadHex {
             get {
@@ -749,7 +739,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Failed upload.
+        ///   Looks up a localized string similar to آپلود ناموفق.
         /// </summary>
         public static string FailedUpload {
             get {
@@ -767,7 +757,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Flight Modes.
+        ///   Looks up a localized string similar to حالت های پرواز.
         /// </summary>
         public static string FlightModes {
             get {
@@ -776,7 +766,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Full Parameter List.
+        ///   Looks up a localized string similar to لیست کامل پارامترها.
         /// </summary>
         public static string FullParameterList {
             get {
@@ -785,7 +775,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Full Parameter Tree.
+        ///   Looks up a localized string similar to درختواره کامل پارامترها.
         /// </summary>
         public static string FullParameterTree {
             get {
@@ -794,7 +784,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GeoFence.
+        ///   Looks up a localized string similar to ژئوفنس.
         /// </summary>
         public static string GeoFence {
             get {
@@ -803,7 +793,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Geofence Breach.
+        ///   Looks up a localized string similar to نقض جغرافیایی.
         /// </summary>
         public static string GeofenceBreach {
             get {
@@ -812,7 +802,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Getting .
+        ///   Looks up a localized string similar to درحال دریافت.
         /// </summary>
         public static string Getting {
             get {
@@ -821,7 +811,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Getting FW List.
+        ///   Looks up a localized string similar to دریافت لیست فریمورها.
         /// </summary>
         public static string GettingFWList {
             get {
@@ -830,7 +820,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Getting FW Version.
+        ///   Looks up a localized string similar to دریافت لیست نسخه های فریمور.
         /// </summary>
         public static string GettingFWVersion {
             get {
@@ -839,7 +829,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Getting Params.
+        ///   Looks up a localized string similar to دریافت اطلاعات پهپاد .
         /// </summary>
         public static string GettingParams {
             get {
@@ -848,7 +838,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Getting Params....
+        ///   Looks up a localized string similar to دریافت اطلاعات پهپاد ....
         /// </summary>
         public static string GettingParamsD {
             get {
@@ -857,7 +847,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Getting updated parameters.
+        ///   Looks up a localized string similar to دریافت پارامترهای به روز شده.
         /// </summary>
         public static string GettingUpdatedParams {
             get {
@@ -866,7 +856,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Got param .
+        ///   Looks up a localized string similar to دریافت اطلاعات .
         /// </summary>
         public static string Gotparam {
             get {
@@ -875,7 +865,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid home location.
+        ///   Looks up a localized string similar to موقعیت مکانی خانه نامعتبر است.
         /// </summary>
         public static string Invalid_home_location {
             get {
@@ -893,7 +883,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid Alt.
+        ///   Looks up a localized string similar to ارتفاع وارد شده نامعتبر است.
         /// </summary>
         public static string InvalidAlt {
             get {
@@ -902,7 +892,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid BaudRate.
+        ///   Looks up a localized string similar to نرخ بادریت وارد شده نامعتبر است.
         /// </summary>
         public static string InvalidBaudRate {
             get {
@@ -911,7 +901,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid Board Type.
+        ///   Looks up a localized string similar to نوع برد نامعتبر است.
         /// </summary>
         public static string InvalidBoardType {
             get {
@@ -929,7 +919,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid Field.
+        ///   Looks up a localized string similar to فیلد وارد شده نامعتبر است.
         /// </summary>
         public static string InvalidField {
             get {
@@ -938,7 +928,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid FileName.
+        ///   Looks up a localized string similar to نام فایل وارد شده نامعتبر است.
         /// </summary>
         public static string InvalidFileName {
             get {
@@ -947,7 +937,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid number entered
+        ///   Looks up a localized string similar to عدد وارد شده نامعتبر است
         ///.
         /// </summary>
         public static string InvalidNumberEntered {
@@ -957,7 +947,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid Pan Range.
+        ///   Looks up a localized string similar to محدوده پن وارد شده نامعتبر است.
         /// </summary>
         public static string InvalidPanRange {
             get {
@@ -966,7 +956,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid PortName.
+        ///   Looks up a localized string similar to نام پورت وارد شده نامعتبر است.
         /// </summary>
         public static string InvalidPortName {
             get {
@@ -975,7 +965,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid Tilt Range.
+        ///   Looks up a localized string similar to محدوده تیل وارد شده نامعتبر است.
         /// </summary>
         public static string InvalidTiltRange {
             get {
@@ -984,7 +974,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid Update Rate.
+        ///   Looks up a localized string similar to نرخ بروزرسانی نامعتبر است.
         /// </summary>
         public static string InvalidUpdateRate {
             get {
@@ -993,7 +983,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Link Stats.
+        ///   Looks up a localized string similar to وضعیت لینک تلمتری.
         /// </summary>
         public static string LinkStats {
             get {
@@ -1002,7 +992,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Load data.
+        ///   Looks up a localized string similar to بارگذاری داده ها.
         /// </summary>
         public static string Load_data {
             get {
@@ -1020,7 +1010,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please click ok and move the autopilot around all axises in a circular motion.
+        ///   Looks up a localized string similar to لطفاً روی اوکی کلیک کنید و خلبان خودکار را حول تمام محورها به صورت دایره ای حرکت دهید.
         /// </summary>
         public static string MagCalibMsg {
             get {
@@ -1038,7 +1028,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mavlink Connecting....
+        ///   Looks up a localized string similar to درحال اتصال به پهپاد ....
         /// </summary>
         public static string MavlinkConnecting {
             get {
@@ -1047,7 +1037,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You are missing data points. do you want to run the calibration anyway?.
+        ///   Looks up a localized string similar to شما نقاط داده را از دست داده اید. آیا به هر حال می خواهید کالیبراسیون را اجرا کنید؟.
         /// </summary>
         public static string MissingDataPoints {
             get {
@@ -1056,7 +1046,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to New Firmware.
+        ///   Looks up a localized string similar to سیستم عامل جدید.
         /// </summary>
         public static string NewFirmware {
             get {
@@ -1065,7 +1055,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to New firmware available
+        ///   Looks up a localized string similar to سیستم عامل جدید موجود شد
         ///.
         /// </summary>
         public static string NewFirmwareA {
@@ -1084,7 +1074,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No valid heartbeats read from port.
+        ///   Looks up a localized string similar to هیچ سیگنال معتبری از پورت خوانده نشد.
         /// </summary>
         public static string No_valid_heartbeats_read_from_port {
             get {
@@ -1102,7 +1092,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No FMT message for .
+        ///   Looks up a localized string similar to هیچ پیامی موجود نمی باشد: .
         /// </summary>
         public static string NoFMTMessage {
             get {
@@ -1120,7 +1110,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NO RC Receiver.
+        ///   Looks up a localized string similar to No Rc Found.
         /// </summary>
         public static string NORCReceiver {
             get {
@@ -1138,7 +1128,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Note.
+        ///   Looks up a localized string similar to توجه.
         /// </summary>
         public static string Note {
             get {
@@ -1156,7 +1146,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OK.
+        ///   Looks up a localized string similar to قبول.
         /// </summary>
         public static string OK {
             get {
@@ -1174,7 +1164,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Only 1 Heatbeat Received.
+        ///   Looks up a localized string similar to فقط یک سیگنال دریافت شد.
         /// </summary>
         public static string Only1Hb {
             get {
@@ -1183,8 +1173,9 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Only 1 Mavlink Heartbeat Packets was read from this port - Verify your hardware is setup correctly
-        ///Mission Planner waits for 2 valid heartbeat packets before connecting.
+        ///   Looks up a localized string similar to فقط یک سیگنال از این پورت خوانده شد - تأیید کنید که سخت افزار شما به درستی تنظیم شده است
+        ///نرم افزار قبل از اتصال منتظر دو سیگنال معتبر است
+        ///.
         /// </summary>
         public static string Only1HbD {
             get {
@@ -1212,7 +1203,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please connect first.
+        ///   Looks up a localized string similar to لطفا ابتدا به پهپاد متصل شوید.
         /// </summary>
         public static string PleaseConnect {
             get {
@@ -1221,7 +1212,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please connect and backup your config in the configuration tab..
+        ///   Looks up a localized string similar to لطفاً پیکربندی خود را در برگه پیکربندی وصل کرده و پشتیبان بگیرید..
         /// </summary>
         public static string PleaseConnectAndBackupConfig {
             get {
@@ -1230,7 +1221,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please load a valid file.
+        ///   Looks up a localized string similar to لطفا یک فایل معتبر بارگذاری کنید.
         /// </summary>
         public static string PleaseLoadValidFile {
             get {
@@ -1239,7 +1230,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please select a cell first.
+        ///   Looks up a localized string similar to لطفا ابتدا یک سلول را انتخاب کنید.
         /// </summary>
         public static string PleaseSelectCell {
             get {
@@ -1248,8 +1239,8 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please unplug the board, and then press OK and plug back in.
-        ///Mission Planner will look for 30 seconds to find the board.
+        ///   Looks up a localized string similar to لطفاً برد را از برق بکشید و سپس OK را فشار دهید و دوباره وصل کنید.
+        ///برنامه ریز ماموریت به مدت 30 ثانیه برای یافتن تخته جستجو می کند.
         /// </summary>
         public static string PleaseUnplugTheBoardAnd {
             get {
@@ -1259,7 +1250,7 @@ namespace MissionPlanner {
         
         /// <summary>
         ///   Looks up a localized string similar to 
-        ///Please upgrade.
+        ///لطفا ارتقا دهید.
         /// </summary>
         public static string Pleaseup {
             get {
@@ -1277,7 +1268,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to pos horiz variance.
+        ///   Looks up a localized string similar to واریانس موقعیت افقی.
         /// </summary>
         public static string pos_horiz_variance {
             get {
@@ -1286,7 +1277,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to pos vert variance.
+        ///   Looks up a localized string similar to واریانس موقعیت عمودی.
         /// </summary>
         public static string pos_vert_variance {
             get {
@@ -1295,16 +1286,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Prearm check failed - check messages.
-        /// </summary>
-        public static string Prearm_check_failed {
-            get {
-                return ResourceManager.GetString("Prearm_check_failed", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sucessfully programmed.
+        ///   Looks up a localized string similar to با موفقیت پروگرام شد.
         /// </summary>
         public static string ProgrammedOK {
             get {
@@ -1331,7 +1313,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Raw Param Warning.
+        ///   Looks up a localized string similar to هشدار پارامترها.
         /// </summary>
         public static string RawParamWarning {
             get {
@@ -1340,8 +1322,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to All values on this screen are not min/max checked. Please double check your input.
-        ///Please use Standard/Advanced Params for the safe settings.
+        ///   Looks up a localized string similar to تمام مقادیر موجود در این صفحه حداقل/حداکثر بررسی نشده اند. لطفا ورودی خود را دوباره بررسی کنید. لطفاً از پارامترهای استاندارد/پیشرفته برای تنظیمات ایمن استفاده کنید.
         /// </summary>
         public static string RawParamWarningi {
             get {
@@ -1368,7 +1349,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Received List.
+        ///   Looks up a localized string similar to لیست دریافت شد.
         /// </summary>
         public static string ReceivedList {
             get {
@@ -1377,7 +1358,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to run anyway.
+        ///   Looks up a localized string similar to به هر حال اجرا کنید.
         /// </summary>
         public static string RunAnyway {
             get {
@@ -1386,7 +1367,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Saving.
+        ///   Looks up a localized string similar to درحال ذخیره کردن.
         /// </summary>
         public static string Saving {
             get {
@@ -1395,7 +1376,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Scanning File.
+        ///   Looks up a localized string similar to در حال بررسی فایل.
         /// </summary>
         public static string Scanning_File {
             get {
@@ -1404,7 +1385,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please select a comport.
+        ///   Looks up a localized string similar to لطفا یک پورت اتصال انتخاب کنید.
         /// </summary>
         public static string SelectComport {
             get {
@@ -1413,7 +1394,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Set Here.
+        ///   Looks up a localized string similar to اینجا را تنظیم کنید.
         /// </summary>
         public static string SetHere {
             get {
@@ -1422,7 +1403,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Show me again?.
+        ///   Looks up a localized string similar to آیا دوباره نمایش داده شود؟.
         /// </summary>
         public static string ShowMeAgain {
             get {
@@ -1431,7 +1412,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Standard Params.
+        ///   Looks up a localized string similar to پارامترهای استاندارد.
         /// </summary>
         public static string StandardParams {
             get {
@@ -1440,7 +1421,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Start.
+        ///   Looks up a localized string similar to شروع .
         /// </summary>
         public static string Start {
             get {
@@ -1449,7 +1430,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Your model is still moving are you sure you want to disconnect?.
+        ///   Looks up a localized string similar to پهپاد شما هنوز در حال پرواز است آیا مطمئن هستید که می خواهید ارتباط را قطع کنید؟.
         /// </summary>
         public static string Stillmoving {
             get {
@@ -1458,7 +1439,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Stop.
+        ///   Looks up a localized string similar to متوقف کردن.
         /// </summary>
         public static string Stop {
             get {
@@ -1467,7 +1448,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to terrain alt variance.
+        ///   Looks up a localized string similar to واریانس ارتفاعی زمین.
         /// </summary>
         public static string terrain_alt_variance {
             get {
@@ -1485,7 +1466,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Timeout waiting for autoscan/no mavlink device connected.
+        ///   Looks up a localized string similar to زمان انتظار برای اسکن خودکار به پایان رسیده است.
         /// </summary>
         public static string Timeout {
             get {
@@ -1521,8 +1502,8 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Trying to connect.
-        ///Timeout in {0}.
+        ///   Looks up a localized string similar to در حال تلاش برای اتصال
+        /// {0}.
         /// </summary>
         public static string Trying {
             get {
@@ -1540,9 +1521,9 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Update Found
+        ///   Looks up a localized string similar to به روز رسانی پیدا شد
         ///
-        ///Do you wish to update now? .
+        ///آیا می خواهید اکنون به روز رسانی کنید؟ .
         /// </summary>
         public static string UpdateFound {
             get {
@@ -1551,7 +1532,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No update available..
+        ///   Looks up a localized string similar to به روز رسانی در دسترس نیست..
         /// </summary>
         public static string UpdateNotFound {
             get {
@@ -1560,7 +1541,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Update Now.
+        ///   Looks up a localized string similar to اکنون به روز رسانی کن.
         /// </summary>
         public static string UpdateNow {
             get {
@@ -1569,7 +1550,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Upload Complete.
+        ///   Looks up a localized string similar to آپلود کامل شد.
         /// </summary>
         public static string UploadComplete {
             get {
@@ -1605,7 +1586,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to velocity variance.
+        ///   Looks up a localized string similar to واریانس سرعت.
         /// </summary>
         public static string velocity_variance {
             get {
@@ -1614,7 +1595,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verify Complete.
+        ///   Looks up a localized string similar to تأیید کامل شد.
         /// </summary>
         public static string VerifyComplete {
             get {
@@ -1623,7 +1604,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verify Firmware.
+        ///   Looks up a localized string similar to فریمور را تأیید کنید.
         /// </summary>
         public static string VerifyFirmware {
             get {
@@ -1632,7 +1613,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Warning.
+        ///   Looks up a localized string similar to هشدار.
         /// </summary>
         public static string Warning {
             get {
@@ -1659,8 +1640,8 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Log Browse will not function correctly without FMT messages in your log.
-        ///These appear to be missing from your log..
+        ///   Looks up a localized string similar to Log Browse بدون پیام های FMT در گزارش شما به درستی عمل نمی کند.
+        ///به نظر می رسد این موارد در گزارش شما وجود ندارد..
         /// </summary>
         public static string WarningLogBrowseFMTMissing {
             get {
@@ -1678,8 +1659,8 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Update Params
-        ///DON&apos;T DO THIS IF YOU ARE IN THE AIR
+        ///   Looks up a localized string similar to به روز رسانی پارامترها
+        ///اگر در هوا هستید این کار را نکنید
         ///.
         /// </summary>
         public static string WarningUpdateParamList {
@@ -1700,7 +1681,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Zoom To.
+        ///   Looks up a localized string similar to بزرگنمایی.
         /// </summary>
         public static string Zoom_To {
             get {
@@ -1709,7 +1690,7 @@ namespace MissionPlanner {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Zoom to the center or the loaded file?.
+        ///   Looks up a localized string similar to زوم به مرکز یا فایل بارگذاری شده؟.
         /// </summary>
         public static string Zoom_to_the_center_or_the_loaded_file {
             get {

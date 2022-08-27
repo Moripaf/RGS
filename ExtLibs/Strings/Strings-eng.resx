@@ -121,280 +121,280 @@
     <value>Bad Lat/Lng</value>
   </data>
   <data name="CannotGraphField" xml:space="preserve">
-    <value>این فیلد را نمی توان نمودار کرد</value>
+    <value>Cannot graph this field</value>
   </data>
   <data name="CommandFailed" xml:space="preserve">
-    <value>فرمان اجرا نشد
+    <value>The Command failed to execute
 </value>
   </data>
   <data name="ERROR" xml:space="preserve">
-    <value>خطا</value>
+    <value>Error</value>
   </data>
   <data name="ErrorClosingLogFile" xml:space="preserve">
-    <value>خطا در بستن فایل های گزارش</value>
+    <value>Error closing log files</value>
   </data>
   <data name="ErrorCommunicating" xml:space="preserve">
-    <value>خطا در برقراری ارتباط با خلبان خودکار</value>
+    <value>Error communicating with the autopilot</value>
   </data>
   <data name="ErrorConnecting" xml:space="preserve">
-    <value>خطا در اتصال
+    <value>Error Connecting
 </value>
   </data>
   <data name="ErrorFeatureNotEnabled" xml:space="preserve">
-    <value>این ویژگی در سیستم خلبان خودکار شما فعال نیست</value>
+    <value>This feature is not enabled in your firmware.</value>
   </data>
   <data name="ErrorFirmwareFile" xml:space="preserve">
-    <value>خطا در بارگیری فایل سیستم عامل</value>
+    <value>Error loading firmware file</value>
   </data>
   <data name="ErrorLogList" xml:space="preserve">
-    <value>خطا در دریافت لیست گزارش</value>
+    <value>Error receiving log list</value>
   </data>
   <data name="ErrorNoResponce" xml:space="preserve">
-    <value>خطا: پاسخی از تلمتری لینک پهپاد دریافت نشد</value>
+    <value>Error: no responce from MAV</value>
   </data>
   <data name="ErrorNotConnected" xml:space="preserve">
-    <value>شما متصل نمی باشید</value>
+    <value>You are not connected.</value>
   </data>
   <data name="ErrorReceivingParams" xml:space="preserve">
-    <value>خطا در دریافت لیست
+    <value>Error receiving list
 </value>
   </data>
   <data name="ErrorRejectedByMAV" xml:space="preserve">
-    <value>خطا: دستور توسط پهپاد دریافت نشد</value>
+    <value>Error: command rejected by MAV</value>
   </data>
   <data name="ErrorRenameFile" xml:space="preserve">
-    <value>خطا در تغییر نام فایل</value>
+    <value>Error renaming file</value>
   </data>
   <data name="ErrorSettingParameter" xml:space="preserve">
-    <value>خطا در تنظیم پارامترها </value>
+    <value>Error setting parameter </value>
   </data>
   <data name="ErrorSetValueFailed" xml:space="preserve">
-    <value>با خطا مواجه شد {0} تنظیم</value>
+    <value>Set {0} Failed</value>
   </data>
   <data name="InvalidAlt" xml:space="preserve">
-    <value>ارتفاع وارد شده نامعتبر است</value>
+    <value>Invalid Alt</value>
   </data>
   <data name="InvalidBaudRate" xml:space="preserve">
-    <value>نرخ بادریت وارد شده نامعتبر است</value>
+    <value>Invalid BaudRate</value>
   </data>
   <data name="InvalidField" xml:space="preserve">
-    <value>فیلد وارد شده نامعتبر است</value>
+    <value>Invalid Field</value>
   </data>
   <data name="InvalidFileName" xml:space="preserve">
-    <value>نام فایل وارد شده نامعتبر است</value>
+    <value>Invalid FileName</value>
   </data>
   <data name="InvalidNumberEntered" xml:space="preserve">
-    <value>عدد وارد شده نامعتبر است
+    <value>Invalid number entered
 </value>
   </data>
   <data name="InvalidPanRange" xml:space="preserve">
-    <value>محدوده پن وارد شده نامعتبر است</value>
+    <value>Invalid Pan Range</value>
   </data>
   <data name="InvalidPortName" xml:space="preserve">
-    <value>نام پورت وارد شده نامعتبر است</value>
+    <value>Invalid PortName</value>
   </data>
   <data name="InvalidTiltRange" xml:space="preserve">
-    <value>محدوده تیل وارد شده نامعتبر است</value>
+    <value>Invalid Tilt Range</value>
   </data>
   <data name="InvalidUpdateRate" xml:space="preserve">
-    <value>نرخ بروزرسانی نامعتبر است</value>
+    <value>Invalid Update Rate</value>
   </data>
   <data name="NoFMTMessage" xml:space="preserve">
-    <value>هیچ پیامی موجود نمی باشد: </value>
+    <value>No FMT message for </value>
   </data>
   <data name="PleaseConnect" xml:space="preserve">
-    <value>لطفا ابتدا به پهپاد متصل شوید</value>
+    <value>Please connect first</value>
   </data>
   <data name="PleaseLoadValidFile" xml:space="preserve">
-    <value>لطفا یک فایل معتبر بارگذاری کنید</value>
+    <value>Please load a valid file</value>
   </data>
   <data name="PleaseSelectCell" xml:space="preserve">
-    <value>لطفا ابتدا یک سلول را انتخاب کنید</value>
+    <value>Please select a cell first</value>
   </data>
   <data name="SelectComport" xml:space="preserve">
-    <value>لطفا یک پورت اتصال انتخاب کنید</value>
+    <value>Please select a comport</value>
   </data>
   <data name="WarningLogBrowseFMTMissing" xml:space="preserve">
-    <value>Log Browse بدون پیام های FMT در گزارش شما به درستی عمل نمی کند.
-به نظر می رسد این موارد در گزارش شما وجود ندارد.</value>
+    <value>Log Browse will not function correctly without FMT messages in your log.
+These appear to be missing from your log.</value>
   </data>
   <data name="WarningUpdateParamList" xml:space="preserve">
-    <value>به روز رسانی پارامترها
-اگر در هوا هستید این کار را نکنید
+    <value>Update Params
+DON'T DO THIS IF YOU ARE IN THE AIR
 </value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>درحال بررسی کردن </value>
+    <value>Checking </value>
   </data>
   <data name="DownloadedFromInternet" xml:space="preserve">
-    <value>از اینترنت دانلود شده</value>
+    <value>Downloaded from internet</value>
   </data>
   <data name="Getting" xml:space="preserve">
-    <value>درحال دریافت</value>
+    <value>Getting </value>
   </data>
   <data name="GettingUpdatedParams" xml:space="preserve">
-    <value>دریافت پارامترهای به روز شده</value>
+    <value>Getting updated parameters</value>
   </data>
   <data name="AdvancedParams" xml:space="preserve">
-    <value>پارامترهای پیشرفته</value>
+    <value>Advanced Params</value>
   </data>
   <data name="BasicTuning" xml:space="preserve">
-    <value>تنظیم اولیه</value>
+    <value>Basic Tuning</value>
   </data>
   <data name="Desc" xml:space="preserve">
-    <value>شرح: </value>
+    <value>Description: </value>
   </data>
   <data name="ExtendedTuning" xml:space="preserve">
-    <value>تنظیمات تکمیلی</value>
+    <value>Extended Tuning</value>
   </data>
   <data name="FlightModes" xml:space="preserve">
-    <value>حالت های پرواز</value>
+    <value>Flight Modes</value>
   </data>
   <data name="FullParameterList" xml:space="preserve">
-    <value>لیست کامل پارامترها</value>
+    <value>Full Parameter List</value>
   </data>
   <data name="FullParameterTree" xml:space="preserve">
-    <value>درختواره کامل پارامترها</value>
+    <value>Full Parameter Tree</value>
   </data>
   <data name="GeoFence" xml:space="preserve">
-    <value>ژئوفنس</value>
+    <value>GeoFence</value>
   </data>
   <data name="StandardParams" xml:space="preserve">
-    <value>پارامترهای استاندارد</value>
+    <value>Standard Params</value>
   </data>
   <data name="Units" xml:space="preserve">
     <value>Units: {0}{1}</value>
   </data>
   <data name="ProgrammedOK" xml:space="preserve">
-    <value>با موفقیت پروگرام شد</value>
+    <value>Sucessfully programmed</value>
   </data>
   <data name="CONNECTc" xml:space="preserve">
-    <value>اتصال</value>
+    <value>CONNECT</value>
   </data>
   <data name="Disconnect" xml:space="preserve">
-    <value>قطع اتصال</value>
+    <value>Disconnect</value>
   </data>
   <data name="DISCONNECTc" xml:space="preserve">
-    <value>عدم اتصال</value>
+    <value>DISCONNECT</value>
   </data>
   <data name="Failclog" xml:space="preserve">
-    <value>ثبت گزارش ایجاد نشد</value>
+    <value>Failed to create ground station log - wont log this session</value>
   </data>
   <data name="NewFirmware" xml:space="preserve">
-    <value>سیستم عامل جدید</value>
+    <value>New Firmware</value>
   </data>
   <data name="NewFirmwareA" xml:space="preserve">
-    <value>سیستم عامل جدید موجود شد
+    <value>New firmware available
 </value>
   </data>
   <data name="Pleaseup" xml:space="preserve">
     <value>
-لطفا ارتقا دهید</value>
+Please upgrade</value>
   </data>
   <data name="Stillmoving" xml:space="preserve">
-    <value>پهپاد شما هنوز در حال پرواز است آیا مطمئن هستید که می خواهید ارتباط را قطع کنید؟</value>
+    <value>Your model is still moving are you sure you want to disconnect?</value>
   </data>
   <data name="Timeout" xml:space="preserve">
-    <value>زمان انتظار برای اسکن خودکار به پایان رسیده است</value>
+    <value>Timeout waiting for autoscan/no mavlink device connected</value>
   </data>
   <data name="ConnectFailed" xml:space="preserve">
-    <value>اتصال به پهپاد ناموفق بود</value>
+    <value>Connect Failed</value>
   </data>
   <data name="ConnectingMavlink" xml:space="preserve">
-    <value>در حال اتصال به پهپاد</value>
+    <value>Connecting Mavlink</value>
   </data>
   <data name="Done" xml:space="preserve">
-    <value>انجام شد</value>
+    <value>Done</value>
   </data>
   <data name="GettingParams" xml:space="preserve">
-    <value>دریافت اطلاعات پهپاد </value>
+    <value>Getting Params</value>
   </data>
   <data name="GettingParamsD" xml:space="preserve">
-    <value>دریافت اطلاعات پهپاد ...</value>
+    <value>Getting Params...</value>
   </data>
   <data name="Gotparam" xml:space="preserve">
-    <value>دریافت اطلاعات </value>
+    <value>Got param </value>
   </data>
   <data name="MavlinkConnecting" xml:space="preserve">
-    <value>درحال اتصال به پهپاد ...</value>
+    <value>Mavlink Connecting...</value>
   </data>
   <data name="Only1Hb" xml:space="preserve">
-    <value>فقط یک سیگنال دریافت شد</value>
+    <value>Only 1 Heatbeat Received</value>
   </data>
   <data name="Only1HbD" xml:space="preserve">
-    <value>فقط یک سیگنال از این پورت خوانده شد - تأیید کنید که سخت افزار شما به درستی تنظیم شده است
-نرم افزار قبل از اتصال منتظر دو سیگنال معتبر است
-</value>
+    <value>Only 1 Mavlink Heartbeat Packets was read from this port - Verify your hardware is setup correctly
+Mission Planner waits for 2 valid heartbeat packets before connecting</value>
   </data>
   <data name="Trying" xml:space="preserve">
-    <value>در حال تلاش برای اتصال
- {0}</value>
+    <value>Trying to connect.
+Timeout in {0}</value>
   </data>
   <data name="CantDetectBoardVersion" xml:space="preserve">
-    <value>نمی‌توان نسخه برد شما را شناسایی کرد. لطفا کابل کشی خود را بررسی کنید</value>
+    <value>Cant detect your Board version. Please check your cabling</value>
   </data>
   <data name="CheckPortSettingsOr" xml:space="preserve">
-    <value>تنظیمات پورت اتصال را بررسی کنید</value>
+    <value>Check port settings or Port in use?</value>
   </data>
   <data name="CommunicationErrorNoConnection" xml:space="preserve">
-    <value>خطای ارتباط – اتصال انجام نشد</value>
+    <value>Communication Error - no connection</value>
   </data>
   <data name="DetectedA" xml:space="preserve">
-    <value>شناسایی شده است </value>
+    <value>Detected a </value>
   </data>
   <data name="DetectingBoardVersion" xml:space="preserve">
-    <value>تشخیص نسخه برد</value>
+    <value>Detecting Board Version</value>
   </data>
   <data name="DownloadingFromInternet" xml:space="preserve">
-    <value>دانلود از اینترنت</value>
+    <value>Downloading from Internet</value>
   </data>
   <data name="EppromChanged" xml:space="preserve">
-    <value>تمام تنظیمات شما در طول به روز رسانی از بین می رود، آیا می خواهید ادامه دهید؟</value>
+    <value>Epprom changed, all your setting will be lost during the update,
+Do you wish to continue?</value>
   </data>
   <data name="EppromFormatChanged" xml:space="preserve">
     <value>Epprom format changed ({0) vs {1})</value>
   </data>
   <data name="FailedDownload" xml:space="preserve">
-    <value>دانلود انجام نشد</value>
+    <value>Failed download</value>
   </data>
   <data name="FailedReadHEX" xml:space="preserve">
-    <value>HEX خوانده نشد</value>
+    <value>Failed read HEX</value>
   </data>
   <data name="FailedToReadHex" xml:space="preserve">
-    <value>Firmware.hex خوانده نشد:</value>
+    <value>Failed to read firmware.hex :</value>
   </data>
   <data name="FailedUpload" xml:space="preserve">
-    <value>آپلود ناموفق</value>
+    <value>Failed upload</value>
   </data>
   <data name="GettingFWList" xml:space="preserve">
-    <value>دریافت لیست فریمورها</value>
+    <value>Getting FW List</value>
   </data>
   <data name="GettingFWVersion" xml:space="preserve">
-    <value>دریافت لیست نسخه های فریمور</value>
+    <value>Getting FW Version</value>
   </data>
   <data name="InvalidBoardType" xml:space="preserve">
-    <value>نوع برد نامعتبر است</value>
+    <value>Invalid Board Type</value>
   </data>
   <data name="PleaseConnectAndBackupConfig" xml:space="preserve">
-    <value>لطفاً پیکربندی خود را در برگه پیکربندی وصل کرده و پشتیبان بگیرید.</value>
+    <value>Please connect and backup your config in the configuration tab.</value>
   </data>
   <data name="ReadingHexFile" xml:space="preserve">
     <value>Reading Hex File</value>
   </data>
   <data name="ReceivedList" xml:space="preserve">
-    <value>لیست دریافت شد</value>
+    <value>Received List</value>
   </data>
   <data name="UploadComplete" xml:space="preserve">
-    <value>آپلود کامل شد</value>
+    <value>Upload Complete</value>
   </data>
   <data name="UploadingBytesToBoard" xml:space="preserve">
     <value>Uploading {0} bytes to Board:</value>
   </data>
   <data name="VerifyComplete" xml:space="preserve">
-    <value>تأیید کامل شد</value>
+    <value>Verify Complete</value>
   </data>
   <data name="VerifyFirmware" xml:space="preserve">
-    <value>فریمور را تأیید کنید</value>
+    <value>Verify Firmware</value>
   </data>
   <data name="UploadSucceededButVerifyFailed" xml:space="preserve">
     <value>Upload succeeded, but verify failed: exp {0} got {1} at </value>
@@ -406,7 +406,7 @@
     <value>Warning rally points are located greater than RALLY_LIMIT_KM</value>
   </data>
   <data name="Warning" xml:space="preserve">
-    <value>هشدار</value>
+    <value>Warning</value>
   </data>
   <data name="WarningAC32" xml:space="preserve">
     <value>Warning, if you are installing AC 3.2 for the first time you MUST redo a Compass calibration.</value>
@@ -415,63 +415,64 @@
     <value>Warning, as of AC 3.1 motors will spin when armed, configurable through the MOT_SPIN_ARMED parameter</value>
   </data>
   <data name="MagCalibMsg" xml:space="preserve">
-    <value>لطفاً روی اوکی کلیک کنید و خلبان خودکار را حول تمام محورها به صورت دایره ای حرکت دهید</value>
+    <value>Please click ok and move the autopilot around all axises in a circular motion</value>
   </data>
   <data name="MissingDataPoints" xml:space="preserve">
-    <value>شما نقاط داده را از دست داده اید. آیا به هر حال می خواهید کالیبراسیون را اجرا کنید؟</value>
+    <value>You are missing data points. do you want to run the calibration anyway?</value>
   </data>
   <data name="RunAnyway" xml:space="preserve">
-    <value>به هر حال اجرا کنید</value>
+    <value>run anyway</value>
   </data>
   <data name="UpdateFound" xml:space="preserve">
-    <value>به روز رسانی پیدا شد
+    <value>Update Found
 
-آیا می خواهید اکنون به روز رسانی کنید؟ </value>
+Do you wish to update now? </value>
   </data>
   <data name="UpdateNow" xml:space="preserve">
-    <value>اکنون به روز رسانی کن</value>
+    <value>Update Now</value>
   </data>
   <data name="RawParamWarning" xml:space="preserve">
-    <value>هشدار پارامترها</value>
+    <value>Raw Param Warning</value>
   </data>
   <data name="RawParamWarningi" xml:space="preserve">
-    <value>تمام مقادیر موجود در این صفحه حداقل/حداکثر بررسی نشده اند. لطفا ورودی خود را دوباره بررسی کنید. لطفاً از پارامترهای استاندارد/پیشرفته برای تنظیمات ایمن استفاده کنید</value>
+    <value>All values on this screen are not min/max checked. Please double check your input.
+Please use Standard/Advanced Params for the safe settings</value>
   </data>
   <data name="ShowMeAgain" xml:space="preserve">
-    <value>آیا دوباره نمایش داده شود؟</value>
+    <value>Show me again?</value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>قبول</value>
+    <value>OK</value>
   </data>
   <data name="LinkStats" xml:space="preserve">
-    <value>وضعیت لینک تلمتری</value>
+    <value>Link Stats</value>
   </data>
   <data name="Stop" xml:space="preserve">
-    <value>متوقف کردن</value>
+    <value>Stop</value>
   </data>
   <data name="Connect" xml:space="preserve">
-    <value>اتصال</value>
+    <value>Connect</value>
   </data>
   <data name="Start" xml:space="preserve">
-    <value>شروع </value>
+    <value>Start</value>
   </data>
   <data name="AreYouSureYouWantToUpload" xml:space="preserve">
-    <value>آیا مطمئن هستید که می خواهید آپلود کنید؟ </value>
+    <value>Are you sure you want to upload </value>
   </data>
   <data name="Beta" xml:space="preserve">
-    <value>بتا</value>
+    <value>Beta</value>
   </data>
   <data name="BetaWarning" xml:space="preserve">
-    <value>اینها سیستم عامل بتا هستند، با مسئولیت خود استفاده کنید!!!</value>
+    <value>These are beta firmware, use at your own risk!!!</value>
   </data>
   <data name="CanNotConnectToComPortAnd" xml:space="preserve">
-    <value>نمی توان به پورت com متصل شد و نوع برد را تشخیص داد</value>
+    <value>Can not connect to com port and detect board type</value>
   </data>
   <data name="Continue" xml:space="preserve">
-    <value>ادامه </value>
+    <value>Continue</value>
   </data>
   <data name="ErrorUploadingFirmware" xml:space="preserve">
-    <value>خطا در آپلود سیستم عامل</value>
+    <value>Error uploading firmware</value>
   </data>
   <data name="QuestionMark" xml:space="preserve">
     <value>?</value>
@@ -483,71 +484,74 @@
     <value>These are the latest trunk firmware, use at your own risk!!!</value>
   </data>
   <data name="BadGPSHealth" xml:space="preserve">
-    <value>داده های جی پی اس با اختلال همراه است</value>
+    <value>Unhealthy GPS Signal</value>
+  </data>
+  <data name="BadAirspeed" xml:space="preserve">
+    <value>Unhealthy Airspeed</value>
   </data>
   <data name="BadGyroHealth" xml:space="preserve">
-    <value>خطا در سنسور ژیروسکوپ پهپاد</value>
+    <value>Bad Gyro Health</value>
   </data>
   <data name="BadAccelHealth" xml:space="preserve">
-    <value>خطا در سنسور شتاب سنج پهپاد</value>
+    <value>Bad Accel Health</value>
   </data>
   <data name="BadCompassHealth" xml:space="preserve">
-    <value>خطا در سنسور قطب نما پهپاد</value>
+    <value>Bad Compass Health</value>
   </data>
   <data name="BadBaroHealth" xml:space="preserve">
-    <value>خطا در سنسور فشارهوا پهپاد</value>
+    <value>Bad Baro Health</value>
   </data>
   <data name="BadLiDARHealth" xml:space="preserve">
-    <value>خطا در سنسور رادار پهپاد</value>
+    <value>Bad LiDAR Health</value>
   </data>
   <data name="BadOptFlowHealth" xml:space="preserve">
-    <value>خطا در سنسور رادار خطی پهپاد</value>
+    <value>Bad OptFlow Health</value>
   </data>
   <data name="BadorNoTerrainData" xml:space="preserve">
-    <value>عدم وجود داده های زمین شناسی </value>
+    <value>Bad or No Terrain Data</value>
   </data>
   <data name="GeofenceBreach" xml:space="preserve">
-    <value>نقض جغرافیایی</value>
+    <value>Geofence Breach</value>
   </data>
   <data name="BadAHRS" xml:space="preserve">
-    <value>خطا در ای.اچ.آر.اس پهپاد</value>
+    <value>Unhealthy AHRS</value>
   </data>
   <data name="NORCReceiver" xml:space="preserve">
-    <value>No Rc Found</value>
+    <value>NO RC Receiver</value>
   </data>
   <data name="AutoWP" xml:space="preserve">
-    <value>پرواز خودکار</value>
+    <value>Auto WP</value>
   </data>
   <data name="EnsurePropsNotOn" xml:space="preserve">
-    <value>اطمینان حاصل کنید ملخ ها به پهپاد متصل نمی باشد</value>
+    <value>Ensure your props are not on the Plane/Quad</value>
   </data>
   <data name="FailSafe" xml:space="preserve">
     <value>FailSafe</value>
   </data>
   <data name="Error_binding" xml:space="preserve">
-    <value>خطا در اتصال</value>
+    <value>Error binding</value>
   </data>
   <data name="Put_the_transmitter_in_bind_mode__Receiver_is_waiting" xml:space="preserve">
     <value>Put the transmitter in bind mode. Receiver is waiting.</value>
   </data>
   <data name="Completed" xml:space="preserve">
-    <value>تکمیل شد</value>
+    <value>Completed</value>
   </data>
   <data name="Click_when_Done" xml:space="preserve">
-    <value>هنگامی که انجام شد کلیک کنید</value>
+    <value>Click when Done</value>
   </data>
   <data name="Saving" xml:space="preserve">
-    <value>درحال ذخیره کردن</value>
+    <value>Saving</value>
   </data>
   <data name="InvalidCert" xml:space="preserve">
     <value>Invalid Cert</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>توجه</value>
+    <value>Note</value>
   </data>
   <data name="PleaseUnplugTheBoardAnd" xml:space="preserve">
-    <value>لطفاً برد را از برق بکشید و سپس OK را فشار دهید و دوباره وصل کنید.
-برنامه ریز ماموریت به مدت 30 ثانیه برای یافتن تخته جستجو می کند</value>
+    <value>Please unplug the board, and then press OK and plug back in.
+Mission Planner will look for 30 seconds to find the board</value>
   </data>
   <data name="ThisBoardHasBeenRetired" xml:space="preserve">
     <value>This board has been retired, Mission Planner this will upload the last available version to your board (AC 3.2.1/AP 3.4.0)</value>
@@ -567,64 +571,64 @@ Please contact your hardware vendor about signing your hardware.</value>
     <value>Obtain From Module</value>
   </data>
   <data name="SetHere" xml:space="preserve">
-    <value>اینجا را تنظیم کنید</value>
+    <value>Set Here</value>
   </data>
   <data name="TrackerHome" xml:space="preserve">
     <value>Tracker Home</value>
   </data>
   <data name="velocity_variance" xml:space="preserve">
-    <value>واریانس سرعت</value>
+    <value>velocity variance</value>
   </data>
   <data name="compass_variance" xml:space="preserve">
-    <value>واریانس قطب نما</value>
+    <value>compass variance</value>
   </data>
   <data name="pos_horiz_variance" xml:space="preserve">
-    <value>واریانس موقعیت افقی</value>
+    <value>pos horiz variance</value>
   </data>
   <data name="pos_vert_variance" xml:space="preserve">
-    <value>واریانس موقعیت عمودی</value>
+    <value>pos vert variance</value>
   </data>
   <data name="terrain_alt_variance" xml:space="preserve">
-    <value>واریانس ارتفاعی زمین</value>
+    <value>terrain alt variance</value>
   </data>
   <data name="ChangeThrottle" xml:space="preserve">
-    <value>تغییر سرعت</value>
+    <value>Change Throttle</value>
   </data>
   <data name="Invalid_home_location" xml:space="preserve">
-    <value>موقعیت مکانی خانه نامعتبر است</value>
+    <value>Invalid home location</value>
   </data>
   <data name="Converting_bin_to_log" xml:space="preserve">
     <value>Converting bin to log</value>
   </data>
   <data name="UpdateNotFound" xml:space="preserve">
-    <value>به روز رسانی در دسترس نیست.</value>
+    <value>No update available.</value>
   </data>
   <data name="Failed_to_connect_to_SITL_instance" xml:space="preserve">
     <value>Failed to connect to SITL instance</value>
   </data>
   <data name="Scanning_File" xml:space="preserve">
-    <value>در حال بررسی فایل</value>
+    <value>Scanning File</value>
   </data>
   <data name="Zoom_to_the_center_or_the_loaded_file" xml:space="preserve">
-    <value>زوم به مرکز یا فایل بارگذاری شده؟</value>
+    <value>Zoom to the center or the loaded file?</value>
   </data>
   <data name="Zoom_To" xml:space="preserve">
-    <value>بزرگنمایی</value>
+    <value>Zoom To</value>
   </data>
   <data name="Do_you_want_to_load_this_into_the_flight_data_screen" xml:space="preserve">
-    <value>آیا می خواهید این را در صفحه داده های پرواز بارگیری کنید؟</value>
+    <value>Do you want to load this into the flight data screen?</value>
   </data>
   <data name="Load_data" xml:space="preserve">
-    <value>بارگذاری داده ها</value>
+    <value>Load data</value>
   </data>
   <data name="Bad_KML_File" xml:space="preserve">
     <value>Bad KML File :</value>
   </data>
   <data name="No_valid_heartbeats_read_from_port" xml:space="preserve">
-    <value>هیچ سیگنال معتبری از پورت خوانده نشد</value>
+    <value>No valid heartbeats read from port</value>
   </data>
   <data name="Bad_Vision_Position" xml:space="preserve">
-    <value>وضعیت دید نامناسب</value>
+    <value>Bad Vision Position</value>
   </data>
   <data name="BadLogging" xml:space="preserve">
     <value>Bad Logging</value>
@@ -639,20 +643,20 @@ old #{0}  new #{1}</value>
   <data name="Not_available_when_used_as_a_windows_store_app" xml:space="preserve">
     <value>Not available when used as a windows store app</value>
   </data>
+  <data name="No_firmware_available_for_this_board" xml:space="preserve">
+    <value>No firmware available for this board!</value>
+  </data>
   <data name="OnboardOSD" xml:space="preserve">
     <value>Onboard OSD</value>
   </data>
   <data name="User_Params" xml:space="preserve">
     <value>User Params</value>
   </data>
-  <data name="BadAirspeed" xml:space="preserve">
-    <value>Unhealthy Airspeed</value>
-  </data>
-  <data name="No_firmware_available_for_this_board" xml:space="preserve">
-    <value>No firmware available for this board!</value>
-  </data>
   <data name="Planner" xml:space="preserve">
     <value>Planner</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
   </data>
   <data name="No_valid_sik_radio" xml:space="preserve">
     <value>No valid sik radio</value>
@@ -668,6 +672,9 @@ old #{0}  new #{1}</value>
   </data>
   <data name="Bad_SatCom" xml:space="preserve">
     <value>Bad SatCom</value>
+  </data>
+  <data name="Prearm_check_failed" xml:space="preserve">
+    <value>Prearm check failed - check messages</value>
   </data>
   <data name="Invalid_Location" xml:space="preserve">
     <value>Invalid Location</value>

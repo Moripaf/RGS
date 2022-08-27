@@ -4429,8 +4429,8 @@ namespace MissionPlanner.GCSViews
                     QVL.DoubleClick += quickView_DoubleClick;
                 QVL.ContextMenuStrip = contextMenuStripQuickView;
                 QVL.Dock = DockStyle.Fill;
-                QVL.numberColor = ThemeManager.getQvNumberColor();
-                QVL.numberColorBackup = QVL.numberColor;
+                QVL.numberColor = Color.Red;          //ThemeManager.getQvNumberColor();
+                QVL.numberColorBackup = Color.Blue;
                 QVL.number = 0;
 
                 tableLayoutPanelQuick.Controls.Add(QVL);
@@ -4447,8 +4447,8 @@ namespace MissionPlanner.GCSViews
                     QVR.DoubleClick += quickView_DoubleClick;
                 QVR.ContextMenuStrip = contextMenuStripQuickView;
                 QVR.Dock = DockStyle.Fill;
-                QVR.numberColor = ThemeManager.getQvNumberColor();
-                QVR.numberColorBackup = QVR.numberColor;
+                QVR.numberColor = Color.Red;
+                QVR.numberColorBackup = Color.Blue;
                 QVR.number = 0;
 
 
@@ -5767,15 +5767,26 @@ namespace MissionPlanner.GCSViews
 
         private void hudPanel_Resize(object sender, EventArgs e)
         {      
-            int guageHeight = leftGuagePanel.Height / 2;
-            leftGuagePanel.Width = guageHeight;
-            rightGuagePanel.Width = guageHeight;
-            
-            fixGuageLocations(guageHeight);
-           
+                   
+        }
+       
+        private void midSplitter_Panel1_Resize(object sender, EventArgs e)
+        {
+            subMainLeft.Width = 200;
+            subMainRight.Width = 200;
+            subMainRight.Height = subMainLeft.Height;
+            controlTableRight.Width = subMainRight.Width;
+            tableLayoutPanel1.Width = subMainRight.Width;
+                      
+            fixHudPanelSize();
+            fixGuageLocations(subMainLeft.Height / 2);
         }
         private void fixGuageLocations(int height)
         {
+            
+            leftGuagePanel.Width = height;
+            rightGuagePanel.Width = height;
+
             Gvspeed.Visible = true;
             Gvspeed.Height = height;
             Gspeed.Height = height;
@@ -5786,22 +5797,50 @@ namespace MissionPlanner.GCSViews
             Gspeed.Location = new Point(0, Gvspeed.Bottom + 1);
             Galt.Location = new Point(0, 0);
             Gheading.Location = new Point(0, Galt.Bottom + 1);
-        }
-
-        private void midSplitter_Panel1_Resize(object sender, EventArgs e)
-        {        
-            leftGuagePanel.Width = 150;
-            rightGuagePanel.Width = 150;
-            controlTableRIght.Width = rightGuagePanel.Width;
-            tableLayoutPanel1.Width = leftGuagePanel.Width;
-            fixHudPanelSize();
 
         }
+
         private void fixHudPanelSize()
         {
-            hudPanel.Location = new Point(leftGuagePanel.Right + 1, 0);
-            hudPanel.Height = leftGuagePanel.Height;
-            hudPanel.Width = midSplitter.Panel1.Width - (rightGuagePanel.Width + leftGuagePanel.Width + 2);
+          //  hudPanel.Location = new Point(subMainLeft.Right + 1, 0);
+            hudPanel.Height = subMainLeft.Height;
+            hudPanel.Width = midSplitter.Width - (subMainRight.Width + subMainLeft.Width + 2);
+            
+        }
+
+        private void BUT_FBWA_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ((Control)sender).Enabled = false;
+                MainV2.comPort.setMode("FBWA");
+            }
+            catch
+            {
+                CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR);
+            }
+
+            ((Control)sender).Enabled = true;
+        }
+
+        private void BUT_Manual_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ((Control)sender).Enabled = false;
+                MainV2.comPort.setMode("Manual");
+            }
+            catch
+            {
+                CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR);
+            }
+
+            ((Control)sender).Enabled = true;
+        }
+
+        private void midSplitter_Resize(object sender, EventArgs e)
+        {
+            midSplitter.SplitterDistance = 301;
         }
     }
 }

@@ -272,7 +272,7 @@
     <value>اتصال</value>
   </data>
   <data name="Disconnect" xml:space="preserve">
-    <value>قطع اتصال</value>
+    <value>عدم اتصال</value>
   </data>
   <data name="DISCONNECTc" xml:space="preserve">
     <value>عدم اتصال</value>
@@ -513,7 +513,7 @@
     <value>خطا در ای.اچ.آر.اس پهپاد</value>
   </data>
   <data name="NORCReceiver" xml:space="preserve">
-    <value>No Rc Found</value>
+    <value>رادیو کنترل قطع می باشد</value>
   </data>
   <data name="AutoWP" xml:space="preserve">
     <value>پرواز خودکار</value>
@@ -595,8 +595,7 @@ Please contact your hardware vendor about signing your hardware.</value>
   </data>
   <data name="Converting_bin_to_log" xml:space="preserve">
     <value>Converting bin to log</value>
-  </data>
-  <data name="UpdateNotFound" xml:space="preserve">
+  </data>  <data name="UpdateNotFound" xml:space="preserve">
     <value>به روز رسانی در دسترس نیست.</value>
   </data>
   <data name="Failed_to_connect_to_SITL_instance" xml:space="preserve">
@@ -638,41 +637,5 @@ old #{0}  new #{1}</value>
   </data>
   <data name="Not_available_when_used_as_a_windows_store_app" xml:space="preserve">
     <value>Not available when used as a windows store app</value>
-  </data>
-  <data name="OnboardOSD" xml:space="preserve">
-    <value>Onboard OSD</value>
-  </data>
-  <data name="User_Params" xml:space="preserve">
-    <value>User Params</value>
-  </data>
-  <data name="BadAirspeed" xml:space="preserve">
-    <value>Unhealthy Airspeed</value>
-  </data>
-  <data name="No_firmware_available_for_this_board" xml:space="preserve">
-    <value>No firmware available for this board!</value>
-  </data>
-  <data name="Planner" xml:space="preserve">
-    <value>Planner</value>
-  </data>
-  <data name="No_valid_sik_radio" xml:space="preserve">
-    <value>No valid sik radio</value>
-  </data>
-  <data name="MAVFtp" xml:space="preserve">
-    <value>MAVFtp</value>
-  </data>
-  <data name="Bad_Battery" xml:space="preserve">
-    <value>Bad Battery</value>
-  </data>
-  <data name="Bad_Proximity" xml:space="preserve">
-    <value>Bad Proximity</value>
-  </data>
-  <data name="Bad_SatCom" xml:space="preserve">
-    <value>Bad SatCom</value>
-  </data>
-  <data name="Invalid_Location" xml:space="preserve">
-    <value>Invalid Location</value>
-  </data>
-  <data name="Loading" xml:space="preserve">
-    <value>Loading</value>
   </data>
 </root>
