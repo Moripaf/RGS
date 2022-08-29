@@ -363,6 +363,9 @@ namespace MissionPlanner.GCSViews
 
             hud1.displayicons = Settings.Instance.GetBoolean("HUD_showicons", false);
 
+            hud1.bgimage = Resources.Gaugebg;
+          
+
             tabControlactions.Multiline = Settings.Instance.GetBoolean("tabControlactions_Multiline", false);
 
         }
@@ -396,7 +399,8 @@ namespace MissionPlanner.GCSViews
                 //setQuickViewRowsCols(1, 7);
             }
 
-          //  bindQVData();
+            //  bindQVData();
+            fixLeftActionMenuLayout();
             fixQvtableLayout();
             CheckBatteryShow();
 
@@ -578,6 +582,20 @@ namespace MissionPlanner.GCSViews
 
             tableLayoutPanelQuick.ResumeLayout(true);
             quickViewRight.ResumeLayout(true);
+        }
+        public void fixLeftActionMenuLayout()
+        {
+
+            tableLayoutPanel1.PerformLayout();
+            tableLayoutPanel1.SuspendLayout();
+            tableLayoutPanel1.RowStyles.Clear();
+            for(int i=0;i<6;i++)
+            {
+                tableLayoutPanel1.RowStyles.Add(new RowStyle());
+                tableLayoutPanel1.RowStyles[i].SizeType = SizeType.Percent;
+                tableLayoutPanel1.RowStyles[i].Height = 100.0f / 6;
+            }
+            tableLayoutPanel1.ResumeLayout(true);
         }
         public void bindQVData()
         {
@@ -5848,7 +5866,7 @@ namespace MissionPlanner.GCSViews
         private void errLabel_TextChanged(object sender, EventArgs e)
         {
             msgLabel.Text = hudMsgHandler(errLabel.Text);
-            msgLabel.ForeColor = Color.Red;
+            msgLabel.ForeColor = Color.Red;        
         }
         private string hudMsgHandler(string errorCode)
         {
@@ -5895,14 +5913,42 @@ namespace MissionPlanner.GCSViews
                 case "E11":
                     return "پرواز خودکار";
 
-
-                case "E12":
-                    return "FailSafe";
-
+                case "":
+                    return "";
 
                 default:
-                    return "Message";
+                    return errorCode;
 
+            }
+        }
+     
+
+        private void label10_TextChanged(object sender, EventArgs e)
+        {
+            modeLabel.Text = translateMode(label10.Text);
+            modeLabel.Visible = true;
+            modeLabel.ForeColor = Color.Cyan;
+        }
+        private string translateMode(string mode)
+        {
+            switch (mode)
+            {
+                case "Auto":
+                    return "پرواز خودکار";
+                case "Manual":
+                    return "پرواز دستی";
+                case "FBWA":
+                    return "پرواز پایدار";
+                case "RTL":
+                    return "بازگشت به خانه";
+                case "Unknown":
+                    return "مد شناسایی نشد";
+                case "Initializing":
+                    return "در حال راه اندازی";
+                case "":
+                    return "Mode";
+                default:
+                    return mode;
             }
         }
     }

@@ -4867,6 +4867,8 @@
     <None Include="Resources\scenario1.png" />
     <None Include="Resources\header.jpg" />
     <None Include="Resources\setting.png" />
+    <None Include="Resources\Guagebg - Copy.bmp" />
+    <None Include="Resources\Gaugebg - Copy.png" />
     <Content Include="rotmat.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

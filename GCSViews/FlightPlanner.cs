@@ -7154,7 +7154,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                     polyicon.IsSelected = false;
                     clearPolygonToolStripMenuItem_Click(this, null);
 
-                    contextMenuStrip1.Visible = false;
+                    contextMenuStripMap.Visible = false;
 
                     return;
                 }

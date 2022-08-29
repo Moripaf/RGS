@@ -12,14 +12,28 @@ namespace MissionPlanner.GCSViews
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlightData));
             this.MainH = new System.Windows.Forms.SplitContainer();
             this.quickViewRight = new System.Windows.Forms.TableLayoutPanel();
-            this.QV14 = new MissionPlanner.Controls.QuickView();
+            this.QV14 = new System.Windows.Forms.Panel();
+            this.QV14Value = new System.Windows.Forms.Label();
             this.bindingSourceHud = new System.Windows.Forms.BindingSource(this.components);
-            this.QV13 = new MissionPlanner.Controls.QuickView();
-            this.QV12 = new MissionPlanner.Controls.QuickView();
-            this.QV11 = new MissionPlanner.Controls.QuickView();
-            this.QV10 = new MissionPlanner.Controls.QuickView();
-            this.QV9 = new MissionPlanner.Controls.QuickView();
-            this.QV8 = new MissionPlanner.Controls.QuickView();
+            this.QV14Desc = new System.Windows.Forms.Label();
+            this.QV13 = new System.Windows.Forms.Panel();
+            this.QV13Value = new System.Windows.Forms.Label();
+            this.QV13Desc = new System.Windows.Forms.Label();
+            this.QV12 = new System.Windows.Forms.Panel();
+            this.QV12Value = new System.Windows.Forms.Label();
+            this.QV12Desc = new System.Windows.Forms.Label();
+            this.QV9 = new System.Windows.Forms.Panel();
+            this.QV9Value = new System.Windows.Forms.Label();
+            this.QV9Desc = new System.Windows.Forms.Label();
+            this.QV11 = new System.Windows.Forms.Panel();
+            this.QV11Value = new System.Windows.Forms.Label();
+            this.QV11Desc = new System.Windows.Forms.Label();
+            this.QV10 = new System.Windows.Forms.Panel();
+            this.QV10Value = new System.Windows.Forms.Label();
+            this.QV10Desc = new System.Windows.Forms.Label();
+            this.QV8 = new System.Windows.Forms.Panel();
+            this.QV8Value = new System.Windows.Forms.Label();
+            this.QV8Desc = new System.Windows.Forms.Label();
             this.midSplitter = new System.Windows.Forms.SplitContainer();
             this.subMainLeft = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -41,12 +55,13 @@ namespace MissionPlanner.GCSViews
             this.subMainRight = new System.Windows.Forms.Panel();
             this.controlTableRight = new System.Windows.Forms.TableLayoutPanel();
             this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.errLabel = new System.Windows.Forms.Label();
             this.msgLabel = new System.Windows.Forms.Label();
+            this.modeLabel = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.tableMap = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.but_disablejoystick = new MissionPlanner.Controls.MyButton();
@@ -183,16 +198,32 @@ namespace MissionPlanner.GCSViews
             this.lbl_hdop = new MissionPlanner.Controls.MyLabel();
             this.lbl_sats = new MissionPlanner.Controls.MyLabel();
             this.gMapControl1 = new MissionPlanner.Controls.myGMAP();
+            this.myMapStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.TRK_zoom = new MissionPlanner.Controls.MyTrackBar();
             this.mainContainer = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanelQuick = new System.Windows.Forms.TableLayoutPanel();
-            this.QV7 = new MissionPlanner.Controls.QuickView();
-            this.QV6 = new MissionPlanner.Controls.QuickView();
-            this.QV5 = new MissionPlanner.Controls.QuickView();
-            this.QV4 = new MissionPlanner.Controls.QuickView();
-            this.QV3 = new MissionPlanner.Controls.QuickView();
-            this.QV2 = new MissionPlanner.Controls.QuickView();
-            this.QV1 = new MissionPlanner.Controls.QuickView();
+            this.QV7 = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.QV7Desc = new System.Windows.Forms.Label();
+            this.Qv6 = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.QV6Desc = new System.Windows.Forms.Label();
+            this.QV5 = new System.Windows.Forms.Panel();
+            this.QV5Value = new System.Windows.Forms.Label();
+            this.QV5Desc = new System.Windows.Forms.Label();
+            this.QV4 = new System.Windows.Forms.Panel();
+            this.QV4Value = new System.Windows.Forms.Label();
+            this.QV4Desc = new System.Windows.Forms.Label();
+            this.QV3 = new System.Windows.Forms.Panel();
+            this.QV3Value = new System.Windows.Forms.Label();
+            this.QV3Desc = new System.Windows.Forms.Label();
+            this.QV2 = new System.Windows.Forms.Panel();
+            this.QV2Value = new System.Windows.Forms.Label();
+            this.QV2Desc = new System.Windows.Forms.Label();
+            this.QV1 = new System.Windows.Forms.Panel();
+            this.QV1Value = new System.Windows.Forms.Label();
+            this.QV1Desc = new System.Windows.Forms.Label();
             this.contextMenuStripQuickView = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.setViewCountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.undockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -247,7 +278,14 @@ namespace MissionPlanner.GCSViews
             this.MainH.Panel2.SuspendLayout();
             this.MainH.SuspendLayout();
             this.quickViewRight.SuspendLayout();
+            this.QV14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).BeginInit();
+            this.QV13.SuspendLayout();
+            this.QV12.SuspendLayout();
+            this.QV9.SuspendLayout();
+            this.QV11.SuspendLayout();
+            this.QV10.SuspendLayout();
+            this.QV8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.midSplitter)).BeginInit();
             this.midSplitter.Panel1.SuspendLayout();
             this.midSplitter.Panel2.SuspendLayout();
@@ -296,12 +334,20 @@ namespace MissionPlanner.GCSViews
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.contextMenuStripMap.SuspendLayout();
+            this.myMapStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainContainer)).BeginInit();
             this.mainContainer.Panel1.SuspendLayout();
             this.mainContainer.Panel2.SuspendLayout();
             this.mainContainer.SuspendLayout();
             this.tableLayoutPanelQuick.SuspendLayout();
+            this.QV7.SuspendLayout();
+            this.Qv6.SuspendLayout();
+            this.QV5.SuspendLayout();
+            this.QV4.SuspendLayout();
+            this.QV3.SuspendLayout();
+            this.QV2.SuspendLayout();
+            this.QV1.SuspendLayout();
             this.contextMenuStripQuickView.SuspendLayout();
             this.contextMenuStripHud.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).BeginInit();
@@ -331,92 +377,150 @@ namespace MissionPlanner.GCSViews
             this.quickViewRight.Controls.Add(this.QV14, 0, 6);
             this.quickViewRight.Controls.Add(this.QV13, 0, 5);
             this.quickViewRight.Controls.Add(this.QV12, 0, 4);
+            this.quickViewRight.Controls.Add(this.QV9, 0, 1);
             this.quickViewRight.Controls.Add(this.QV11, 0, 3);
             this.quickViewRight.Controls.Add(this.QV10, 0, 2);
-            this.quickViewRight.Controls.Add(this.QV9, 0, 1);
             this.quickViewRight.Controls.Add(this.QV8, 0, 0);
             this.quickViewRight.Name = "quickViewRight";
             // 
             // QV14
             // 
-            this.QV14.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceHud, "lng", true));
-            this.QV14.desc = "";
+            this.QV14.Controls.Add(this.QV14Value);
+            this.QV14.Controls.Add(this.QV14Desc);
             resources.ApplyResources(this.QV14, "QV14");
             this.QV14.Name = "QV14";
-            this.QV14.number = 0D;
-            this.QV14.numberColor = System.Drawing.Color.DarkRed;
-            this.QV14.numberColorBackup = System.Drawing.Color.Empty;
-            this.QV14.numberformat = "0.00";
+            // 
+            // QV14Value
+            // 
+            this.QV14Value.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "lng", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "00.0", "N2"));
+            resources.ApplyResources(this.QV14Value, "QV14Value");
+            this.QV14Value.ForeColor = System.Drawing.Color.DarkRed;
+            this.QV14Value.Name = "QV14Value";
             // 
             // bindingSourceHud
             // 
             this.bindingSourceHud.DataSource = typeof(MissionPlanner.CurrentState);
             // 
+            // QV14Desc
+            // 
+            resources.ApplyResources(this.QV14Desc, "QV14Desc");
+            this.QV14Desc.Name = "QV14Desc";
+            // 
             // QV13
             // 
-            this.QV13.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceHud, "lat", true));
-            this.QV13.desc = "";
+            this.QV13.Controls.Add(this.QV13Value);
+            this.QV13.Controls.Add(this.QV13Desc);
             resources.ApplyResources(this.QV13, "QV13");
             this.QV13.Name = "QV13";
-            this.QV13.number = 0D;
-            this.QV13.numberColor = System.Drawing.Color.DarkRed;
-            this.QV13.numberColorBackup = System.Drawing.Color.Empty;
-            this.QV13.numberformat = "0.00";
+            // 
+            // QV13Value
+            // 
+            this.QV13Value.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "lat", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "00.0", "N2"));
+            resources.ApplyResources(this.QV13Value, "QV13Value");
+            this.QV13Value.ForeColor = System.Drawing.Color.DarkRed;
+            this.QV13Value.Name = "QV13Value";
+            // 
+            // QV13Desc
+            // 
+            resources.ApplyResources(this.QV13Desc, "QV13Desc");
+            this.QV13Desc.Name = "QV13Desc";
             // 
             // QV12
             // 
-            this.QV12.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceHud, "yaw", true));
-            this.QV12.desc = "";
+            this.QV12.Controls.Add(this.QV12Value);
+            this.QV12.Controls.Add(this.QV12Desc);
             resources.ApplyResources(this.QV12, "QV12");
             this.QV12.Name = "QV12";
-            this.QV12.number = 0D;
-            this.QV12.numberColor = System.Drawing.Color.DarkRed;
-            this.QV12.numberColorBackup = System.Drawing.Color.Empty;
-            this.QV12.numberformat = "0.00";
             // 
-            // QV11
+            // QV12Value
             // 
-            this.QV11.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceHud, "roll", true));
-            this.QV11.desc = "";
-            resources.ApplyResources(this.QV11, "QV11");
-            this.QV11.Name = "QV11";
-            this.QV11.number = 0D;
-            this.QV11.numberColor = System.Drawing.Color.DarkRed;
-            this.QV11.numberColorBackup = System.Drawing.Color.Empty;
-            this.QV11.numberformat = "0.00";
+            this.QV12Value.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "yaw", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "00.0", "N2"));
+            resources.ApplyResources(this.QV12Value, "QV12Value");
+            this.QV12Value.ForeColor = System.Drawing.Color.DarkRed;
+            this.QV12Value.Name = "QV12Value";
             // 
-            // QV10
+            // QV12Desc
             // 
-            this.QV10.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceHud, "pitch", true));
-            this.QV10.desc = "";
-            resources.ApplyResources(this.QV10, "QV10");
-            this.QV10.Name = "QV10";
-            this.QV10.number = 0D;
-            this.QV10.numberColor = System.Drawing.Color.DarkRed;
-            this.QV10.numberColorBackup = System.Drawing.Color.Empty;
-            this.QV10.numberformat = "0.00";
+            resources.ApplyResources(this.QV12Desc, "QV12Desc");
+            this.QV12Desc.Name = "QV12Desc";
             // 
             // QV9
             // 
-            this.QV9.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceHud, "battery_remaining", true));
-            this.QV9.desc = "";
+            this.QV9.Controls.Add(this.QV9Value);
+            this.QV9.Controls.Add(this.QV9Desc);
             resources.ApplyResources(this.QV9, "QV9");
             this.QV9.Name = "QV9";
-            this.QV9.number = 0D;
-            this.QV9.numberColor = System.Drawing.Color.DarkRed;
-            this.QV9.numberColorBackup = System.Drawing.Color.Empty;
-            this.QV9.numberformat = "0.00";
+            this.toolTip1.SetToolTip(this.QV9, resources.GetString("QV9.ToolTip"));
+            // 
+            // QV9Value
+            // 
+            this.QV9Value.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "current", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "00.0", "N2"));
+            resources.ApplyResources(this.QV9Value, "QV9Value");
+            this.QV9Value.ForeColor = System.Drawing.Color.DarkRed;
+            this.QV9Value.Name = "QV9Value";
+            // 
+            // QV9Desc
+            // 
+            resources.ApplyResources(this.QV9Desc, "QV9Desc");
+            this.QV9Desc.Name = "QV9Desc";
+            // 
+            // QV11
+            // 
+            this.QV11.Controls.Add(this.QV11Value);
+            this.QV11.Controls.Add(this.QV11Desc);
+            resources.ApplyResources(this.QV11, "QV11");
+            this.QV11.Name = "QV11";
+            // 
+            // QV11Value
+            // 
+            this.QV11Value.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "roll", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "00.0", "N2"));
+            resources.ApplyResources(this.QV11Value, "QV11Value");
+            this.QV11Value.ForeColor = System.Drawing.Color.DarkRed;
+            this.QV11Value.Name = "QV11Value";
+            // 
+            // QV11Desc
+            // 
+            resources.ApplyResources(this.QV11Desc, "QV11Desc");
+            this.QV11Desc.Name = "QV11Desc";
+            // 
+            // QV10
+            // 
+            this.QV10.Controls.Add(this.QV10Value);
+            this.QV10.Controls.Add(this.QV10Desc);
+            resources.ApplyResources(this.QV10, "QV10");
+            this.QV10.Name = "QV10";
+            // 
+            // QV10Value
+            // 
+            this.QV10Value.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "pitch", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "00.0", "N2"));
+            resources.ApplyResources(this.QV10Value, "QV10Value");
+            this.QV10Value.ForeColor = System.Drawing.Color.DarkRed;
+            this.QV10Value.Name = "QV10Value";
+            // 
+            // QV10Desc
+            // 
+            resources.ApplyResources(this.QV10Desc, "QV10Desc");
+            this.QV10Desc.Name = "QV10Desc";
             // 
             // QV8
             // 
-            this.QV8.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceHud, "battery_voltage", true));
-            this.QV8.desc = "";
+            this.QV8.Controls.Add(this.QV8Value);
+            this.QV8.Controls.Add(this.QV8Desc);
             resources.ApplyResources(this.QV8, "QV8");
             this.QV8.Name = "QV8";
-            this.QV8.number = 0D;
-            this.QV8.numberColor = System.Drawing.Color.DarkRed;
-            this.QV8.numberColorBackup = System.Drawing.Color.Empty;
-            this.QV8.numberformat = "0.00";
+            this.toolTip1.SetToolTip(this.QV8, resources.GetString("QV8.ToolTip"));
+            // 
+            // QV8Value
+            // 
+            this.QV8Value.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "battery_voltage", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "00.0", "N2"));
+            resources.ApplyResources(this.QV8Value, "QV8Value");
+            this.QV8Value.ForeColor = System.Drawing.Color.DarkRed;
+            this.QV8Value.Name = "QV8Value";
+            // 
+            // QV8Desc
+            // 
+            resources.ApplyResources(this.QV8Desc, "QV8Desc");
+            this.QV8Desc.Name = "QV8Desc";
             // 
             // midSplitter
             // 
@@ -1112,6 +1216,8 @@ namespace MissionPlanner.GCSViews
             // subMainRight
             // 
             this.subMainRight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.subMainRight.Controls.Add(this.errLabel);
+            this.subMainRight.Controls.Add(this.label10);
             this.subMainRight.Controls.Add(this.controlTableRight);
             resources.ApplyResources(this.subMainRight, "subMainRight");
             this.subMainRight.Name = "subMainRight";
@@ -1120,26 +1226,19 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.controlTableRight, "controlTableRight");
             this.controlTableRight.Controls.Add(this.label11, 1, 3);
-            this.controlTableRight.Controls.Add(this.label10, 0, 2);
             this.controlTableRight.Controls.Add(this.servoOptions3, 0, 0);
             this.controlTableRight.Controls.Add(this.label7, 1, 0);
             this.controlTableRight.Controls.Add(this.label8, 1, 1);
             this.controlTableRight.Controls.Add(this.servoOptions2, 0, 1);
             this.controlTableRight.Controls.Add(this.label9, 1, 2);
-            this.controlTableRight.Controls.Add(this.errLabel, 0, 3);
             this.controlTableRight.Controls.Add(this.msgLabel, 0, 4);
+            this.controlTableRight.Controls.Add(this.modeLabel, 0, 2);
             this.controlTableRight.Name = "controlTableRight";
             // 
             // label11
             // 
             resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "mode", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "یافت نشد"));
-            this.label10.Name = "label10";
             // 
             // label7
             // 
@@ -1158,8 +1257,8 @@ namespace MissionPlanner.GCSViews
             // 
             // errLabel
             // 
-            resources.ApplyResources(this.errLabel, "errLabel");
             this.errLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "messageHigh", true));
+            resources.ApplyResources(this.errLabel, "errLabel");
             this.errLabel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.errLabel.Name = "errLabel";
             this.errLabel.TextChanged += new System.EventHandler(this.errLabel_TextChanged);
@@ -1171,6 +1270,19 @@ namespace MissionPlanner.GCSViews
             this.controlTableRight.SetColumnSpan(this.msgLabel, 2);
             this.msgLabel.ForeColor = System.Drawing.Color.Red;
             this.msgLabel.Name = "msgLabel";
+            // 
+            // modeLabel
+            // 
+            resources.ApplyResources(this.modeLabel, "modeLabel");
+            this.modeLabel.ForeColor = System.Drawing.Color.Cyan;
+            this.modeLabel.Name = "modeLabel";
+            // 
+            // label10
+            // 
+            this.label10.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "mode", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "یافت نشد"));
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            this.label10.TextChanged += new System.EventHandler(this.label10_TextChanged);
             // 
             // tableMap
             // 
@@ -2139,7 +2251,7 @@ namespace MissionPlanner.GCSViews
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 360D;
+            this.windDir1.Direction = 180D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -2418,7 +2530,7 @@ namespace MissionPlanner.GCSViews
             this.gMapControl1.BackColor = System.Drawing.Color.Black;
             this.gMapControl1.Bearing = 0F;
             this.gMapControl1.CanDragMap = true;
-            this.gMapControl1.ContextMenuStrip = this.contextMenuStripMap;
+            this.gMapControl1.ContextMenuStrip = this.myMapStrip;
             resources.ApplyResources(this.gMapControl1, "gMapControl1");
             this.gMapControl1.EmptyTileColor = System.Drawing.Color.Gray;
             this.gMapControl1.GrayScaleMode = false;
@@ -2445,6 +2557,20 @@ namespace MissionPlanner.GCSViews
             this.gMapControl1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gMapControl1_MouseMove);
             this.gMapControl1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.gMapControl1_MouseUp);
             // 
+            // myMapStrip
+            // 
+            this.myMapStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.myMapStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.myMapStrip.Name = "myMapStrip";
+            resources.ApplyResources(this.myMapStrip, "myMapStrip");
+            this.myMapStrip.Click += new System.EventHandler(this.flyToHereAltToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
+            // 
             // TRK_zoom
             // 
             resources.ApplyResources(this.TRK_zoom, "TRK_zoom");
@@ -2461,6 +2587,7 @@ namespace MissionPlanner.GCSViews
             // mainContainer
             // 
             resources.ApplyResources(this.mainContainer, "mainContainer");
+            this.mainContainer.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
             this.mainContainer.Name = "mainContainer";
             // 
             // mainContainer.Panel1
@@ -2477,7 +2604,7 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.tableLayoutPanelQuick, "tableLayoutPanelQuick");
             this.tableLayoutPanelQuick.Controls.Add(this.QV7, 0, 6);
-            this.tableLayoutPanelQuick.Controls.Add(this.QV6, 0, 5);
+            this.tableLayoutPanelQuick.Controls.Add(this.Qv6, 0, 5);
             this.tableLayoutPanelQuick.Controls.Add(this.QV5, 0, 4);
             this.tableLayoutPanelQuick.Controls.Add(this.QV4, 0, 3);
             this.tableLayoutPanelQuick.Controls.Add(this.QV3, 0, 2);
@@ -2487,80 +2614,148 @@ namespace MissionPlanner.GCSViews
             // 
             // QV7
             // 
-            this.QV7.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceHud, "satcount", true));
-            this.QV7.desc = "Sat_Count";
+            this.QV7.Controls.Add(this.label23);
+            this.QV7.Controls.Add(this.QV7Desc);
             resources.ApplyResources(this.QV7, "QV7");
             this.QV7.Name = "QV7";
-            this.QV7.number = 0D;
-            this.QV7.numberColor = System.Drawing.Color.DarkRed;
-            this.QV7.numberColorBackup = System.Drawing.Color.Empty;
-            this.QV7.numberformat = "0.00";
             // 
-            // QV6
+            // label23
             // 
-            this.QV6.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceHud, "rpm1", true));
-            this.QV6.desc = "RPM";
-            resources.ApplyResources(this.QV6, "QV6");
-            this.QV6.Name = "QV6";
-            this.QV6.number = 0D;
-            this.QV6.numberColor = System.Drawing.Color.DarkRed;
-            this.QV6.numberColorBackup = System.Drawing.Color.Empty;
-            this.QV6.numberformat = "0.00";
+            this.label23.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "satcount", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "00.0", "N2"));
+            resources.ApplyResources(this.label23, "label23");
+            this.label23.ForeColor = System.Drawing.Color.DarkRed;
+            this.label23.Name = "label23";
+            // 
+            // QV7Desc
+            // 
+            resources.ApplyResources(this.QV7Desc, "QV7Desc");
+            this.QV7Desc.Name = "QV7Desc";
+            // 
+            // Qv6
+            // 
+            this.Qv6.Controls.Add(this.label21);
+            this.Qv6.Controls.Add(this.QV6Desc);
+            resources.ApplyResources(this.Qv6, "Qv6");
+            this.Qv6.Name = "Qv6";
+            this.toolTip1.SetToolTip(this.Qv6, resources.GetString("Qv6.ToolTip"));
+            // 
+            // label21
+            // 
+            this.label21.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "rpm1", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "00.0", "N2"));
+            resources.ApplyResources(this.label21, "label21");
+            this.label21.ForeColor = System.Drawing.Color.DarkRed;
+            this.label21.Name = "label21";
+            this.toolTip1.SetToolTip(this.label21, resources.GetString("label21.ToolTip"));
+            // 
+            // QV6Desc
+            // 
+            resources.ApplyResources(this.QV6Desc, "QV6Desc");
+            this.QV6Desc.Name = "QV6Desc";
+            this.toolTip1.SetToolTip(this.QV6Desc, resources.GetString("QV6Desc.ToolTip"));
             // 
             // QV5
             // 
-            this.QV5.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceHud, "DistFromMovingBase", true));
-            this.QV5.desc = "Dist to WP";
+            this.QV5.Controls.Add(this.QV5Value);
+            this.QV5.Controls.Add(this.QV5Desc);
             resources.ApplyResources(this.QV5, "QV5");
             this.QV5.Name = "QV5";
-            this.QV5.number = 0D;
-            this.QV5.numberColor = System.Drawing.Color.DarkRed;
-            this.QV5.numberColorBackup = System.Drawing.Color.Empty;
-            this.QV5.numberformat = "0.00";
+            this.toolTip1.SetToolTip(this.QV5, resources.GetString("QV5.ToolTip"));
+            // 
+            // QV5Value
+            // 
+            this.QV5Value.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "wp_dist", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "00.0", "N2"));
+            resources.ApplyResources(this.QV5Value, "QV5Value");
+            this.QV5Value.ForeColor = System.Drawing.Color.DarkRed;
+            this.QV5Value.Name = "QV5Value";
+            this.toolTip1.SetToolTip(this.QV5Value, resources.GetString("QV5Value.ToolTip"));
+            // 
+            // QV5Desc
+            // 
+            resources.ApplyResources(this.QV5Desc, "QV5Desc");
+            this.QV5Desc.Name = "QV5Desc";
+            this.toolTip1.SetToolTip(this.QV5Desc, resources.GetString("QV5Desc.ToolTip"));
             // 
             // QV4
             // 
-            this.QV4.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceHud, "DistToHome", true));
-            this.QV4.desc = "Dist to Home";
+            this.QV4.Controls.Add(this.QV4Value);
+            this.QV4.Controls.Add(this.QV4Desc);
             resources.ApplyResources(this.QV4, "QV4");
             this.QV4.Name = "QV4";
-            this.QV4.number = 0D;
-            this.QV4.numberColor = System.Drawing.Color.DarkRed;
-            this.QV4.numberColorBackup = System.Drawing.Color.Empty;
-            this.QV4.numberformat = "0.00";
+            this.toolTip1.SetToolTip(this.QV4, resources.GetString("QV4.ToolTip"));
+            // 
+            // QV4Value
+            // 
+            this.QV4Value.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "DistToHome", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "00.0", "N2"));
+            resources.ApplyResources(this.QV4Value, "QV4Value");
+            this.QV4Value.ForeColor = System.Drawing.Color.DarkRed;
+            this.QV4Value.Name = "QV4Value";
+            this.toolTip1.SetToolTip(this.QV4Value, resources.GetString("QV4Value.ToolTip"));
+            // 
+            // QV4Desc
+            // 
+            resources.ApplyResources(this.QV4Desc, "QV4Desc");
+            this.QV4Desc.Name = "QV4Desc";
+            this.toolTip1.SetToolTip(this.QV4Desc, resources.GetString("QV4Desc.ToolTip"));
             // 
             // QV3
             // 
-            this.QV3.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceHud, "airspeed", true));
-            this.QV3.desc = "Air Speed";
+            this.QV3.Controls.Add(this.QV3Value);
+            this.QV3.Controls.Add(this.QV3Desc);
             resources.ApplyResources(this.QV3, "QV3");
             this.QV3.Name = "QV3";
-            this.QV3.number = 0D;
-            this.QV3.numberColor = System.Drawing.Color.DarkRed;
-            this.QV3.numberColorBackup = System.Drawing.Color.Empty;
-            this.QV3.numberformat = "0.00";
+            // 
+            // QV3Value
+            // 
+            this.QV3Value.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "airspeed", true));
+            resources.ApplyResources(this.QV3Value, "QV3Value");
+            this.QV3Value.ForeColor = System.Drawing.Color.DarkRed;
+            this.QV3Value.Name = "QV3Value";
+            // 
+            // QV3Desc
+            // 
+            resources.ApplyResources(this.QV3Desc, "QV3Desc");
+            this.QV3Desc.Name = "QV3Desc";
             // 
             // QV2
             // 
-            this.QV2.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceHud, "groundspeed", true));
-            this.QV2.desc = "Ground Speed";
+            this.QV2.Controls.Add(this.QV2Value);
+            this.QV2.Controls.Add(this.QV2Desc);
             resources.ApplyResources(this.QV2, "QV2");
             this.QV2.Name = "QV2";
-            this.QV2.number = 0D;
-            this.QV2.numberColor = System.Drawing.Color.DarkRed;
-            this.QV2.numberColorBackup = System.Drawing.Color.Empty;
-            this.QV2.numberformat = "0.00";
+            // 
+            // QV2Value
+            // 
+            this.QV2Value.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "groundspeed", true));
+            resources.ApplyResources(this.QV2Value, "QV2Value");
+            this.QV2Value.ForeColor = System.Drawing.Color.DarkRed;
+            this.QV2Value.Name = "QV2Value";
+            // 
+            // QV2Desc
+            // 
+            resources.ApplyResources(this.QV2Desc, "QV2Desc");
+            this.QV2Desc.Name = "QV2Desc";
             // 
             // QV1
             // 
-            this.QV1.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceHud, "alt", true));
-            this.QV1.desc = "alt";
+            this.QV1.Controls.Add(this.QV1Value);
+            this.QV1.Controls.Add(this.QV1Desc);
             resources.ApplyResources(this.QV1, "QV1");
             this.QV1.Name = "QV1";
-            this.QV1.number = 0D;
-            this.QV1.numberColor = System.Drawing.Color.DarkRed;
-            this.QV1.numberColorBackup = System.Drawing.Color.Empty;
-            this.QV1.numberformat = "0.00";
+            this.toolTip1.SetToolTip(this.QV1, resources.GetString("QV1.ToolTip"));
+            // 
+            // QV1Value
+            // 
+            this.QV1Value.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "alt", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, "00.0", "N2"));
+            resources.ApplyResources(this.QV1Value, "QV1Value");
+            this.QV1Value.ForeColor = System.Drawing.Color.DarkRed;
+            this.QV1Value.Name = "QV1Value";
+            this.toolTip1.SetToolTip(this.QV1Value, resources.GetString("QV1Value.ToolTip"));
+            // 
+            // QV1Desc
+            // 
+            resources.ApplyResources(this.QV1Desc, "QV1Desc");
+            this.QV1Desc.Name = "QV1Desc";
+            this.toolTip1.SetToolTip(this.QV1Desc, resources.GetString("QV1Desc.ToolTip"));
             // 
             // contextMenuStripQuickView
             // 
@@ -2946,7 +3141,14 @@ namespace MissionPlanner.GCSViews
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).EndInit();
             this.MainH.ResumeLayout(false);
             this.quickViewRight.ResumeLayout(false);
+            this.QV14.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).EndInit();
+            this.QV13.ResumeLayout(false);
+            this.QV12.ResumeLayout(false);
+            this.QV9.ResumeLayout(false);
+            this.QV11.ResumeLayout(false);
+            this.QV10.ResumeLayout(false);
+            this.QV8.ResumeLayout(false);
             this.midSplitter.Panel1.ResumeLayout(false);
             this.midSplitter.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.midSplitter)).EndInit();
@@ -3009,6 +3211,7 @@ namespace MissionPlanner.GCSViews
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.contextMenuStripMap.ResumeLayout(false);
+            this.myMapStrip.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).EndInit();
             this.mainContainer.Panel1.ResumeLayout(false);
             this.mainContainer.Panel2.ResumeLayout(false);
@@ -3016,6 +3219,13 @@ namespace MissionPlanner.GCSViews
             ((System.ComponentModel.ISupportInitialize)(this.mainContainer)).EndInit();
             this.mainContainer.ResumeLayout(false);
             this.tableLayoutPanelQuick.ResumeLayout(false);
+            this.QV7.ResumeLayout(false);
+            this.Qv6.ResumeLayout(false);
+            this.QV5.ResumeLayout(false);
+            this.QV4.ResumeLayout(false);
+            this.QV3.ResumeLayout(false);
+            this.QV2.ResumeLayout(false);
+            this.QV1.ResumeLayout(false);
             this.contextMenuStripQuickView.ResumeLayout(false);
             this.contextMenuStripHud.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).EndInit();
@@ -3244,19 +3454,50 @@ namespace MissionPlanner.GCSViews
         private Label errLabel;
         private Label label11;
         private Label msgLabel;
-        private Controls.QuickView QV14;
-        private Controls.QuickView QV13;
-        private Controls.QuickView QV12;
-        private Controls.QuickView QV11;
-        private Controls.QuickView QV10;
-        private Controls.QuickView QV9;
-        private Controls.QuickView QV8;
-        private Controls.QuickView QV7;
-        private Controls.QuickView QV6;
-        private Controls.QuickView QV5;
-        private Controls.QuickView QV4;
-        private Controls.QuickView QV3;
-        private Controls.QuickView QV2;
-        private Controls.QuickView QV1;
+        private Label QV1Desc;
+        private Panel QV1;
+        private Label QV1Value;
+        private Label label23;
+        private Label QV7Desc;
+        private Panel Qv6;
+        private Label label21;
+        private Label QV6Desc;
+        private Panel QV5;
+        private Label QV5Value;
+        private Label QV5Desc;
+        private Panel QV4;
+        private Label QV4Value;
+        private Label QV4Desc;
+        private Panel QV3;
+        private Label QV3Value;
+        private Label QV3Desc;
+        private Panel QV2;
+        private Label QV2Value;
+        private Label QV2Desc;
+        private Panel QV14;
+        private Label QV14Value;
+        private Label QV14Desc;
+        private Panel QV13;
+        private Label QV13Value;
+        private Label QV13Desc;
+        private Panel QV12;
+        private Label QV12Value;
+        private Label QV12Desc;
+        private Panel QV9;
+        private Label QV9Value;
+        private Label QV9Desc;
+        private Panel QV11;
+        private Label QV11Value;
+        private Label QV11Desc;
+        private Panel QV10;
+        private Label QV10Value;
+        private Label QV10Desc;
+        private Panel QV8;
+        private Label QV8Value;
+        private Label QV8Desc;
+        private Panel QV7;
+        private Label modeLabel;
+        private ContextMenuStrip myMapStrip;
+        private ToolStripMenuItem toolStripMenuItem1;
     }
 }

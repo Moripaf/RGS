@@ -136,18 +136,21 @@
   <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="BUT_Low.Font" type="System.Drawing.Font, System.Drawing">
+    <value>B Yekan, 12pt</value>
+  </data>
   <data name="BUT_Low.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 4</value>
   </data>
   <data name="BUT_Low.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 21</value>
+    <value>63, 24</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BUT_Low.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="BUT_Low.Text" xml:space="preserve">
-    <value>Low</value>
+    <value>خاموش</value>
   </data>
   <data name="&gt;&gt;BUT_Low.Name" xml:space="preserve">
     <value>BUT_Low</value>
@@ -161,17 +164,20 @@
   <data name="&gt;&gt;BUT_Low.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="BUT_High.Font" type="System.Drawing.Font, System.Drawing">
+    <value>B Yekan, 12pt</value>
+  </data>
   <data name="BUT_High.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 4</value>
+    <value>72, 3</value>
   </data>
   <data name="BUT_High.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 21</value>
+    <value>57, 25</value>
   </data>
   <data name="BUT_High.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="BUT_High.Text" xml:space="preserve">
-    <value>High</value>
+    <value>روشن</value>
   </data>
   <data name="&gt;&gt;BUT_High.Name" xml:space="preserve">
     <value>BUT_High</value>
@@ -346,7 +352,7 @@
     <value>True</value>
   </metadata>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 30</value>
+    <value>132, 31</value>
   </data>
   <data name="&gt;&gt;renameToolStripMenuItem.Name" xml:space="preserve">
     <value>renameToolStripMenuItem</value>

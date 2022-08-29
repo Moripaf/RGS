@@ -64,6 +64,7 @@ namespace MissionPlanner
             // MainMenu
             // 
             resources.ApplyResources(this.MainMenu, "MainMenu");
+            this.MainMenu.BackColor = System.Drawing.SystemColors.Desktop;
             this.MainMenu.BackgroundImage = global::MissionPlanner.Properties.Resources.bg;
             this.MainMenu.ContextMenuStrip = this.CTX_mainmenu;
             this.MainMenu.GripMargin = new System.Windows.Forms.Padding(0);
@@ -256,7 +257,6 @@ namespace MissionPlanner
             this.KeyPreview = true;
             this.MainMenuStrip = this.MainMenu;
             this.Name = "MainV2";
-            this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainV2_KeyDown);
             this.Resize += new System.EventHandler(this.MainV2_Resize);

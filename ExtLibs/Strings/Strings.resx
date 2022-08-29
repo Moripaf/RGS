@@ -483,46 +483,46 @@
     <value>These are the latest trunk firmware, use at your own risk!!!</value>
   </data>
   <data name="BadGPSHealth" xml:space="preserve">
-    <value>داده های جی پی اس با اختلال همراه است</value>
+    <value>E1</value>
   </data>
   <data name="BadGyroHealth" xml:space="preserve">
-    <value>خطا در سنسور ژیروسکوپ پهپاد</value>
+    <value>E2</value>
   </data>
   <data name="BadAccelHealth" xml:space="preserve">
-    <value>خطا در سنسور شتاب سنج پهپاد</value>
+     <value>E3</value>
   </data>
   <data name="BadCompassHealth" xml:space="preserve">
-    <value>خطا در سنسور قطب نما پهپاد</value>
+    <value>E4</value>
   </data>
   <data name="BadBaroHealth" xml:space="preserve">
-    <value>خطا در سنسور فشارهوا پهپاد</value>
+    <value>E5</value>
   </data>
   <data name="BadLiDARHealth" xml:space="preserve">
-    <value>خطا در سنسور رادار پهپاد</value>
+    <value>E6</value>
   </data>
   <data name="BadOptFlowHealth" xml:space="preserve">
-    <value>خطا در سنسور رادار خطی پهپاد</value>
+    <value>E7</value>
   </data>
   <data name="BadorNoTerrainData" xml:space="preserve">
-    <value>عدم وجود داده های زمین شناسی </value>
+    <value>E8</value>
   </data>
   <data name="GeofenceBreach" xml:space="preserve">
     <value>نقض جغرافیایی</value>
   </data>
   <data name="BadAHRS" xml:space="preserve">
-    <value>خطا در ای.اچ.آر.اس پهپاد</value>
+    <value>E9</value>
   </data>
   <data name="NORCReceiver" xml:space="preserve">
-    <value>No Rc Found</value>
+    <value>E10</value>
   </data>
   <data name="AutoWP" xml:space="preserve">
-    <value>پرواز خودکار</value>
+    <value>E11</value>
   </data>
   <data name="EnsurePropsNotOn" xml:space="preserve">
     <value>اطمینان حاصل کنید ملخ ها به پهپاد متصل نمی باشد</value>
   </data>
   <data name="FailSafe" xml:space="preserve">
-    <value>FailSafe</value>
+    <value>E12</value>
   </data>
   <data name="Error_binding" xml:space="preserve">
     <value>خطا در اتصال</value>

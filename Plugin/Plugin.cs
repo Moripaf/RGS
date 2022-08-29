@@ -158,7 +158,7 @@ namespace MissionPlanner.Plugin
         /// </summary>
         public ContextMenuStrip FPMenuMap
         {
-            get { return MainV2.instance.FlightPlanner.contextMenuStrip1; }
+            get { return MainV2.instance.FlightPlanner.contextMenuStripMap; }
         }
 
         /// <summary>
