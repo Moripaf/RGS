@@ -9,7 +9,7 @@ namespace MissionPlanner.Maps
     [Serializable]
     public class GMapMarkerPlane : GMapMarkerBase
     {
-        private readonly Bitmap icon = global::MissionPlanner.Maps.Resources.planeicon;
+        private readonly Bitmap icon = Resources.donate;
 
         static SolidBrush shadow = new SolidBrush(Color.FromArgb(50, Color.Black));
 

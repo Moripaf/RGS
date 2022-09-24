@@ -4060,19 +4060,25 @@ namespace MissionPlanner
                 return true;
             }
 
-            if (keyData == Keys.F2)
+            if (keyData == Keys.F1)
             {
                 MenuFlightData_Click(null, null);
                 return true;
             }
 
-            if (keyData == Keys.F3)
+            if (keyData == Keys.F2)
             {
                 MenuFlightPlanner_Click(null, null);
                 return true;
             }
 
-            if (keyData == Keys.F4)
+            if (keyData == (Keys.Control | Keys.Shift | Keys.F3))
+            {
+                MenuSetup_Click(null, null);
+                return true;
+            }
+
+            if (keyData == (Keys.Control | Keys.Shift | Keys.F4))
             {
                 MenuTuning_Click(null, null);
                 return true;
@@ -4085,7 +4091,7 @@ namespace MissionPlanner
                 return true;
             }
 
-            if (keyData == (Keys.Control | Keys.F)) // temp
+        /*    if (keyData == (Keys.Control | Keys.F)) // temp
             {
                 Form frm = new temp();
                 ThemeManager.ApplyThemeTo(frm);
@@ -4093,11 +4099,11 @@ namespace MissionPlanner
                 return true;
             }
 
-            /*if (keyData == (Keys.Control | Keys.S)) // screenshot
+            if (keyData == (Keys.Control | Keys.S)) // screenshot
             {
                 ScreenShot();
                 return true;
-            }*/
+            }
             if (keyData == (Keys.Control | Keys.P))
             {
                 new PluginUI().Show();
@@ -4181,7 +4187,7 @@ namespace MissionPlanner
 
                 return true;
             }
-
+           */
             if (ProcessCmdKeyCallback != null)
             {
                 return ProcessCmdKeyCallback(ref msg, keyData);

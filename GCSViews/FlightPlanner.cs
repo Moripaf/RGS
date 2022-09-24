@@ -233,11 +233,11 @@ namespace MissionPlanner.GCSViews
             //set default
             CMB_altmode.SelectedItem = altmode.Relative;
 
-            cmb_missiontype.DataSource = new List<MAVLink.MAV_MISSION_TYPE>()
-                {MAVLink.MAV_MISSION_TYPE.MISSION, MAVLink.MAV_MISSION_TYPE.FENCE, MAVLink.MAV_MISSION_TYPE.RALLY};
-
+               cmb_missiontype.DataSource = new List<MAVLink.MAV_MISSION_TYPE>()
+            {MAVLink.MAV_MISSION_TYPE.MISSION, MAVLink.MAV_MISSION_TYPE.FENCE, MAVLink.MAV_MISSION_TYPE.RALLY};       
+            
             updateCMDParams();
-
+              
             foreach (DataGridViewColumn commandsColumn in Commands.Columns)
             {
                 if (commandsColumn is DataGridViewTextBoxColumn)
@@ -327,7 +327,7 @@ namespace MissionPlanner.GCSViews
             }
             catch
             {
-                CustomMessageBox.Show("Please fix your default alt value");
+                CustomMessageBox.Show("لطفا مقدار ارتفاع پیش فرض خود را اصلاح کنید");
                 TXT_DefaultAlt.Text = (50 * CurrentState.multiplieralt).ToString("0");
             }
         }
@@ -610,7 +610,7 @@ namespace MissionPlanner.GCSViews
                 else
                 {
                     if (
-                        CustomMessageBox.Show("This will clear your existing points, Continue?", "Confirm",
+                        CustomMessageBox.Show("با این کار نقاط موجود شما پاک می شود، ادامه می دهید؟", "تایید",
                             MessageBoxButtons.OKCancel) != (int) DialogResult.OK)
                     {
                         return;
@@ -621,11 +621,11 @@ namespace MissionPlanner.GCSViews
             IProgressReporterDialogue frmProgressReporter = new ProgressReporterDialogue
             {
                 StartPosition = FormStartPosition.CenterScreen,
-                Text = "Receiving WP's"
+                Text = "دریافت سناریو پروازی"
             };
 
             frmProgressReporter.DoWork += getWPs;
-            frmProgressReporter.UpdateProgressAndStatus(-1, "Receiving WP's");
+            frmProgressReporter.UpdateProgressAndStatus(-1, "دریافت سناریو پروازی");
 
             ThemeManager.ApplyThemeTo(frmProgressReporter);
 
@@ -644,7 +644,7 @@ namespace MissionPlanner.GCSViews
             if ((altmode) CMB_altmode.SelectedValue == altmode.Absolute)
             {
                 if ((int) DialogResult.No ==
-                    CustomMessageBox.Show("Absolute Alt is selected are you sure?", "Alt Mode",
+                    CustomMessageBox.Show("ارتفاع  مطلق انتخاب شده است؛آیا مطمئن هستید؟", "مد ارتفاع",
                         MessageBoxButtons.YesNo))
                 {
                     CMB_altmode.SelectedValue = (int) altmode.Relative;
@@ -663,7 +663,7 @@ namespace MissionPlanner.GCSViews
             }
             catch
             {
-                CustomMessageBox.Show("Your home location is invalid", Strings.ERROR);
+                CustomMessageBox.Show("مکان نقطه خانه شما نامعتبر است", Strings.ERROR);
                 return;
             }
 
@@ -677,7 +677,7 @@ namespace MissionPlanner.GCSViews
                     {
                         if (!double.TryParse(Commands[b, a].Value.ToString(), out answer))
                         {
-                            CustomMessageBox.Show("There are errors in your mission");
+                            CustomMessageBox.Show("در ماموریت شما خطاهایی وجود دارد");
                             return;
                         }
                     }
@@ -696,8 +696,8 @@ namespace MissionPlanner.GCSViews
                             cmd != (ushort) MAVLink.MAV_CMD.LAND &&
                             cmd != (ushort) MAVLink.MAV_CMD.RETURN_TO_LAUNCH)
                         {
-                            CustomMessageBox.Show("Low alt on WP#" + (a + 1) +
-                                                  "\nPlease reduce the alt warning, or increase the altitude");
+                            CustomMessageBox.Show("ارتفاع پایین در نقطه   #" + (a + 1) +
+                                                  "\n لطفاً هشدار ارتفاع را نادیده بگیرید یا ارتفاع را افزایش دهید");
                             return;
                         }
                     }
@@ -707,12 +707,12 @@ namespace MissionPlanner.GCSViews
             IProgressReporterDialogue frmProgressReporter = new ProgressReporterDialogue
             {
                 StartPosition = FormStartPosition.CenterScreen,
-                Text = "Sending WP's"
+                Text = "ارسال سناریو پروازی"
             };
 
             frmProgressReporter.DoWork += saveWPs;
 
-            frmProgressReporter.UpdateProgressAndStatus(-1, "Sending WP's");
+            frmProgressReporter.UpdateProgressAndStatus(-1, "ارسال سناریو پروازی");
 
             ThemeManager.ApplyThemeTo(frmProgressReporter);
 
@@ -835,7 +835,7 @@ namespace MissionPlanner.GCSViews
                 }
                 catch
                 {
-                    CustomMessageBox.Show("Failed to get fence point", Strings.ERROR);
+                    CustomMessageBox.Show("دریافت نقاط حصار ناموفق بود", Strings.ERROR);
                 }
 
                 return;
@@ -843,13 +843,13 @@ namespace MissionPlanner.GCSViews
 
             if (MainV2.comPort.MAV.param["FENCE_ACTION"] == null || MainV2.comPort.MAV.param["FENCE_TOTAL"] == null)
             {
-                CustomMessageBox.Show("Not Supported");
+                CustomMessageBox.Show("پشتیبانی نشده");
                 return;
             }
 
             if (int.Parse(MainV2.comPort.MAV.param["FENCE_TOTAL"].ToString()) <= 1)
             {
-                CustomMessageBox.Show("Nothing to download");
+                CustomMessageBox.Show("چیزی برای دانلود وجود ندارد");
                 return;
             }
 
@@ -867,7 +867,7 @@ namespace MissionPlanner.GCSViews
                 }
                 catch
                 {
-                    CustomMessageBox.Show("Failed to get fence point", Strings.ERROR);
+                    CustomMessageBox.Show("دریافت نقطه حصار ناموفق بود", Strings.ERROR);
                     return;
                 }
             }
@@ -923,13 +923,13 @@ namespace MissionPlanner.GCSViews
 
             if (MainV2.comPort.MAV.param["RALLY_TOTAL"] == null)
             {
-                CustomMessageBox.Show("Not Supported");
+                CustomMessageBox.Show("پشتیبانی نشده");
                 return;
             }
 
             if (int.Parse(MainV2.comPort.MAV.param["RALLY_TOTAL"].ToString()) < 1)
             {
-                CustomMessageBox.Show("Rally points - Nothing to download");
+                CustomMessageBox.Show("چیزی برای دانلود وجود ندارد");
                 return;
             }
 
@@ -952,7 +952,7 @@ namespace MissionPlanner.GCSViews
                 }
                 catch
                 {
-                    CustomMessageBox.Show("Failed to get rally point", Strings.ERROR);
+                    CustomMessageBox.Show("امتیاز رالی دریافت نشد", Strings.ERROR);
                     return;
                 }
             }
@@ -1001,7 +1001,7 @@ namespace MissionPlanner.GCSViews
             }
             catch (Exception ex)
             {
-                CustomMessageBox.Show("Can't open file! " + ex);
+                CustomMessageBox.Show("فایل باز نمی شود " + ex);
             }
         }
 
@@ -1083,7 +1083,7 @@ namespace MissionPlanner.GCSViews
             }
             catch (Exception ex)
             {
-                CustomMessageBox.Show("A invalid entry has been detected\n" + ex.Message, Strings.ERROR);
+                CustomMessageBox.Show("یک ورودی نامعتبر شناسایی شده است\n" + ex.Message, Strings.ERROR);
             }
 
             // remove more than 40 revisions
@@ -1104,7 +1104,7 @@ namespace MissionPlanner.GCSViews
         {
             if (selectedrow > Commands.RowCount)
             {
-                CustomMessageBox.Show("Invalid coord, How did you do this?");
+                CustomMessageBox.Show("نامعتبر coord");
                 return;
             }
 
@@ -1163,9 +1163,9 @@ namespace MissionPlanner.GCSViews
 
                     if (pass == false)
                     {
-                        CustomMessageBox.Show("You must have a home altitude");
-                        string homealt = "100";
-                        if (DialogResult.Cancel == InputBox.Show("Home Alt", "Home Altitude", ref homealt))
+                        CustomMessageBox.Show("شما باید ارتفاع خانه داشته باشید");
+                        string homealt = "200";
+                        if (DialogResult.Cancel == InputBox.Show("ارتفاع نقطه خانه", "ارتفاع نقطه خانه", ref homealt))
                             return;
                         TXT_homealt.Text = homealt;
                     }
@@ -1173,14 +1173,14 @@ namespace MissionPlanner.GCSViews
                     int results1;
                     if (!int.TryParse(TXT_DefaultAlt.Text, out results1))
                     {
-                        CustomMessageBox.Show("Your default alt is not valid");
+                        CustomMessageBox.Show("ارتفاع  پیشفرض شما نامعتبر است");
                         return;
                     }
 
                     if (results1 == 0)
                     {
                         string defalt = "100";
-                        if (DialogResult.Cancel == InputBox.Show("Default Alt", "Default Altitude", ref defalt))
+                        if (DialogResult.Cancel == InputBox.Show("ارتفاع  پیشفرض", "ارتفاع  پیشفرض", ref defalt))
                             return;
                         TXT_DefaultAlt.Text = defalt;
                     }
@@ -1231,7 +1231,7 @@ namespace MissionPlanner.GCSViews
                 }
                 else
                 {
-                    CustomMessageBox.Show("Invalid Home or wp Alt");
+                    CustomMessageBox.Show("ارتفاع  نامعتبر است");
                     cell.Style.BackColor = Color.Red;
                 }
             }
@@ -1822,7 +1822,7 @@ namespace MissionPlanner.GCSViews
                         }
                         catch
                         {
-                            CustomMessageBox.Show("Error opening File", Strings.ERROR);
+                            CustomMessageBox.Show("خطا در باز کردن فایل", Strings.ERROR);
                             return;
                         }
                     }
@@ -1837,7 +1837,7 @@ namespace MissionPlanner.GCSViews
                         }
                         catch
                         {
-                            CustomMessageBox.Show("Error opening File", Strings.ERROR);
+                            CustomMessageBox.Show("خطا در باز کردن فایل", Strings.ERROR);
                             return;
                         }
                     }
@@ -1888,7 +1888,7 @@ namespace MissionPlanner.GCSViews
             if ((altmode) CMB_altmode.SelectedValue == altmode.Absolute)
             {
                 if ((int) DialogResult.No ==
-                    CustomMessageBox.Show("Absolute Alt is selected are you sure?", "Alt Mode",
+                    CustomMessageBox.Show("ارتفاع مطلق انتخاب شده است، آیا مطمئن هستید؟", "مد ارتفاع",
                         MessageBoxButtons.YesNo))
                 {
                     CMB_altmode.SelectedValue = (int) altmode.Relative;
@@ -1897,7 +1897,7 @@ namespace MissionPlanner.GCSViews
 
             if ((MAVLink.MAV_MISSION_TYPE) cmb_missiontype.SelectedValue != MAVLink.MAV_MISSION_TYPE.MISSION)
             {
-                CustomMessageBox.Show("Only available for missions");
+                CustomMessageBox.Show("فقط برای ماموریت ها موجود است");
                 return;
             }
 
@@ -1912,7 +1912,7 @@ namespace MissionPlanner.GCSViews
             }
             catch
             {
-                CustomMessageBox.Show("Your home location is invalid", Strings.ERROR);
+                CustomMessageBox.Show("مکان نقطه خانه شما نامعتبر است", Strings.ERROR);
                 return;
             }
 
@@ -1926,7 +1926,7 @@ namespace MissionPlanner.GCSViews
                     {
                         if (!double.TryParse(Commands[b, a].Value.ToString(), out answer))
                         {
-                            CustomMessageBox.Show("There are errors in your mission");
+                            CustomMessageBox.Show("در ماموریت شما خطاهایی وجود دارد");
                             return;
                         }
                     }
@@ -1945,8 +1945,8 @@ namespace MissionPlanner.GCSViews
                             cmd != (ushort) MAVLink.MAV_CMD.LAND &&
                             cmd != (ushort) MAVLink.MAV_CMD.RETURN_TO_LAUNCH)
                         {
-                            CustomMessageBox.Show("Low alt on WP#" + (a + 1) +
-                                                  "\nPlease reduce the alt warning, or increase the altitude");
+                            CustomMessageBox.Show("ارتفاع پایین در نقطه#" + (a + 1) +
+                                                  "\n Please reduce the alt warning, or increase the altitude");
                             return;
                         }
                     }
@@ -2227,7 +2227,7 @@ namespace MissionPlanner.GCSViews
             catch (Exception ex)
             {
                 log.Error(ex);
-                CustomMessageBox.Show("Map change failed. try zooming out first.");
+                CustomMessageBox.Show("تغییر نقشه انجام نشد. ابتدا بزرگنمایی را امتحان کنید");
             }
         }
 
@@ -3099,7 +3099,7 @@ namespace MissionPlanner.GCSViews
                     catch (Exception ex)
                     {
                         log.Error(ex);
-                        CustomMessageBox.Show("error selecting wp, please try again.");
+                        CustomMessageBox.Show("خطا در انتخاب  مسیرها، لطفا دوباره امتحان کنید.");
                     }
                 }
                 else if (int.TryParse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("grid", ""), out no))
@@ -3113,7 +3113,7 @@ namespace MissionPlanner.GCSViews
                     catch (Exception ex)
                     {
                         log.Error(ex);
-                        CustomMessageBox.Show("Remove point Failed. Please try again.");
+                        CustomMessageBox.Show("نقطه حذف نشد. لطفا دوباره تلاش کنید.");
                     }
                 }
             }
@@ -3135,7 +3135,7 @@ namespace MissionPlanner.GCSViews
                     catch (Exception ex)
                     {
                         log.Error(ex);
-                        CustomMessageBox.Show("error selecting wp, please try again.");
+                        CustomMessageBox.Show("خطا در انتخاب  مسیرها، لطفا دوباره امتحان کنید.");
                     }
                 }
 
@@ -3584,7 +3584,7 @@ namespace MissionPlanner.GCSViews
                 }
             }
             redrawPolygonSurvey(currentWaypoints);
-            if (CustomMessageBox.Show("Clear current waypoints?", "Confirm",
+            if (CustomMessageBox.Show("سناریو پروازی فعلی پاک شود؟", "تایید",
                                        MessageBoxButtons.YesNo) == (int)DialogResult.Yes)
             {
                 clearMissionToolStripMenuItem_Click(null, null);  // perhaps not best practice to directly call "click" events
@@ -3847,7 +3847,7 @@ namespace MissionPlanner.GCSViews
             }
             catch (Exception ex)
             {
-                CustomMessageBox.Show("Failed to send new fence points " + ex, Strings.ERROR);
+                CustomMessageBox.Show("نقاط حصار جدید ارسال نشد " + ex, Strings.ERROR);
             }
         }
 
@@ -4030,7 +4030,7 @@ namespace MissionPlanner.GCSViews
                 }
                 catch
                 {
-                    CustomMessageBox.Show("Invalid insert position", Strings.ERROR);
+                    CustomMessageBox.Show("موقعیت وارد شده، نامعتبر است", Strings.ERROR);
                     return;
                 }
 
@@ -4269,7 +4269,7 @@ namespace MissionPlanner.GCSViews
             }
             catch
             {
-                CustomMessageBox.Show("Failed to open url http://127.0.0.1:56781/network.kml");
+                CustomMessageBox.Show("باز نشد url http://127.0.0.1:56781/network.kml");
             }
         }
 
@@ -4675,7 +4675,7 @@ namespace MissionPlanner.GCSViews
                 }
                 catch
                 {
-                    CustomMessageBox.Show("Error opening File", Strings.ERROR);
+                    CustomMessageBox.Show("خطا در باز کردن فایل", Strings.ERROR);
                     return;
                 }
             }
@@ -4848,15 +4848,15 @@ namespace MissionPlanner.GCSViews
 
             e.Graphics.ResetTransform();
 
-            polyicon.Location = new Point(10, 100);
-            polyicon.Paint(e.Graphics);
+           // polyicon.Location = new Point(10, 100);
+          //  polyicon.Paint(e.Graphics);
 
-            e.Graphics.ResetTransform();
+           // e.Graphics.ResetTransform();
 
-            zoomicon.Location = new Point(10, polyicon.Location.Y + polyicon.Height + 5);
-            zoomicon.Paint(e.Graphics);
+          //  zoomicon.Location = new Point(10, polyicon.Location.Y + polyicon.Height + 5);
+          //  zoomicon.Paint(e.Graphics);
 
-            e.Graphics.ResetTransform();
+           // e.Graphics.ResetTransform();
         }
 
         private void MainMap_Resize(object sender, EventArgs e)
@@ -4987,7 +4987,7 @@ namespace MissionPlanner.GCSViews
             RectLatLng area = MainMap.SelectedArea;
             if (area.IsEmpty)
             {
-                var res = CustomMessageBox.Show("No ripp area defined, ripp displayed on screen?", "Rip",
+                var res = CustomMessageBox.Show("هیچ ناحیه ripp تعریف نشده است، ripp روی صفحه نمایش داده می شود؟", "Rip",
                     MessageBoxButtons.YesNo);
                 if (res == (int) DialogResult.Yes)
                 {
@@ -4998,7 +4998,7 @@ namespace MissionPlanner.GCSViews
             if (!area.IsEmpty)
             {
                 string maxzoomstring = "20";
-                if (InputBox.Show("max zoom", "Enter the max zoom to prefetch to.", ref maxzoomstring) !=
+                if (InputBox.Show("حداکثر بزرگنمایی ", "حداکثر بزرگنمایی را برای دانلود نقشه وارد کنید.", ref maxzoomstring) !=
                     DialogResult.OK)
                     return;
 
@@ -5029,7 +5029,7 @@ namespace MissionPlanner.GCSViews
             }
             else
             {
-                CustomMessageBox.Show("Select map area holding ALT", "GMap.NET", MessageBoxButtons.OK,
+                CustomMessageBox.Show("منطقه نقشه را با نگه داشتن دکمه ALT  روی کیبورد انتخاب کنید", "نقشه", MessageBoxButtons.OK,
                     MessageBoxIcon.Exclamation);
             }
         }
@@ -5283,7 +5283,7 @@ namespace MissionPlanner.GCSViews
                     {
                         if (cellhome.Value.ToString() != TXT_homelat.Text && cellhome.Value.ToString() != "0")
                         {
-                            var dr = CustomMessageBox.Show("Reset Home to loaded coords", "Reset Home Coords",
+                            var dr = CustomMessageBox.Show("بازنشانی نقطه خانه به کرد بارگذاری شده", "تنظیم مجدد نقطه خانه",
                                 MessageBoxButtons.YesNo);
 
                             if (dr == (int) DialogResult.Yes)
@@ -5543,7 +5543,7 @@ namespace MissionPlanner.GCSViews
                     }
                     catch
                     {
-                        CustomMessageBox.Show("Failed to write fence file");
+                        CustomMessageBox.Show("نوشتن فایل حصار انجام نشد");
                     }
                 }
             }
@@ -5566,7 +5566,7 @@ namespace MissionPlanner.GCSViews
                 }
                 catch
                 {
-                    CustomMessageBox.Show("Failed to save rally point", Strings.ERROR);
+                    CustomMessageBox.Show("نقطه رالی ذخیره نشد", Strings.ERROR);
                     return;
                 }
             }
@@ -5576,7 +5576,7 @@ namespace MissionPlanner.GCSViews
         {
             if (geofenceoverlay.Markers.Count == 0)
             {
-                CustomMessageBox.Show("Please set a return location");
+                CustomMessageBox.Show("لطفا مکان بازگشت را تعیین کنید");
                 return;
             }
 
@@ -5627,7 +5627,7 @@ namespace MissionPlanner.GCSViews
                     }
                     catch
                     {
-                        CustomMessageBox.Show("Failed to write fence file");
+                        CustomMessageBox.Show("نوشتن فایل حصار انجام نشد");
                     }
                 }
             }
@@ -5637,7 +5637,7 @@ namespace MissionPlanner.GCSViews
         {
             if (rallypointoverlay.Markers.Count == 0)
             {
-                CustomMessageBox.Show("Please set some rally points");
+                CustomMessageBox.Show("لطفاً چند نقطه رالی تعیین کنید");
                 return;
             }
             /*
@@ -5673,7 +5673,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                     }
                     catch
                     {
-                        CustomMessageBox.Show("Failed to write rally file");
+                        CustomMessageBox.Show("نوشتن فایل رالی ناموفق بود");
                     }
                 }
             }
@@ -6448,7 +6448,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 }
                 catch (ArgumentException ex)
                 {
-                    CustomMessageBox.Show("Bad input options, please try again\n" + ex.ToString(), Strings.ERROR);
+                    CustomMessageBox.Show("گزینه های ورودی نامناسب، لطفاً دوباره امتحان کنید\n" + ex.ToString(), Strings.ERROR);
                 }
 
                 quickadd = false;
@@ -6586,7 +6586,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         public void TXT_homelat_Enter(object sender, EventArgs e)
         {
             if (!sethome)
-                CustomMessageBox.Show("Click on the Map to set Home ");
+                CustomMessageBox.Show("برای تنظیم نقطه خانه روی نقشه کلیک کنید ");
             sethome = true;
 
         }
@@ -6716,22 +6716,19 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 cmdParamNames.Clear();
                 cmdParamNames.Add(MAVLink.MAV_CMD.RALLY_POINT.ToString(), rally);
             }
-
+           
             List<string> cmds = new List<string>();
 
-            foreach (string item in cmdParamNames.Keys)
-            {
-                cmds.Add(item);
-            }
-
-            cmds.Add("UNKNOWN");
+            
+           cmds.Add(MAVLink.MAV_CMD.WAYPOINT.ToString());
+           cmds.Add(MAVLink.MAV_CMD.DO_JUMP.ToString());
 
             Command.DataSource = cmds;
 
             log.InfoFormat("Command item count {0} orig list {1}", Command.Items.Count, cmds.Count);
 
             //We have to iterate through current mission items and if user deleted or added a command from the allowed list, change back it to UNKNOWN or replace unknown with the new name
-            for (var a = 0; a<Commands.RowCount;a++)
+        /*    for (var a = 0; a<Commands.RowCount;a++)
             {
                 var cmdName = Commands.Rows[a].Cells[Command.Index].Value.ToString();
 
@@ -6748,7 +6745,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                     Commands.Rows[a].Cells[Command.Index].Value = "UNKNOWN";
                     //No need to set the .Tag because we already did that when command was entered
                 }
-            }
+            }*/
 
 
         }
@@ -7755,7 +7752,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             }
             catch (Exception e)
             {
-                CustomMessageBox.Show("Failed to make WMS Server request: " + e.Message);
+                CustomMessageBox.Show("درخواست سرور WMS انجام نشد: " + e.Message);
                 return null;
             }
         }
@@ -7775,7 +7772,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             bool bPngCapable = false;
             XmlNodeList getMapElements = xCapabilitesResponse.SelectNodes("//GetMap", nsmgr);
             if (getMapElements.Count != 1)
-                CustomMessageBox.Show("Invalid WMS Server response: Invalid number of GetMap elements.");
+                CustomMessageBox.Show("تعداد عناصر GetMap نامعتبر است.");
             else
             {
                 XmlNode getMapNode = getMapElements.Item(0);
@@ -7793,7 +7790,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
             if (!bPngCapable)
             {
-                CustomMessageBox.Show("Invalid WMS Server response: Server unable to return PNG images.");
+                CustomMessageBox.Show("سرور قادر به برگرداندن تصاویر نیست.");
                 return;
             }
 
@@ -7892,7 +7889,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 GeoCoderStatusCode status = MainMap.SetPositionByKeywords(place);
                 if (status != GeoCoderStatusCode.G_GEO_SUCCESS)
                 {
-                    CustomMessageBox.Show("Google Maps Geocoder can't find: '" + place + "', reason: " + status,
+                    CustomMessageBox.Show("ژئوکدر گوگل مپ نمی تواند پیدا کند: '" + place + "', دلیل: " + status,
                         "GMap.NET", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else
@@ -7931,5 +7928,36 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         {
             Settings.Instance["UseMissionMAVFTP"] = chk_usemavftp.Checked.ToString();
         }
-    }
+        bool mapType;
+        GMapProvider gmapProvider;
+        private void changeMapTypeBUT_Click(object sender, EventArgs e)
+        {
+            if (mapType == true)
+            {
+                changeMapTypeBUT.Text = "نقشه ماهواره ای";
+                changeMapType(GMapProviders.GoogleHybridMap);
+            }
+            else
+            {
+                changeMapTypeBUT.Text = "نقشه زمینشناسی";
+                changeMapType(GMapProviders.GoogleTerrainMap);
+            }
+            mapType = !mapType;
+        }
+        public void changeMapType(GMapProvider gMap)
+        {
+            try
+            {
+                MainMap.MapProvider = gMap;
+                FlightData.mymap.MapProvider = gMap;
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex);
+                CustomMessageBox.Show("تغییر نقشه انجام نشد.");
+            }
+
+
+        }
+    } 
 }
