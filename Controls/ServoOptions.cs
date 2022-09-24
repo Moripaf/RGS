@@ -84,21 +84,26 @@ namespace MissionPlanner.Controls
 
         private void BUT_High_Click(object sender, EventArgs e)
         {
-            try
+            CustomMessageBox.DialogResult dr = CustomMessageBox.Show("ایا از انجام این کار مطمئن هسنید؟", "", CustomMessageBox.MessageBoxButtons.YesNo, CustomMessageBox.MessageBoxIcon.Exclamation);
+            if (dr == CustomMessageBox.DialogResult.Yes)
             {
-                if (MainV2.comPort.doCommand((byte)MainV2.comPort.sysidcurrent, (byte)MainV2.comPort.compidcurrent, MAVLink.MAV_CMD.DO_SET_SERVO, thisservo, int.Parse(TXT_pwm_high.Text), 0, 0,
-                    0, 0, 0))
+
+                try
                 {
-                    TXT_rcchannel.BackColor = Color.Green;
+                    if (MainV2.comPort.doCommand((byte)MainV2.comPort.sysidcurrent, (byte)MainV2.comPort.compidcurrent, MAVLink.MAV_CMD.DO_SET_SERVO, thisservo, int.Parse(TXT_pwm_high.Text), 0, 0,
+                        0, 0, 0))
+                    {
+                        TXT_rcchannel.BackColor = Color.Green;
+                    }
+                    else
+                    {
+                        CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR);
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR);
+                    CustomMessageBox.Show(Strings.CommandFailed + ex.ToString(), Strings.ERROR);
                 }
-            }
-            catch (Exception ex)
-            {
-                CustomMessageBox.Show(Strings.CommandFailed + ex.ToString(), Strings.ERROR);
             }
         }
 

@@ -401,6 +401,7 @@ namespace MissionPlanner.GCSViews
 
             //  bindQVData();
             fixLeftActionMenuLayout();
+            fixRightActionMenuLayout();
             fixQvtableLayout();
             CheckBatteryShow();
 
@@ -596,6 +597,29 @@ namespace MissionPlanner.GCSViews
                 tableLayoutPanel1.RowStyles[i].Height = 100.0f / 6;
             }
             tableLayoutPanel1.ResumeLayout(true);
+        }
+        public void fixRightActionMenuLayout()
+        {
+            
+            controlTableRight.PerformLayout();
+            controlTableRight.SuspendLayout();
+            controlTableRight.RowStyles.Clear();
+            for (int i = 0; i < 6; i++)
+            {
+                controlTableRight.RowStyles.Add(new RowStyle());
+                controlTableRight.RowStyles[i].SizeType = SizeType.Percent;
+                controlTableRight.RowStyles[i].Height = 100.0f / 8;
+            }
+            controlTableRight.RowStyles.Add(new RowStyle());
+            controlTableRight.RowStyles[6].SizeType = SizeType.Percent;
+            controlTableRight.RowStyles[6].Height = 100.0f / 4;
+            controlTableRight.ColumnStyles.Clear();
+            controlTableRight.ColumnStyles.Add(new ColumnStyle());
+            controlTableRight.ColumnStyles[0].SizeType = SizeType.AutoSize;
+            controlTableRight.ColumnStyles.Add(new ColumnStyle());
+            controlTableRight.ColumnStyles[1].SizeType = SizeType.AutoSize;
+
+            controlTableRight.ResumeLayout(true);
         }
         public void bindQVData()
         {
@@ -5796,15 +5820,12 @@ namespace MissionPlanner.GCSViews
             subMainRight.Width = 200;
             subMainRight.Height = subMainLeft.Height;
             controlTableRight.Width = subMainRight.Width;
-            tableLayoutPanel1.Width = subMainRight.Width;
-
-            fixHudPanelSize();
-            fixGuageLocations(subMainLeft.Height / 2);
+            tableLayoutPanel1.Width = subMainRight.Width;           
+            fixGuageLocations(splitContainer3.Height / 2);
+            fixHudPanel(splitContainer3.Height / 2);
         }
         private void fixGuageLocations(int height)
-        {
-
-            leftGuagePanel.Width = height;
+        {      
             rightGuagePanel.Width = height;
 
             Gvspeed.Visible = true;
@@ -5816,16 +5837,23 @@ namespace MissionPlanner.GCSViews
             Gvspeed.Location = new Point(0, 0);
             Gspeed.Location = new Point(0, Gvspeed.Bottom + 1);
             Galt.Location = new Point(0, 0);
-            Gheading.Location = new Point(0, Galt.Bottom + 1);
+            Gheading.Location = new Point(0, Galt.Bottom + 1);       
 
         }
-
-        private void fixHudPanelSize()
+        private void fixHudPanel(int width)
         {
-            //  hudPanel.Location = new Point(subMainLeft.Right + 1, 0);
-            hudPanel.Height = subMainLeft.Height;
-            hudPanel.Width = midSplitter.Width - (subMainRight.Width + subMainLeft.Width + 2);
-
+            try
+            {
+                hudPanel.SplitterDistance = hudPanel.Width - width;
+            }
+            catch(Exception ex)
+            {
+                hudPanel.SplitterDistance = 363;
+            }
+            finally
+            {
+                splitContainer3.SplitterDistance = width;
+            }        
         }
 
         private void BUT_FBWA_Click(object sender, EventArgs e)
@@ -5860,7 +5888,8 @@ namespace MissionPlanner.GCSViews
 
         private void midSplitter_Resize(object sender, EventArgs e)
         {
-            midSplitter.SplitterDistance = 301;
+            midSplitter.SplitterDistance = (midSplitter.Height/5) * 2;
+
         }
 
         private void errLabel_TextChanged(object sender, EventArgs e)
@@ -5873,34 +5902,34 @@ namespace MissionPlanner.GCSViews
             switch (errorCode)
             {
                 case "E1":
-                    return "با اختلال همراه است GPS داده های";
+                    return "با اختلال همراه است GPS";
 
                 case "E2":
-                    return "خطا در سنسور ژیروسکوپ پهپاد";
+                    return "خطا در سنسور ژیروسکوپ";
 
 
                 case "E3":
-                    return "خطا در سنسور شتاب سنج پهپاد";
+                    return "خطا در سنسور شتاب سنج";
 
 
                 case "E4":
-                    return "خطا در سنسور قطب نما پهپاد";
+                    return "خطا در سنسور قطب نما";
 
 
                 case "E5":
-                    return "خطا در سنسور فشارهوا پهپاد";
+                    return "خطا در سنسور فشارهوا";
 
 
                 case "E6":
-                    return "خطا در سنسور رادار پهپاد";
+                    return "خطا در سنسور رادار";
 
 
                 case "E7":
-                    return "خطا در سنسور رادار خطی پهپاد";
+                    return "خطا در سنسور رادار خطی";
 
 
                 case "E8":
-                    return "عدم وجود داده های زمین شناسی ";
+                    return "عدم وجود داده های زمینشناسی";
 
 
                 case "E9":
@@ -5950,6 +5979,46 @@ namespace MissionPlanner.GCSViews
                 default:
                     return mode;
             }
+        }
+
+        private void flare1State_TextChanged(object sender, EventArgs e)
+        {
+             try
+             {
+                 if (int.Parse(flare1State.Text) > 1500)
+                 {
+                     flare1Lbl.Text = "روشن";
+                 }
+                 else
+                 {
+                     flare1Lbl.Text = "خاموش";
+                 }
+             }
+             catch(Exception ex)
+             {
+                 flare1Lbl.Text = flare1State.Text;
+             }
+        
+        }
+
+        private void flare2State_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (int.Parse(flare2State.Text) > 1500)
+                {
+                    flare2Lbl.Text = "روشن";
+                }
+                else
+                {
+                    flare2Lbl.Text = "خاموش";
+                }
+            }
+            catch (Exception ex)
+            {
+                flare2Lbl.Text = "";
+            }
+        
         }
     }
 
