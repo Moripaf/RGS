@@ -590,11 +590,11 @@ namespace MissionPlanner.GCSViews
             tableLayoutPanel1.PerformLayout();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel1.RowStyles.Clear();
-            for(int i=0;i<6;i++)
+            for(int i=0;i<7;i++)
             {
                 tableLayoutPanel1.RowStyles.Add(new RowStyle());
                 tableLayoutPanel1.RowStyles[i].SizeType = SizeType.Percent;
-                tableLayoutPanel1.RowStyles[i].Height = 100.0f / 6;
+                tableLayoutPanel1.RowStyles[i].Height = 100.0f / 7;
             }
             tableLayoutPanel1.ResumeLayout(true);
         }
@@ -2548,6 +2548,12 @@ namespace MissionPlanner.GCSViews
             {
                 mainloop();
             }
+            //size fixes:
+            fixmidSplitterWidths();
+            fixGuageLocations();
+            fixHudPanel(midSplitter.Panel1.Height / 2);
+
+
         }
 
         private void FlightData_ParentChanged(object sender, EventArgs e)
@@ -5816,35 +5822,33 @@ namespace MissionPlanner.GCSViews
 
         private void midSplitter_Panel1_Resize(object sender, EventArgs e)
         {
+        }
+        private void fixmidSplitterWidths()
+        {
             subMainLeft.Width = 200;
             subMainRight.Width = 200;
             subMainRight.Height = subMainLeft.Height;
             controlTableRight.Width = subMainRight.Width;
-            tableLayoutPanel1.Width = subMainRight.Width;           
-            fixGuageLocations(splitContainer3.Height / 2);
-            fixHudPanel(splitContainer3.Height / 2);
+            tableLayoutPanel1.Width = subMainRight.Width;
         }
-        private void fixGuageLocations(int height)
-        {      
-            rightGuagePanel.Width = height;
+        private void fixGuageLocations()
+        {
+            rightGuagePanel.SplitterDistance = rightGuagePanel.Height / 2;
+            leftGuagePanel.SplitterDistance = leftGuagePanel.Height / 2;
 
             Gvspeed.Visible = true;
-            Gvspeed.Height = height;
-            Gspeed.Height = height;
-            Galt.Height = height;
-            Gheading.Height = height;
+           
 
-            Gvspeed.Location = new Point(0, 0);
-            Gspeed.Location = new Point(0, Gvspeed.Bottom + 1);
-            Galt.Location = new Point(0, 0);
-            Gheading.Location = new Point(0, Galt.Bottom + 1);       
 
         }
+        int fixC = 0;
         private void fixHudPanel(int width)
         {
+            fixC++;
             try
             {
                 hudPanel.SplitterDistance = hudPanel.Width - width;
+                
             }
             catch(Exception ex)
             {
@@ -5853,6 +5857,10 @@ namespace MissionPlanner.GCSViews
             finally
             {
                 splitContainer3.SplitterDistance = width;
+                label7.Text = "fixC " + fixC.ToString();
+                label8.Text = width.ToString();
+                label13.Text = hudPanel.SplitterDistance.ToString();
+                label16.Text = splitContainer3.SplitterDistance.ToString();
             }        
         }
 
@@ -6019,6 +6027,21 @@ namespace MissionPlanner.GCSViews
                 flare2Lbl.Text = "";
             }
         
+        }
+        bool isTimerForm = false;
+        Form timerForm;
+        private void timerButton_Click(object sender, EventArgs e)
+        {
+            if (!isTimerForm)
+            {
+                timerForm = new TimerForm();
+                ThemeManager.ApplyThemeTo(timerForm);
+                timerForm.Show();
+            }
+            else
+            {
+                timerForm.Close();
+            }
         }
     }
 

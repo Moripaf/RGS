@@ -109,19 +109,27 @@ namespace MissionPlanner.ArduPilot
                 var client = new HttpClient();
 
                 if (!String.IsNullOrEmpty(Settings.Instance.UserAgent))
-                    client.DefaultRequestHeaders.Add("User-Agent", Settings.Instance.UserAgent);
+                    client.DefaultRequestHeaders.Add("User-Agent", Settings.Instance.UserAgent);             
+                try 
+                {
+                    var manifestgz = client.GetByteArrayAsync(url).GetAwaiter().GetResult();
+                    var mssrc = new MemoryStream(manifestgz);
+                    var msdest = new MemoryStream();
+                    GZipStream gz = new GZipStream(mssrc, CompressionMode.Decompress);
+                    gz.CopyTo(msdest);
+                    msdest.Position = 0;
+                    var manifest = new StreamReader(msdest).ReadToEnd();
 
-                var manifestgz = client.GetByteArrayAsync(url).GetAwaiter().GetResult();
-                var mssrc = new MemoryStream(manifestgz);
-                var msdest = new MemoryStream();
-                GZipStream gz = new GZipStream(mssrc, CompressionMode.Decompress);
-                gz.CopyTo(msdest);
-                msdest.Position = 0;
-                var manifest = new StreamReader(msdest).ReadToEnd();
+                    Manifest = JsonConvert.DeserializeObject<ManifestRoot>(manifest);
 
-                Manifest = JsonConvert.DeserializeObject<ManifestRoot>(manifest);
-
-                log.Info(Manifest.Firmware?.Length);
+                    log.Info(Manifest.Firmware?.Length);
+                }
+                catch(Exception ex) 
+                {
+                  
+                }
+                
+               
             }
         }
 

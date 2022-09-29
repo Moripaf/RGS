@@ -447,17 +447,80 @@
   <data name="splitContainer3.Location" type="System.Drawing.Point, System.Drawing">
     <value>143, 0</value>
   </data>
+  <data name="rightGuagePanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="rightGuagePanel.IsSplitterFixed" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rightGuagePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="rightGuagePanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rightGuagePanel.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="Gvspeed.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="Gvspeed.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="Gvspeed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Gvspeed.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Gvspeed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 149</value>
+  </data>
+  <data name="Gvspeed.TabIndex" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
+  <data name="&gt;&gt;Gvspeed.Name" xml:space="preserve">
+    <value>Gvspeed</value>
+  </data>
+  <data name="&gt;&gt;Gvspeed.Type" xml:space="preserve">
+    <value>AGaugeApp.AGauge, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Gvspeed.Parent" xml:space="preserve">
+    <value>rightGuagePanel.Panel1</value>
+  </data>
+  <data name="&gt;&gt;Gvspeed.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rightGuagePanel.Panel1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="&gt;&gt;rightGuagePanel.Panel1.Name" xml:space="preserve">
+    <value>rightGuagePanel.Panel1</value>
+  </data>
+  <data name="&gt;&gt;rightGuagePanel.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rightGuagePanel.Panel1.Parent" xml:space="preserve">
+    <value>rightGuagePanel</value>
+  </data>
+  <data name="&gt;&gt;rightGuagePanel.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="Gspeed.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
+  <data name="Gspeed.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="Gspeed.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 148</value>
+    <value>0, 0</value>
   </data>
   <data name="Gspeed.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="Gspeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 151</value>
+    <value>149, 149</value>
   </data>
   <data name="Gspeed.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
@@ -475,58 +538,43 @@
     <value>AGaugeApp.AGauge, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;Gspeed.Parent" xml:space="preserve">
-    <value>rightGuagePanel</value>
+    <value>rightGuagePanel.Panel2</value>
   </data>
   <data name="&gt;&gt;Gspeed.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="Gvspeed.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="rightGuagePanel.Panel2.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
   </data>
-  <data name="Gvspeed.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="&gt;&gt;rightGuagePanel.Panel2.Name" xml:space="preserve">
+    <value>rightGuagePanel.Panel2</value>
   </data>
-  <data name="Gvspeed.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="&gt;&gt;rightGuagePanel.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Gvspeed.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="Gvspeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 151</value>
-  </data>
-  <data name="Gvspeed.TabIndex" type="System.Int32, mscorlib">
-    <value>82</value>
-  </data>
-  <data name="&gt;&gt;Gvspeed.Name" xml:space="preserve">
-    <value>Gvspeed</value>
-  </data>
-  <data name="&gt;&gt;Gvspeed.Type" xml:space="preserve">
-    <value>AGaugeApp.AGauge, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Gvspeed.Parent" xml:space="preserve">
+  <data name="&gt;&gt;rightGuagePanel.Panel2.Parent" xml:space="preserve">
     <value>rightGuagePanel</value>
   </data>
-  <data name="&gt;&gt;Gvspeed.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;rightGuagePanel.Panel2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="rightGuagePanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="rightGuagePanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 0</value>
-  </data>
   <data name="rightGuagePanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 299</value>
+    <value>151, 299</value>
+  </data>
+  <data name="rightGuagePanel.SplitterDistance" type="System.Int32, mscorlib">
+    <value>149</value>
+  </data>
+  <data name="rightGuagePanel.SplitterWidth" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="rightGuagePanel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;rightGuagePanel.Name" xml:space="preserve">
     <value>rightGuagePanel</value>
   </data>
   <data name="&gt;&gt;rightGuagePanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;rightGuagePanel.Parent" xml:space="preserve">
     <value>splitContainer3.Panel1</value>
@@ -565,7 +613,7 @@
     <value>4, 5, 4, 5</value>
   </data>
   <data name="hud1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>363, 299</value>
+    <value>361, 297</value>
   </data>
   <data name="hud1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -597,32 +645,17 @@
   <data name="&gt;&gt;hudPanel.Panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="Gheading.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="leftGuagePanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="Gheading.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 149</value>
+  <data name="leftGuagePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="Gheading.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="leftGuagePanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="Gheading.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 150</value>
-  </data>
-  <data name="Gheading.TabIndex" type="System.Int32, mscorlib">
-    <value>82</value>
-  </data>
-  <data name="&gt;&gt;Gheading.Name" xml:space="preserve">
-    <value>Gheading</value>
-  </data>
-  <data name="&gt;&gt;Gheading.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.HSI, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Gheading.Parent" xml:space="preserve">
-    <value>hudPanel.Panel2</value>
-  </data>
-  <data name="&gt;&gt;Gheading.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="leftGuagePanel.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
   </data>
   <data name="Galt.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -631,7 +664,7 @@
     <value>258, 54</value>
   </metadata>
   <data name="Galt.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+    <value>Fill</value>
   </data>
   <data name="Galt.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -640,7 +673,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="Galt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 150</value>
+    <value>149, 149</value>
   </data>
   <data name="Galt.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
@@ -652,10 +685,94 @@
     <value>AGaugeApp.AGauge, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;Galt.Parent" xml:space="preserve">
-    <value>hudPanel.Panel2</value>
+    <value>leftGuagePanel.Panel1</value>
   </data>
   <data name="&gt;&gt;Galt.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="leftGuagePanel.Panel1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="&gt;&gt;leftGuagePanel.Panel1.Name" xml:space="preserve">
+    <value>leftGuagePanel.Panel1</value>
+  </data>
+  <data name="&gt;&gt;leftGuagePanel.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;leftGuagePanel.Panel1.Parent" xml:space="preserve">
+    <value>leftGuagePanel</value>
+  </data>
+  <data name="&gt;&gt;leftGuagePanel.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Gheading.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="Gheading.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="Gheading.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Gheading.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Gheading.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 147</value>
+  </data>
+  <data name="Gheading.TabIndex" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
+  <data name="&gt;&gt;Gheading.Name" xml:space="preserve">
+    <value>Gheading</value>
+  </data>
+  <data name="&gt;&gt;Gheading.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.HSI, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Gheading.Parent" xml:space="preserve">
+    <value>leftGuagePanel.Panel2</value>
+  </data>
+  <data name="&gt;&gt;Gheading.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="leftGuagePanel.Panel2.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="&gt;&gt;leftGuagePanel.Panel2.Name" xml:space="preserve">
+    <value>leftGuagePanel.Panel2</value>
+  </data>
+  <data name="&gt;&gt;leftGuagePanel.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;leftGuagePanel.Panel2.Parent" xml:space="preserve">
+    <value>leftGuagePanel</value>
+  </data>
+  <data name="&gt;&gt;leftGuagePanel.Panel2.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="leftGuagePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 297</value>
+  </data>
+  <data name="leftGuagePanel.SplitterDistance" type="System.Int32, mscorlib">
+    <value>149</value>
+  </data>
+  <data name="leftGuagePanel.SplitterWidth" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="leftGuagePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;leftGuagePanel.Name" xml:space="preserve">
+    <value>leftGuagePanel</value>
+  </data>
+  <data name="&gt;&gt;leftGuagePanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;leftGuagePanel.Parent" xml:space="preserve">
+    <value>hudPanel.Panel2</value>
+  </data>
+  <data name="&gt;&gt;leftGuagePanel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="hudPanel.Panel2.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
@@ -741,6 +858,42 @@
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <data name="timerButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="timerButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>B Yekan, 12pt</value>
+  </data>
+  <data name="timerButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="timerButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 159</value>
+  </data>
+  <data name="timerButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 30</value>
+  </data>
+  <data name="timerButton.TabIndex" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="timerButton.Text" xml:space="preserve">
+    <value>تایمر</value>
+  </data>
+  <data name="timerButton.ToolTip" xml:space="preserve">
+    <value>Timer</value>
+  </data>
+  <data name="&gt;&gt;timerButton.Name" xml:space="preserve">
+    <value>timerButton</value>
+  </data>
+  <data name="&gt;&gt;timerButton.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;timerButton.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;timerButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="BUT_FBWA.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -751,10 +904,10 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_FBWA.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 98</value>
+    <value>3, 90</value>
   </data>
   <data name="BUT_FBWA.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 32</value>
+    <value>135, 29</value>
   </data>
   <data name="BUT_FBWA.TabIndex" type="System.Int32, mscorlib">
     <value>86</value>
@@ -775,7 +928,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;BUT_FBWA.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="CMB_setwp.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
@@ -787,7 +940,7 @@
     <value>0 (Home)</value>
   </data>
   <data name="CMB_setwp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 212</value>
+    <value>3, 245</value>
   </data>
   <data name="CMB_setwp.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 33</value>
@@ -805,7 +958,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;CMB_setwp.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="BUT_quickauto.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -820,7 +973,7 @@
     <value>3, 3</value>
   </data>
   <data name="BUT_quickauto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 41</value>
+    <value>135, 37</value>
   </data>
   <data name="BUT_quickauto.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -841,7 +994,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;BUT_quickauto.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="BUT_Manual.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -853,10 +1006,10 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_Manual.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 50</value>
+    <value>3, 46</value>
   </data>
   <data name="BUT_Manual.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 42</value>
+    <value>135, 38</value>
   </data>
   <data name="BUT_Manual.TabIndex" type="System.Int32, mscorlib">
     <value>86</value>
@@ -877,7 +1030,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;BUT_Manual.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="BUT_setwp.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -889,10 +1042,10 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_setwp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 173</value>
+    <value>3, 195</value>
   </data>
   <data name="BUT_setwp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 33</value>
+    <value>135, 44</value>
   </data>
   <data name="BUT_setwp.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
@@ -913,7 +1066,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;BUT_setwp.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="BUT_quickrtl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -925,10 +1078,10 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_quickrtl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 136</value>
+    <value>3, 125</value>
   </data>
   <data name="BUT_quickrtl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 31</value>
+    <value>135, 28</value>
   </data>
   <data name="BUT_quickrtl.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -949,7 +1102,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;BUT_quickrtl.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -961,7 +1114,7 @@
     <value>0, 301</value>
   </data>
   <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 297</value>
@@ -982,7 +1135,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="BUT_FBWA" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="CMB_setwp" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="BUT_quickauto" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="BUT_Manual" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="BUT_setwp" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="BUT_quickrtl" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,22.42991,Percent,22.8972,Percent,18.18182,Percent,17.70335,Percent,18.69159,Absolute,84,Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="timerButton" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="BUT_FBWA" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="CMB_setwp" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="BUT_quickauto" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="BUT_Manual" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="BUT_setwp" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="BUT_quickrtl" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,22.42991,Percent,22.8972,Percent,18.18182,Percent,17.70335,Percent,18.69159,Absolute,50,Absolute,54,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="subMainLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>

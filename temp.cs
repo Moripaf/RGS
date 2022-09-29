@@ -162,7 +162,7 @@ namespace MissionPlanner
 
         private void BUT_lang_edit_Click(object sender, EventArgs e)
         {
-            new Form1().Show();
+            new TimerForm().Show();
         }
 
         private void BUT_georefimage_Click(object sender, EventArgs e)

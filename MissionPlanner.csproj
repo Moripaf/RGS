@@ -140,6 +140,9 @@
     <EmbeddedResource Include="Controls\Vibration.uk.resx">
       <DependentUpon>Vibration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TimerForm.resx">
+      <DependentUpon>TimerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAccelerometerCalibration.uk.resx">
       <DependentUpon>ConfigAccelerometerCalibration.cs</DependentUpon>
     </EmbeddedResource>
@@ -769,6 +772,12 @@
     </Compile>
     <Compile Include="Controls\FollowMe.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimerForm.Designer.cs">
+      <DependentUpon>TimerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigADSB.cs">
       <SubType>UserControl</SubType>
