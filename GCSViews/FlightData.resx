@@ -435,6 +435,9 @@
   <data name="midSplitter.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="midSplitter.IsSplitterFixed" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="midSplitter.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -613,7 +616,7 @@
     <value>4, 5, 4, 5</value>
   </data>
   <data name="hud1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>361, 297</value>
+    <value>363, 299</value>
   </data>
   <data name="hud1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -673,7 +676,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="Galt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 149</value>
+    <value>150, 150</value>
   </data>
   <data name="Galt.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
@@ -718,7 +721,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="Gheading.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 147</value>
+    <value>148, 148</value>
   </data>
   <data name="Gheading.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
@@ -751,10 +754,10 @@
     <value>1</value>
   </data>
   <data name="leftGuagePanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 297</value>
+    <value>149, 299</value>
   </data>
   <data name="leftGuagePanel.SplitterDistance" type="System.Int32, mscorlib">
-    <value>149</value>
+    <value>150</value>
   </data>
   <data name="leftGuagePanel.SplitterWidth" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1230,6 +1233,30 @@
   <data name="controlTableRight.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="rpmLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 242</value>
+  </data>
+  <data name="rpmLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 23</value>
+  </data>
+  <data name="rpmLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="rpmLabel.Text" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;rpmLabel.Name" xml:space="preserve">
+    <value>rpmLabel</value>
+  </data>
+  <data name="&gt;&gt;rpmLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rpmLabel.Parent" xml:space="preserve">
+    <value>controlTableRight</value>
+  </data>
+  <data name="&gt;&gt;rpmLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="flare2Lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1267,7 +1294,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;flare2Lbl.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="flare1Lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1306,7 +1333,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;flare1Lbl.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1345,7 +1372,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1384,7 +1411,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1420,7 +1447,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="servoOptions3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1447,7 +1474,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;servoOptions3.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1486,7 +1513,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1525,7 +1552,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="servoOptions2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1552,7 +1579,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;servoOptions2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1591,7 +1618,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="msgLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1630,7 +1657,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;msgLabel.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="modeLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1669,7 +1696,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;modeLabel.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="controlTableRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1702,7 +1729,7 @@
     <value>2</value>
   </data>
   <data name="controlTableRight.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="flare2Lbl" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="flare1Lbl" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label16" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label13" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label11" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="servoOptions3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="servoOptions2" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label9" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="msgLabel" Row="6" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;Control Name="modeLabel" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,62.16216,Percent,37.83784" /&gt;&lt;Rows Styles="Percent,48.52941,Percent,51.47059,Absolute,51,Absolute,32,Absolute,35,Absolute,34,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="rpmLabel" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="flare2Lbl" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="flare1Lbl" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label16" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label13" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label11" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="servoOptions3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="servoOptions2" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label9" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="msgLabel" Row="6" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;Control Name="modeLabel" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,62.16216,Percent,37.83784" /&gt;&lt;Rows Styles="Percent,48.52941,Percent,51.47059,Absolute,51,Absolute,32,Absolute,35,Absolute,34,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="flare1State.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -2260,10 +2287,10 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="CMB_mountmode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 77</value>
+    <value>69, 127</value>
   </data>
   <data name="CMB_mountmode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 33</value>
+    <value>526, 33</value>
   </data>
   <data name="CMB_mountmode.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
@@ -2287,10 +2314,10 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="CMB_modes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 47</value>
+    <value>69, 77</value>
   </data>
   <data name="CMB_modes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 33</value>
+    <value>526, 33</value>
   </data>
   <data name="CMB_modes.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
@@ -2314,10 +2341,10 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="CMB_action.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 88</value>
+    <value>69, 138</value>
   </data>
   <data name="CMB_action.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 33</value>
+    <value>526, 33</value>
   </data>
   <data name="CMB_action.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
@@ -2341,7 +2368,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUTactiondo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 88</value>
+    <value>3, 138</value>
   </data>
   <data name="BUTactiondo.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 54</value>
@@ -2374,10 +2401,10 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_setmode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 47</value>
+    <value>3, 77</value>
   </data>
   <data name="BUT_setmode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 24</value>
+    <value>60, 44</value>
   </data>
   <data name="BUT_setmode.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
@@ -2407,7 +2434,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_mountmode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 77</value>
+    <value>3, 127</value>
   </data>
   <data name="BUT_mountmode.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 5</value>
@@ -2440,7 +2467,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_abortland.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 148</value>
+    <value>3, 198</value>
   </data>
   <data name="BUT_abortland.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 50</value>
@@ -2473,10 +2500,10 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_resumemis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 148</value>
+    <value>69, 198</value>
   </data>
   <data name="BUT_resumemis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 50</value>
+    <value>526, 50</value>
   </data>
   <data name="BUT_resumemis.TabIndex" type="System.Int32, mscorlib">
     <value>85</value>
@@ -2506,7 +2533,7 @@
     <value>5</value>
   </data>
   <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 201</value>
+    <value>598, 251</value>
   </data>
   <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2530,7 +2557,7 @@
     <value>4, 44</value>
   </data>
   <data name="tabActions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 87</value>
+    <value>598, 216</value>
   </data>
   <data name="tabActions.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2563,7 +2590,7 @@
     <value>Vertical</value>
   </data>
   <data name="txt_messagebox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>296, 81</value>
+    <value>592, 210</value>
   </data>
   <data name="txt_messagebox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2587,7 +2614,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPagemessages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 87</value>
+    <value>598, 216</value>
   </data>
   <data name="tabPagemessages.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -2701,7 +2728,7 @@
     <value>4, 44</value>
   </data>
   <data name="tabActionsSimple.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 87</value>
+    <value>598, 216</value>
   </data>
   <data name="tabActionsSimple.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -2728,7 +2755,7 @@
     <value>3, 3</value>
   </data>
   <data name="checkListControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>296, 81</value>
+    <value>592, 210</value>
   </data>
   <data name="checkListControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2752,7 +2779,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPagePreFlight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 87</value>
+    <value>598, 216</value>
   </data>
   <data name="tabPagePreFlight.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -2779,7 +2806,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabGauges.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 87</value>
+    <value>598, 216</value>
   </data>
   <data name="tabGauges.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2809,10 +2836,10 @@
     <value>290, 175</value>
   </data>
   <data name="NACp_tb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 89</value>
+    <value>90, 72</value>
   </data>
   <data name="NACp_tb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 22</value>
+    <value>62, 22</value>
   </data>
   <data name="NACp_tb.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -2830,10 +2857,10 @@
     <value>0</value>
   </data>
   <data name="NIC_tb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 63</value>
+    <value>90, 51</value>
   </data>
   <data name="NIC_tb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 22</value>
+    <value>62, 22</value>
   </data>
   <data name="NIC_tb.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -2857,7 +2884,7 @@
     <value>NoControl</value>
   </data>
   <data name="NACp_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 89</value>
+    <value>80, 111</value>
   </data>
   <data name="NACp_lbl.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 16</value>
@@ -2887,7 +2914,7 @@
     <value>NoControl</value>
   </data>
   <data name="NIC_lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 63</value>
+    <value>80, 79</value>
   </data>
   <data name="NIC_lbl.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 16</value>
@@ -2920,7 +2947,7 @@
     <value>113, 31</value>
   </data>
   <data name="Squawk_nud.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 30</value>
+    <value>50, 30</value>
   </data>
   <data name="Squawk_nud.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -2944,10 +2971,10 @@
     <value>Courier New, 8.25pt</value>
   </data>
   <data name="FlightID_tb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 6</value>
+    <value>90, 5</value>
   </data>
   <data name="FlightID_tb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 23</value>
+    <value>62, 23</value>
   </data>
   <data name="FlightID_tb.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -2986,10 +3013,10 @@
     <value>On Ground</value>
   </data>
   <data name="fault_clb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>196, 6</value>
+    <value>157, 5</value>
   </data>
   <data name="fault_clb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 103</value>
+    <value>70, 82</value>
   </data>
   <data name="fault_clb.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -3010,10 +3037,10 @@
     <value>NoControl</value>
   </data>
   <data name="XPDRConnect_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 114</value>
+    <value>54, 92</value>
   </data>
   <data name="XPDRConnect_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>216, 23</value>
+    <value>173, 18</value>
   </data>
   <data name="XPDRConnect_btn.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -3040,7 +3067,7 @@
     <value>NoControl</value>
   </data>
   <data name="Squawk_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 37</value>
+    <value>80, 46</value>
   </data>
   <data name="Squawk_label.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 16</value>
@@ -3070,7 +3097,7 @@
     <value>NoControl</value>
   </data>
   <data name="FlightID_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 11</value>
+    <value>80, 14</value>
   </data>
   <data name="FlightID_label.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 16</value>
@@ -3100,10 +3127,10 @@
     <value>NoControl</value>
   </data>
   <data name="IDENT_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 92</value>
+    <value>5, 74</value>
   </data>
   <data name="IDENT_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 45</value>
+    <value>44, 36</value>
   </data>
   <data name="IDENT_btn.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -3130,10 +3157,10 @@
     <value>NoControl</value>
   </data>
   <data name="ALT_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 63</value>
+    <value>5, 51</value>
   </data>
   <data name="ALT_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 23</value>
+    <value>44, 18</value>
   </data>
   <data name="ALT_btn.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -3160,10 +3187,10 @@
     <value>NoControl</value>
   </data>
   <data name="STBY_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>5, 5</value>
   </data>
   <data name="STBY_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 23</value>
+    <value>44, 18</value>
   </data>
   <data name="STBY_btn.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -3190,10 +3217,10 @@
     <value>NoControl</value>
   </data>
   <data name="ON_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 35</value>
+    <value>5, 28</value>
   </data>
   <data name="ON_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 22</value>
+    <value>44, 18</value>
   </data>
   <data name="ON_btn.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -3232,10 +3259,10 @@
     <value>1090ES ADS-B OUT</value>
   </data>
   <data name="Mode_clb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>289, 6</value>
+    <value>231, 5</value>
   </data>
   <data name="Mode_clb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 131</value>
+    <value>104, 105</value>
   </data>
   <data name="Mode_clb.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -3262,7 +3289,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabTransponder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 87</value>
+    <value>598, 216</value>
   </data>
   <data name="tabTransponder.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -3292,7 +3319,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 87</value>
+    <value>598, 216</value>
   </data>
   <data name="tabStatus.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -3316,7 +3343,7 @@
     <value>True</value>
   </data>
   <data name="servoOptions4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>253, 3</value>
   </data>
   <data name="servoOptions4.Size" type="System.Drawing.Size, System.Drawing">
     <value>315, 27</value>
@@ -3337,7 +3364,7 @@
     <value>0</value>
   </data>
   <data name="servoOptions5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 36</value>
+    <value>253, 36</value>
   </data>
   <data name="servoOptions5.Size" type="System.Drawing.Size, System.Drawing">
     <value>315, 27</value>
@@ -3358,7 +3385,7 @@
     <value>1</value>
   </data>
   <data name="servoOptions6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 69</value>
+    <value>253, 69</value>
   </data>
   <data name="servoOptions6.Size" type="System.Drawing.Size, System.Drawing">
     <value>315, 27</value>
@@ -3379,7 +3406,7 @@
     <value>2</value>
   </data>
   <data name="servoOptions7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 102</value>
+    <value>253, 102</value>
   </data>
   <data name="servoOptions7.Size" type="System.Drawing.Size, System.Drawing">
     <value>315, 27</value>
@@ -3400,7 +3427,7 @@
     <value>3</value>
   </data>
   <data name="servoOptions8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 135</value>
+    <value>273, 135</value>
   </data>
   <data name="servoOptions8.Size" type="System.Drawing.Size, System.Drawing">
     <value>295, 24</value>
@@ -3421,7 +3448,7 @@
     <value>4</value>
   </data>
   <data name="servoOptions9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 165</value>
+    <value>273, 165</value>
   </data>
   <data name="servoOptions9.Size" type="System.Drawing.Size, System.Drawing">
     <value>295, 24</value>
@@ -3442,7 +3469,7 @@
     <value>5</value>
   </data>
   <data name="servoOptions10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 195</value>
+    <value>273, 195</value>
   </data>
   <data name="servoOptions10.Size" type="System.Drawing.Size, System.Drawing">
     <value>295, 24</value>
@@ -3463,7 +3490,7 @@
     <value>6</value>
   </data>
   <data name="servoOptions11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 225</value>
+    <value>273, 225</value>
   </data>
   <data name="servoOptions11.Size" type="System.Drawing.Size, System.Drawing">
     <value>295, 22</value>
@@ -3484,7 +3511,7 @@
     <value>7</value>
   </data>
   <data name="servoOptions12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 253</value>
+    <value>273, 253</value>
   </data>
   <data name="servoOptions12.Size" type="System.Drawing.Size, System.Drawing">
     <value>295, 22</value>
@@ -3505,7 +3532,7 @@
     <value>8</value>
   </data>
   <data name="relayOptions1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 281</value>
+    <value>69, 253</value>
   </data>
   <data name="relayOptions1.Size" type="System.Drawing.Size, System.Drawing">
     <value>198, 22</value>
@@ -3526,7 +3553,7 @@
     <value>9</value>
   </data>
   <data name="relayOptions2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 309</value>
+    <value>370, 281</value>
   </data>
   <data name="relayOptions2.Size" type="System.Drawing.Size, System.Drawing">
     <value>198, 22</value>
@@ -3547,7 +3574,7 @@
     <value>10</value>
   </data>
   <data name="relayOptions3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 337</value>
+    <value>166, 281</value>
   </data>
   <data name="relayOptions3.Size" type="System.Drawing.Size, System.Drawing">
     <value>198, 22</value>
@@ -3568,7 +3595,7 @@
     <value>11</value>
   </data>
   <data name="relayOptions4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 365</value>
+    <value>370, 309</value>
   </data>
   <data name="relayOptions4.Size" type="System.Drawing.Size, System.Drawing">
     <value>198, 22</value>
@@ -3589,7 +3616,7 @@
     <value>12</value>
   </data>
   <data name="relayOptions5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 393</value>
+    <value>69, 309</value>
   </data>
   <data name="relayOptions5.Size" type="System.Drawing.Size, System.Drawing">
     <value>295, 22</value>
@@ -3610,7 +3637,7 @@
     <value>13</value>
   </data>
   <data name="relayOptions6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 421</value>
+    <value>273, 337</value>
   </data>
   <data name="relayOptions6.Size" type="System.Drawing.Size, System.Drawing">
     <value>295, 22</value>
@@ -3640,7 +3667,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="flowLayoutPanelServos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>296, 81</value>
+    <value>592, 210</value>
   </data>
   <data name="flowLayoutPanelServos.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3664,7 +3691,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabServo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 87</value>
+    <value>598, 216</value>
   </data>
   <data name="tabServo.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -3898,7 +3925,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabScripts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 87</value>
+    <value>598, 216</value>
   </data>
   <data name="tabScripts.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -4201,7 +4228,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPayload.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 87</value>
+    <value>598, 216</value>
   </data>
   <data name="tabPayload.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -4453,7 +4480,7 @@
     <value>39, 69</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 49</value>
+    <value>465, 144</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
@@ -4474,7 +4501,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_loadtelem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>219, 3</value>
+    <value>515, 3</value>
   </data>
   <data name="BUT_loadtelem.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 27</value>
@@ -4507,7 +4534,7 @@
     <value>3, 66</value>
   </data>
   <data name="lbl_playbackspeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 55</value>
+    <value>30, 150</value>
   </data>
   <data name="lbl_playbackspeed.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
@@ -4567,7 +4594,7 @@
     <value>3, 0</value>
   </data>
   <data name="LBL_logfn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 33</value>
+    <value>501, 33</value>
   </data>
   <data name="LBL_logfn.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
@@ -4588,7 +4615,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_log2kml.Location" type="System.Drawing.Point, System.Drawing">
-    <value>219, 69</value>
+    <value>515, 69</value>
   </data>
   <data name="BUT_log2kml.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 50</value>
@@ -4618,7 +4645,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_playlog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>219, 36</value>
+    <value>515, 36</value>
   </data>
   <data name="BUT_playlog.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 27</value>
@@ -4651,7 +4678,7 @@
     <value>39, 36</value>
   </data>
   <data name="tracklog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 27</value>
+    <value>465, 27</value>
   </data>
   <data name="tracklog.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -4678,7 +4705,7 @@
     <value>3</value>
   </data>
   <data name="tableLayoutPaneltlogs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 87</value>
+    <value>598, 216</value>
   </data>
   <data name="tableLayoutPaneltlogs.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
@@ -4702,7 +4729,7 @@
     <value>4, 44</value>
   </data>
   <data name="tabTLogs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 87</value>
+    <value>598, 216</value>
   </data>
   <data name="tabTLogs.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -4948,7 +4975,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tablogbrowse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 87</value>
+    <value>598, 216</value>
   </data>
   <data name="tablogbrowse.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -4975,7 +5002,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabQuick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 87</value>
+    <value>598, 216</value>
   </data>
   <data name="tabQuick.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -5008,7 +5035,7 @@
     <value>0, 0</value>
   </data>
   <data name="tabControlactions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>310, 135</value>
+    <value>606, 264</value>
   </data>
   <data name="tabControlactions.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>

@@ -140,7 +140,7 @@
     <EmbeddedResource Include="Controls\Vibration.uk.resx">
       <DependentUpon>Vibration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TimerForm.resx">
+    <EmbeddedResource Include="timer\TimerForm.resx">
       <DependentUpon>TimerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAccelerometerCalibration.uk.resx">
@@ -773,10 +773,11 @@
     <Compile Include="Controls\FollowMe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TimerForm.cs">
+    <Compile Include="timer\timerEventArgs.cs" />
+    <Compile Include="timer\TimerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TimerForm.Designer.cs">
+    <Compile Include="timer\TimerForm.Designer.cs">
       <DependentUpon>TimerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigADSB.cs">
@@ -5224,7 +5225,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Update="**/*.Designer.cs">
-      <DependentUpon Condition="Exists($([System.String]::Copy('%(Filename)').ToLower().Replace('.designer','.cs')))">$([System.Text.RegularExpressions.Regex]::Replace('%(FileName)', '\.[a-zA-Z\-]+', '')).cs</DependentUpon>
+      <DependentUpon Condition="Exists($([System.String]::Copy('%(Filename)').ToLower().Replace('.designer','.cs')))">TimerForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Update="**/*.99resx">
       <DependentUpon Condition="Exists($([System.Text.RegularExpressions.Regex]::Replace('%(FileName)', '\.[a-zA-Z\-]+', '.cs')))">$([System.Text.RegularExpressions.Regex]::Replace('%(FileName)', '\.[a-zA-Z\-]+', '')).cs</DependentUpon>

@@ -5841,13 +5841,13 @@ namespace MissionPlanner.GCSViews
 
 
         }
-        int fixC = 0;
+      
         private void fixHudPanel(int width)
         {
-            fixC++;
+          
             try
             {
-                hudPanel.SplitterDistance = hudPanel.Width - width;
+                hudPanel.SplitterDistance = hudPanel.Width - width + 5;
                 
             }
             catch(Exception ex)
@@ -5857,10 +5857,7 @@ namespace MissionPlanner.GCSViews
             finally
             {
                 splitContainer3.SplitterDistance = width;
-                label7.Text = "fixC " + fixC.ToString();
-                label8.Text = width.ToString();
-                label13.Text = hudPanel.SplitterDistance.ToString();
-                label16.Text = splitContainer3.SplitterDistance.ToString();
+                
             }        
         }
 
@@ -6029,18 +6026,26 @@ namespace MissionPlanner.GCSViews
         
         }
         bool isTimerForm = false;
-        Form timerForm;
+        TimerForm timerForm = new TimerForm();
+        
         private void timerButton_Click(object sender, EventArgs e)
         {
             if (!isTimerForm)
             {
-                timerForm = new TimerForm();
                 ThemeManager.ApplyThemeTo(timerForm);
                 timerForm.Show();
             }
             else
             {
-                timerForm.Close();
+                timerForm.Hide();
+            }
+        }
+
+        private void rpmLabel_TextChanged(object sender, EventArgs e)
+        {
+            if(Int16.Parse(rpmLabel.Text) > 10)
+            {
+                timerForm.IsOn = true;
             }
         }
     }

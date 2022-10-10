@@ -34,6 +34,7 @@ namespace MissionPlanner.GCSViews
             this.Gheading = new MissionPlanner.Controls.HSI();
             this.subMainLeft = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.timerButton = new MissionPlanner.Controls.MyButton();
             this.BUT_FBWA = new MissionPlanner.Controls.MyButton();
             this.CMB_setwp = new System.Windows.Forms.ComboBox();
             this.BUT_quickauto = new MissionPlanner.Controls.MyButton();
@@ -254,7 +255,7 @@ namespace MissionPlanner.GCSViews
             this.Messagetabtimer = new System.Windows.Forms.Timer(this.components);
             this.bindingSourceQuickTab = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSourceStatusTab = new System.Windows.Forms.BindingSource(this.components);
-            this.timerButton = new MissionPlanner.Controls.MyButton();
+            this.rpmLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).BeginInit();
             this.MainH.Panel1.SuspendLayout();
             this.MainH.Panel2.SuspendLayout();
@@ -765,7 +766,6 @@ namespace MissionPlanner.GCSViews
             // 
             // hudPanel
             // 
-            this.hudPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.hudPanel, "hudPanel");
             this.hudPanel.Name = "hudPanel";
             // 
@@ -1084,6 +1084,17 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel1.Controls.Add(this.BUT_quickrtl, 0, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
+            // timerButton
+            // 
+            this.timerButton.ColorMouseDown = System.Drawing.Color.Empty;
+            this.timerButton.ColorMouseOver = System.Drawing.Color.Empty;
+            this.timerButton.ColorNotEnabled = System.Drawing.Color.Empty;
+            resources.ApplyResources(this.timerButton, "timerButton");
+            this.timerButton.Name = "timerButton";
+            this.toolTip1.SetToolTip(this.timerButton, resources.GetString("timerButton.ToolTip"));
+            this.timerButton.UseVisualStyleBackColor = true;
+            this.timerButton.Click += new System.EventHandler(this.timerButton_Click);
+            // 
             // BUT_FBWA
             // 
             this.BUT_FBWA.ColorMouseDown = System.Drawing.Color.Empty;
@@ -1178,6 +1189,7 @@ namespace MissionPlanner.GCSViews
             // controlTableRight
             // 
             resources.ApplyResources(this.controlTableRight, "controlTableRight");
+            this.controlTableRight.Controls.Add(this.rpmLabel, 0, 5);
             this.controlTableRight.Controls.Add(this.flare2Lbl, 0, 3);
             this.controlTableRight.Controls.Add(this.flare1Lbl, 0, 1);
             this.controlTableRight.Controls.Add(this.label16, 1, 3);
@@ -3016,16 +3028,12 @@ namespace MissionPlanner.GCSViews
             // 
             this.bindingSourceStatusTab.DataSource = typeof(MissionPlanner.CurrentState);
             // 
-            // timerButton
+            // rpmLabel
             // 
-            this.timerButton.ColorMouseDown = System.Drawing.Color.Empty;
-            this.timerButton.ColorMouseOver = System.Drawing.Color.Empty;
-            this.timerButton.ColorNotEnabled = System.Drawing.Color.Empty;
-            resources.ApplyResources(this.timerButton, "timerButton");
-            this.timerButton.Name = "timerButton";
-            this.toolTip1.SetToolTip(this.timerButton, resources.GetString("timerButton.ToolTip"));
-            this.timerButton.UseVisualStyleBackColor = true;
-            this.timerButton.Click += new System.EventHandler(this.timerButton_Click);
+            this.rpmLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "rpm", true));
+            resources.ApplyResources(this.rpmLabel, "rpmLabel");
+            this.rpmLabel.Name = "rpmLabel";
+            this.rpmLabel.TextChanged += new System.EventHandler(this.rpmLabel_TextChanged);
             // 
             // FlightData
             // 
@@ -3378,5 +3386,6 @@ namespace MissionPlanner.GCSViews
         private SplitContainer rightGuagePanel;
         private SplitContainer leftGuagePanel;
         private Controls.MyButton timerButton;
+        private Label rpmLabel;
     }
 }
