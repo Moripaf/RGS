@@ -1,5 +1,4 @@
-﻿using MissionPlanner.timer;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,9 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-namespace MissionPlanner
+using MissionPlanner.timer;
+
+namespace MissionPlanner.CustomControls
 {
-    public partial class TimerForm : Form
+    public partial class TimerControl : UserControl
     {
         Timer timer;
         private bool _isOn;
@@ -19,44 +20,47 @@ namespace MissionPlanner
         TimeSpan time;
         public static event TimerAddDelegate _timerEventhandler;
 
-        public TimerForm()
+        public TimerControl()
         {
             _timerEventhandler = new TimerAddDelegate(timerEventHandler);
+            timer = new Timer();
             InitializeComponent();
-            
         }
-
         public bool IsOn
         {
-            set {              
+            set
+            {
                 if (_timerEventhandler != null)
                 {
                     timerEventArgs args = new timerEventArgs(value);
                     _timerEventhandler.Invoke(args);
                 }
-            
+
             }
         }
         private void buttonStart_Click(object sender, EventArgs e)
         {
+            if (isRunning)
+            {
+                startTimer();
+                buttonStart.Text = "Stop";
+            }
+            else
+            {
+                stopTimer();
+                buttonStart.Text = "Start";
+            }
 
-            startTimer();
-            
         }
-        
-        private void buttonStop_Click(object sender, EventArgs e)
-        {
-            stopTimer();
-        }
-        
+
         private void buttonReset_Click(object sender, EventArgs e)
         {
-            if(isRunning)
+            if (isRunning)
             {
                 stopTimer();
             }
-               timeInSeconds = 0;
-               showTime();
+            timeInSeconds = 0;
+            showTime();
         }
         public void startTimer()
         {
@@ -79,7 +83,7 @@ namespace MissionPlanner
             timer.Stop();
             isRunning = false;
         }
-        private  void TimerCallback(object sender, EventArgs e)
+        private void TimerCallback(object sender, EventArgs e)
         {
             timeInSeconds++;
             showTime();
@@ -98,12 +102,11 @@ namespace MissionPlanner
         }
         public void timerEventHandler(timerEventArgs args)
         {
-            if (args.state)           
-                startTimer();           
+            if (args.state)
+                startTimer();
             else
-                stopTimer();          
+                stopTimer();
 
         }
-
     }
 }

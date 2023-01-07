@@ -604,15 +604,12 @@ namespace MissionPlanner.GCSViews
             controlTableRight.PerformLayout();
             controlTableRight.SuspendLayout();
             controlTableRight.RowStyles.Clear();
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 10; i++)
             {
                 controlTableRight.RowStyles.Add(new RowStyle());
                 controlTableRight.RowStyles[i].SizeType = SizeType.Percent;
                 controlTableRight.RowStyles[i].Height = 100.0f / 8;
             }
-            controlTableRight.RowStyles.Add(new RowStyle());
-            controlTableRight.RowStyles[6].SizeType = SizeType.Percent;
-            controlTableRight.RowStyles[6].Height = 100.0f / 4;
             controlTableRight.ColumnStyles.Clear();
             controlTableRight.ColumnStyles.Add(new ColumnStyle());
             controlTableRight.ColumnStyles[0].SizeType = SizeType.AutoSize;
@@ -5825,8 +5822,8 @@ namespace MissionPlanner.GCSViews
         }
         private void fixmidSplitterWidths()
         {
-            subMainLeft.Width = 200;
-            subMainRight.Width = 200;
+            subMainLeft.Width = 250;
+            subMainRight.Width = 250;
             subMainRight.Height = subMainLeft.Height;
             controlTableRight.Width = subMainRight.Width;
             tableLayoutPanel1.Width = subMainRight.Width;
@@ -6026,11 +6023,11 @@ namespace MissionPlanner.GCSViews
         
         }
         bool isTimerForm = false;
-        TimerForm timerForm = new TimerForm();
+      //  TimerForm timerForm = new TimerForm();
         
         private void timerButton_Click(object sender, EventArgs e)
         {
-            if (!isTimerForm)
+          /*  if (!isTimerForm)
             {
                 ThemeManager.ApplyThemeTo(timerForm);
                 timerForm.Show();
@@ -6038,14 +6035,14 @@ namespace MissionPlanner.GCSViews
             else
             {
                 timerForm.Hide();
-            }
+            }*/
         }
 
         private void rpmLabel_TextChanged(object sender, EventArgs e)
         {
             if(Int16.Parse(rpmLabel.Text) > 10)
             {
-                timerForm.IsOn = true;
+               // timerForm.IsOn = true;
             }
         }
     }

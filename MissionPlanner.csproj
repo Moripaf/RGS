@@ -140,9 +140,10 @@
     <EmbeddedResource Include="Controls\Vibration.uk.resx">
       <DependentUpon>Vibration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="timer\TimerForm.resx">
-      <DependentUpon>TimerForm.cs</DependentUpon>
+    <EmbeddedResource Include="Custom Controls\TimerControl.resx">
+      <DependentUpon>TimerControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\TimerForm.resx" />
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAccelerometerCalibration.uk.resx">
       <DependentUpon>ConfigAccelerometerCalibration.cs</DependentUpon>
     </EmbeddedResource>
@@ -773,13 +774,17 @@
     <Compile Include="Controls\FollowMe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="timer\timerEventArgs.cs" />
-    <Compile Include="timer\TimerForm.cs">
+    <Compile Include="Custom Controls\TimerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\TimerControl.Designer.cs">
+      <DependentUpon>TimerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\timerEventArgs.cs" />
+    <Compile Include="Custom Controls\TimerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="timer\TimerForm.Designer.cs">
-      <DependentUpon>TimerForm.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Custom Controls\TimerForm.Designer.cs" />
     <Compile Include="GCSViews\ConfigurationView\ConfigADSB.cs">
       <SubType>UserControl</SubType>
     </Compile>

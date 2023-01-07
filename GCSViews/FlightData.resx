@@ -448,7 +448,7 @@
     <value>Fill</value>
   </data>
   <data name="splitContainer3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 0</value>
+    <value>250, 0</value>
   </data>
   <data name="rightGuagePanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -562,7 +562,7 @@
     <value>1</value>
   </data>
   <data name="rightGuagePanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 299</value>
+    <value>117, 299</value>
   </data>
   <data name="rightGuagePanel.SplitterDistance" type="System.Int32, mscorlib">
     <value>149</value>
@@ -616,7 +616,7 @@
     <value>4, 5, 4, 5</value>
   </data>
   <data name="hud1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>363, 299</value>
+    <value>283, 299</value>
   </data>
   <data name="hud1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -754,7 +754,7 @@
     <value>1</value>
   </data>
   <data name="leftGuagePanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 299</value>
+    <value>116, 299</value>
   </data>
   <data name="leftGuagePanel.SplitterDistance" type="System.Int32, mscorlib">
     <value>150</value>
@@ -793,10 +793,10 @@
     <value>1</value>
   </data>
   <data name="hudPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>514, 299</value>
+    <value>401, 299</value>
   </data>
   <data name="hudPanel.SplitterDistance" type="System.Int32, mscorlib">
-    <value>363</value>
+    <value>283</value>
   </data>
   <data name="hudPanel.SplitterWidth" type="System.Int32, mscorlib">
     <value>2</value>
@@ -832,10 +832,10 @@
     <value>1</value>
   </data>
   <data name="splitContainer3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>667, 299</value>
+    <value>520, 299</value>
   </data>
   <data name="splitContainer3.SplitterDistance" type="System.Int32, mscorlib">
-    <value>151</value>
+    <value>117</value>
   </data>
   <data name="splitContainer3.SplitterWidth" type="System.Int32, mscorlib">
     <value>2</value>
@@ -861,40 +861,40 @@
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="timerButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="tlButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="timerButton.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="tlButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>B Yekan, 12pt</value>
   </data>
-  <data name="timerButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="tlButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="timerButton.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tlButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 159</value>
   </data>
-  <data name="timerButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 30</value>
+  <data name="tlButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 30</value>
   </data>
-  <data name="timerButton.TabIndex" type="System.Int32, mscorlib">
+  <data name="tlButton.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
   </data>
-  <data name="timerButton.Text" xml:space="preserve">
-    <value>تایمر</value>
+  <data name="tlButton.Text" xml:space="preserve">
+    <value>لاگ</value>
   </data>
-  <data name="timerButton.ToolTip" xml:space="preserve">
+  <data name="tlButton.ToolTip" xml:space="preserve">
     <value>Timer</value>
   </data>
-  <data name="&gt;&gt;timerButton.Name" xml:space="preserve">
-    <value>timerButton</value>
+  <data name="&gt;&gt;tlButton.Name" xml:space="preserve">
+    <value>tlButton</value>
   </data>
-  <data name="&gt;&gt;timerButton.Type" xml:space="preserve">
+  <data name="&gt;&gt;tlButton.Type" xml:space="preserve">
     <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;timerButton.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tlButton.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;timerButton.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tlButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="BUT_FBWA.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -910,7 +910,7 @@
     <value>3, 90</value>
   </data>
   <data name="BUT_FBWA.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 29</value>
+    <value>242, 29</value>
   </data>
   <data name="BUT_FBWA.TabIndex" type="System.Int32, mscorlib">
     <value>86</value>
@@ -943,7 +943,7 @@
     <value>0 (Home)</value>
   </data>
   <data name="CMB_setwp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 245</value>
+    <value>110, 245</value>
   </data>
   <data name="CMB_setwp.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 33</value>
@@ -976,7 +976,7 @@
     <value>3, 3</value>
   </data>
   <data name="BUT_quickauto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 37</value>
+    <value>242, 37</value>
   </data>
   <data name="BUT_quickauto.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -1012,7 +1012,7 @@
     <value>3, 46</value>
   </data>
   <data name="BUT_Manual.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 38</value>
+    <value>242, 38</value>
   </data>
   <data name="BUT_Manual.TabIndex" type="System.Int32, mscorlib">
     <value>86</value>
@@ -1048,7 +1048,7 @@
     <value>3, 195</value>
   </data>
   <data name="BUT_setwp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 44</value>
+    <value>242, 44</value>
   </data>
   <data name="BUT_setwp.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
@@ -1084,7 +1084,7 @@
     <value>3, 125</value>
   </data>
   <data name="BUT_quickrtl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 28</value>
+    <value>242, 28</value>
   </data>
   <data name="BUT_quickrtl.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -1120,7 +1120,7 @@
     <value>7</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 297</value>
+    <value>248, 297</value>
   </data>
   <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
@@ -1138,7 +1138,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="timerButton" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="BUT_FBWA" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="CMB_setwp" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="BUT_quickauto" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="BUT_Manual" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="BUT_setwp" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="BUT_quickrtl" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,22.42991,Percent,22.8972,Percent,18.18182,Percent,17.70335,Percent,18.69159,Absolute,50,Absolute,54,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tlButton" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="BUT_FBWA" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="CMB_setwp" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="BUT_quickauto" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="BUT_Manual" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="BUT_setwp" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="BUT_quickrtl" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,22.42991,Percent,22.8972,Percent,18.18182,Percent,17.70335,Percent,18.69159,Absolute,50,Absolute,54,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="subMainLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
@@ -1147,7 +1147,7 @@
     <value>0, 0</value>
   </data>
   <data name="subMainLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 299</value>
+    <value>250, 299</value>
   </data>
   <data name="subMainLeft.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1233,30 +1233,6 @@
   <data name="controlTableRight.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="rpmLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 242</value>
-  </data>
-  <data name="rpmLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 23</value>
-  </data>
-  <data name="rpmLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>73</value>
-  </data>
-  <data name="rpmLabel.Text" xml:space="preserve">
-    <value>label12</value>
-  </data>
-  <data name="&gt;&gt;rpmLabel.Name" xml:space="preserve">
-    <value>rpmLabel</value>
-  </data>
-  <data name="&gt;&gt;rpmLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rpmLabel.Parent" xml:space="preserve">
-    <value>controlTableRight</value>
-  </data>
-  <data name="&gt;&gt;rpmLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="flare2Lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1270,10 +1246,10 @@
     <value>NoControl</value>
   </data>
   <data name="flare2Lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 175</value>
+    <value>3, 115</value>
   </data>
   <data name="flare2Lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 32</value>
+    <value>148, 32</value>
   </data>
   <data name="flare2Lbl.TabIndex" type="System.Int32, mscorlib">
     <value>91</value>
@@ -1294,7 +1270,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;flare2Lbl.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="flare1Lbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1309,10 +1285,10 @@
     <value>NoControl</value>
   </data>
   <data name="flare1Lbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 60</value>
+    <value>3, 31</value>
   </data>
   <data name="flare1Lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 64</value>
+    <value>148, 33</value>
   </data>
   <data name="flare1Lbl.TabIndex" type="System.Int32, mscorlib">
     <value>90</value>
@@ -1333,7 +1309,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;flare1Lbl.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1348,10 +1324,10 @@
     <value>NoControl</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 175</value>
+    <value>157, 115</value>
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 32</value>
+    <value>88, 32</value>
   </data>
   <data name="label16.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
@@ -1372,7 +1348,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1387,10 +1363,10 @@
     <value>NoControl</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 60</value>
+    <value>157, 31</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 64</value>
+    <value>88, 33</value>
   </data>
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>88</value>
@@ -1411,43 +1387,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label11.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>B Yekan, 12pt</value>
-  </data>
-  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 242</value>
-  </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 34</value>
-  </data>
-  <data name="label11.TabIndex" type="System.Int32, mscorlib">
-    <value>86</value>
-  </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>پیام ها</value>
-  </data>
-  <data name="&gt;&gt;label11.Name" xml:space="preserve">
-    <value>label11</value>
-  </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
-    <value>controlTableRight</value>
-  </data>
-  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="servoOptions3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1459,7 +1399,7 @@
     <value>3, 3</value>
   </data>
   <data name="servoOptions3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 54</value>
+    <value>148, 25</value>
   </data>
   <data name="servoOptions3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1474,7 +1414,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;servoOptions3.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1489,10 +1429,10 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 0</value>
+    <value>157, 0</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 60</value>
+    <value>88, 31</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
@@ -1513,7 +1453,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1528,10 +1468,10 @@
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 124</value>
+    <value>157, 64</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 51</value>
+    <value>88, 51</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
@@ -1552,7 +1492,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="servoOptions2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1561,10 +1501,10 @@
     <value>B Yekan, 7.8pt</value>
   </data>
   <data name="servoOptions2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 127</value>
+    <value>3, 67</value>
   </data>
   <data name="servoOptions2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 45</value>
+    <value>148, 45</value>
   </data>
   <data name="servoOptions2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1579,7 +1519,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;servoOptions2.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1594,10 +1534,10 @@
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 207</value>
+    <value>157, 147</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 35</value>
+    <value>88, 35</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>86</value>
@@ -1618,46 +1558,7 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="msgLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="msgLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="msgLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>B Yekan, 13pt</value>
-  </data>
-  <data name="msgLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="msgLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 276</value>
-  </data>
-  <data name="msgLabel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 4, 0, 4</value>
-  </data>
-  <data name="msgLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 21</value>
-  </data>
-  <data name="msgLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>88</value>
-  </data>
-  <data name="msgLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;msgLabel.Name" xml:space="preserve">
-    <value>msgLabel</value>
-  </data>
-  <data name="&gt;&gt;msgLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;msgLabel.Parent" xml:space="preserve">
-    <value>controlTableRight</value>
-  </data>
-  <data name="&gt;&gt;msgLabel.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>8</value>
   </data>
   <data name="modeLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1672,10 +1573,10 @@
     <value>NoControl</value>
   </data>
   <data name="modeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 207</value>
+    <value>3, 147</value>
   </data>
   <data name="modeLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 35</value>
+    <value>148, 35</value>
   </data>
   <data name="modeLabel.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
@@ -1696,6 +1597,90 @@
     <value>controlTableRight</value>
   </data>
   <data name="&gt;&gt;modeLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="msgLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="msgLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 239</value>
+  </data>
+  <data name="msgLabel.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="msgLabel.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="msgLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 34</value>
+  </data>
+  <data name="msgLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="&gt;&gt;msgLabel.Name" xml:space="preserve">
+    <value>msgLabel</value>
+  </data>
+  <data name="&gt;&gt;msgLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msgLabel.Parent" xml:space="preserve">
+    <value>controlTableRight</value>
+  </data>
+  <data name="&gt;&gt;msgLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="rpmLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rpmLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 276</value>
+  </data>
+  <data name="rpmLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 20</value>
+  </data>
+  <data name="rpmLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="rpmLabel.Text" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;rpmLabel.Name" xml:space="preserve">
+    <value>rpmLabel</value>
+  </data>
+  <data name="&gt;&gt;rpmLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rpmLabel.Parent" xml:space="preserve">
+    <value>controlTableRight</value>
+  </data>
+  <data name="&gt;&gt;rpmLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="timerControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="timerControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 185</value>
+  </data>
+  <data name="timerControl1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="timerControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 48</value>
+  </data>
+  <data name="timerControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>93</value>
+  </data>
+  <data name="&gt;&gt;timerControl1.Name" xml:space="preserve">
+    <value>timerControl1</value>
+  </data>
+  <data name="&gt;&gt;timerControl1.Type" xml:space="preserve">
+    <value>MissionPlanner.CustomControls.TimerControl, MissionPlanner, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;timerControl1.Parent" xml:space="preserve">
+    <value>controlTableRight</value>
+  </data>
+  <data name="&gt;&gt;timerControl1.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
   <data name="controlTableRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -1708,10 +1693,10 @@
     <value>No</value>
   </data>
   <data name="controlTableRight.RowCount" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="controlTableRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 297</value>
+    <value>248, 297</value>
   </data>
   <data name="controlTableRight.TabIndex" type="System.Int32, mscorlib">
     <value>85</value>
@@ -1729,7 +1714,7 @@
     <value>2</value>
   </data>
   <data name="controlTableRight.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="rpmLabel" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="flare2Lbl" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="flare1Lbl" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label16" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label13" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label11" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="servoOptions3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="servoOptions2" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label9" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="msgLabel" Row="6" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;Control Name="modeLabel" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,62.16216,Percent,37.83784" /&gt;&lt;Rows Styles="Percent,48.52941,Percent,51.47059,Absolute,51,Absolute,32,Absolute,35,Absolute,34,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="flare2Lbl" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="flare1Lbl" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label16" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label13" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="servoOptions3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="servoOptions2" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label9" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="modeLabel" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="msgLabel" Row="5" RowSpan="2" Column="0" ColumnSpan="2" /&gt;&lt;Control Name="rpmLabel" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="timerControl1" Row="5" RowSpan="2" Column="0" ColumnSpan="2" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,62.16216,Percent,37.83784" /&gt;&lt;Rows Styles="Percent,48.52941,Percent,51.47059,Absolute,51,Absolute,32,Absolute,35,Absolute,34,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="flare1State.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -1801,10 +1786,10 @@
     <value>Right</value>
   </data>
   <data name="subMainRight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>810, 0</value>
+    <value>770, 0</value>
   </data>
   <data name="subMainRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 299</value>
+    <value>250, 299</value>
   </data>
   <data name="subMainRight.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -6429,6 +6414,9 @@
   <metadata name="bindingSourceStatusTab.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>2, 53</value>
   </metadata>
+  <metadata name="contextMenu1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 98</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -6731,6 +6719,12 @@
   </data>
   <data name="&gt;&gt;bindingSourceStatusTab.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contextMenu1.Name" xml:space="preserve">
+    <value>contextMenu1</value>
+  </data>
+  <data name="&gt;&gt;contextMenu1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenu, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FlightData</value>
