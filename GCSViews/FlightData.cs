@@ -590,7 +590,7 @@ namespace MissionPlanner.GCSViews
             tableLayoutPanel1.PerformLayout();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel1.RowStyles.Clear();
-            for(int i=0;i<7;i++)
+            for(int i=0;i<6;i++)
             {
                 tableLayoutPanel1.RowStyles.Add(new RowStyle());
                 tableLayoutPanel1.RowStyles[i].SizeType = SizeType.Percent;
@@ -681,6 +681,7 @@ namespace MissionPlanner.GCSViews
         {
             if (MainV2.comPort.logreadmode)
             {
+                BUT_playlog.Text = "Pause";
                 MainV2.comPort.logreadmode = false;
                 ZedGraphTimer.Stop();
                 playingLog = false;
@@ -688,6 +689,7 @@ namespace MissionPlanner.GCSViews
             else
             {
                 // BUT_clear_track_Click(sender, e);
+                BUT_playlog.Text = "Play";
                 MainV2.comPort.logreadmode = true;
                 list1.Clear();
                 list2.Clear();
@@ -1360,7 +1362,7 @@ namespace MissionPlanner.GCSViews
 
         private string tlogdir = Settings.Instance.LogDir;
 
-        private void BUT_loadtelem_Click(object sender, EventArgs e)
+        public void BUT_loadtelem_Click(object sender, EventArgs e)
         {
             LBL_logfn.Text = "";
 
@@ -1761,8 +1763,8 @@ namespace MissionPlanner.GCSViews
 
         private void BUT_speed1_Click(object sender, EventArgs e)
         {
-            LogPlayBackSpeed = double.Parse(((MyButton)sender).Tag.ToString(), CultureInfo.InvariantCulture);
-            lbl_playbackspeed.Text = "x " + LogPlayBackSpeed;
+            LogPlayBackSpeed *= double.Parse(((MyButton)sender).Tag.ToString(), CultureInfo.InvariantCulture);
+            lbl_playbackspeed.Text = "x" + LogPlayBackSpeed;
         }
 
         private void BUTactiondo_Click(object sender, EventArgs e)

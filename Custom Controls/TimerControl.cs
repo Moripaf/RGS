@@ -8,9 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MissionPlanner.timer;
+using MissionPlanner.GCSViews;
 
 namespace MissionPlanner.CustomControls
 {
+    //TODO- rewrite using stopwatch
     public partial class TimerControl : UserControl
     {
         Timer timer;
@@ -19,7 +21,6 @@ namespace MissionPlanner.CustomControls
         bool isRunning = false;
         TimeSpan time;
         public static event TimerAddDelegate _timerEventhandler;
-
         public TimerControl()
         {
             _timerEventhandler = new TimerAddDelegate(timerEventHandler);
