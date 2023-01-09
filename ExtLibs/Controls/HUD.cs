@@ -3517,26 +3517,27 @@ namespace MissionPlanner.Controls
 
             base.OnResize(e);
 
-            if (SixteenXNine)
-            {
-                int ht = (int) (this.Width / 1.777f);
-                if (ht >= this.Height + 5 || ht <= this.Height - 5)
-                {
-                    this.Height = ht;
-                    return;
-                }
-            }
-            else
-            {
-                // 4x3
-                int ht = (int) (this.Width / 1.333f);
-                if (ht >= this.Height + 5 || ht <= this.Height - 5)
-                {
-                    this.Height = ht;
-                    return;
-                }
-            }
-
+            /*  if (SixteenXNine)
+              {
+                  int ht = (int) (this.Width / 1.777f);
+                  if (ht >= this.Height + 5 || ht <= this.Height - 5)
+                  {
+                      this.Height = ht;
+                      return;
+                  }
+              }
+              else
+              {
+                  // 4x3
+                  int ht = (int) (this.Width / 1.333f);
+                  if (ht >= this.Height + 5 || ht <= this.Height - 5)
+                  {
+                      this.Height = ht;
+                      return;
+                  }
+              } */
+            this.Height = 244;
+            this.Width = 311;
             graphicsObjectGDIP = new GdiGraphics(Graphics.FromImage(objBitmap));
 
             try

@@ -604,11 +604,17 @@ namespace MissionPlanner.GCSViews
             controlTableRight.PerformLayout();
             controlTableRight.SuspendLayout();
             controlTableRight.RowStyles.Clear();
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 5; i++)
             {
                 controlTableRight.RowStyles.Add(new RowStyle());
                 controlTableRight.RowStyles[i].SizeType = SizeType.Percent;
-                controlTableRight.RowStyles[i].Height = 100.0f / 8;
+                controlTableRight.RowStyles[i].Height = 12.5f;
+            }
+            for (int i = 5; i < 7; i++)
+            {
+                controlTableRight.RowStyles.Add(new RowStyle());
+                controlTableRight.RowStyles[i].SizeType = SizeType.Percent;
+                controlTableRight.RowStyles[i].Height = 18.25f;
             }
             controlTableRight.ColumnStyles.Clear();
             controlTableRight.ColumnStyles.Add(new ColumnStyle());
@@ -680,16 +686,11 @@ namespace MissionPlanner.GCSViews
         public void BUT_playlog_Click(object sender, EventArgs e)
         {
             if (MainV2.comPort.logreadmode)
-            {
-                BUT_playlog.Text = "Pause";
-                MainV2.comPort.logreadmode = false;
-                ZedGraphTimer.Stop();
-                playingLog = false;
-            }
+                return;
+
             else
             {
-                // BUT_clear_track_Click(sender, e);
-                BUT_playlog.Text = "Play";
+                // BUT_clear_track_Click(sender, e);              
                 MainV2.comPort.logreadmode = true;
                 list1.Clear();
                 list2.Clear();
@@ -2530,7 +2531,7 @@ namespace MissionPlanner.GCSViews
             groundColorToolStripMenuItem.Checked = Settings.Instance.GetBoolean("groundColorToolStripMenuItem");
             groundColorToolStripMenuItem_Click(null, null);
 
-            hud1.doResize();
+            
 
             prop = new Propagation(gMapControl1);
 
@@ -2551,7 +2552,8 @@ namespace MissionPlanner.GCSViews
             fixmidSplitterWidths();
             fixGuageLocations();
             fixHudPanel(midSplitter.Panel1.Height / 2);
-
+            
+            hud1.doResize();
 
         }
 
@@ -3170,8 +3172,7 @@ namespace MissionPlanner.GCSViews
                     if (updatescreen.AddMilliseconds(300) < DateTime.Now)
                     {
                         try
-                        {
-                            updatePlayPauseButton(true);
+                        {                         
                             updateLogPlayPosition();
                         }
                         catch
@@ -3282,8 +3283,7 @@ namespace MissionPlanner.GCSViews
                 {
                     // ensure we know to stop
                     if (MainV2.comPort.logreadmode)
-                        MainV2.comPort.logreadmode = false;
-                    updatePlayPauseButton(false);
+                        MainV2.comPort.logreadmode = false;                   
 
                     if (!playingLog && MainV2.comPort.logplaybackfile != null)
                     {
@@ -5045,44 +5045,7 @@ namespace MissionPlanner.GCSViews
                         poly.IsVisible = false;
                 }
             }
-        }
-
-        private void updatePlayPauseButton(bool playing)
-        {
-            if (playing)
-            {
-                if (BUT_playlog.Text == "Pause")
-                    return;
-
-                BeginInvoke((Action)delegate
-               {
-                   try
-                   {
-                       BUT_playlog.Text = "Pause";
-                   }
-                   catch
-                   {
-                   }
-               });
-            }
-            else
-            {
-                if (BUT_playlog.Text == "Play")
-                    return;
-
-                BeginInvoke((Action)delegate
-               {
-                   try
-                   {
-                       BUT_playlog.Text = "Play";
-                   }
-                   catch
-                   {
-                   }
-               });
-            }
-        }
-
+        }    
         private void updateRoutePosition()
         {
             // not async
@@ -5814,11 +5777,6 @@ namespace MissionPlanner.GCSViews
 
         }
 
-        private void hudPanel_Resize(object sender, EventArgs e)
-        {
-
-        }
-
         private void midSplitter_Panel1_Resize(object sender, EventArgs e)
         {
         }
@@ -5835,9 +5793,7 @@ namespace MissionPlanner.GCSViews
             rightGuagePanel.SplitterDistance = rightGuagePanel.Height / 2;
             leftGuagePanel.SplitterDistance = leftGuagePanel.Height / 2;
 
-            Gvspeed.Visible = true;
-           
-
+            Gvspeed.Visible = true;         
 
         }
       
@@ -5855,6 +5811,7 @@ namespace MissionPlanner.GCSViews
             }
             finally
             {
+                hud1.Height = 246;
                 splitContainer3.SplitterDistance = width;
                 
             }        
@@ -6042,10 +5999,20 @@ namespace MissionPlanner.GCSViews
 
         private void rpmLabel_TextChanged(object sender, EventArgs e)
         {
-            if(Int16.Parse(rpmLabel.Text) > 10)
-            {
-               // timerForm.IsOn = true;
-            }
+           
+        }
+
+        private void msgLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BUT_pauselog_Click(object sender, EventArgs e)
+        {
+            MainV2.comPort.logreadmode = false;
+            ZedGraphTimer.Stop();
+            playingLog = false;
+
         }
     }
 

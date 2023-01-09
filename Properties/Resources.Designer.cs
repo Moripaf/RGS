@@ -831,12 +831,9 @@ namespace MissionPlanner.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {\rtf1\ansi\ansicpg1252\deff0\deflang3081\deflangfe3081{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}}
-        ///{\colortbl ;\red0\green0\blue255;}
-        ///{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\nowidctlpar\sa200\sl276\slmult1\f0\fs22\par
-        ///\tab Welcome to the \b Mission Planner\b0 , mission planning for Unmanned Aerial Vehicles (\b UAV\b0 ).\par
-        ///\pard\nowidctlpar\fi720\b Help:\par
-        ///Arduplane: {\field{\*\fldinst{HYPERLINK &quot;http://ardupilot.org/plane&quot;}}{\fldrslt{\ul\cf1 http://ardupilot.org/plane}}}\f0\fs2 [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to مجموعه رایا اوج پرواز متشکل از برخی  پیشکسوتان صنعت پهپاد و دانشجویان نخبه کشور می­باشد، که در زمینه تحقیقات، پژوهش ، طراحی ، ساخت ، تولید و آموزش در این صنعت فعالیت دارد.
+        ///این مجموعه دارای بیش از 10 سال سابقه کار در زمینه طراحی و ساخت پرنده های هدایت پذیر از دور (پهپاد) می باشد . در سال های ابتدایی این مجموعه  به تحقیقات و پژوهش در زمینه پهپاد می‌پرداخت و در ادامه شروع به تولید نمونه‌های اولیه کار خود  و همچنین آموزش خلبانی پهپاد کرد .
+        ///هم اکنون چندین محصول این مجموعه به نتیجه مطلوب رسیده و مقدمات تولید ان [rest of string was truncated]&quot;;.
         /// </summary>
         public static string help_text {
             get {

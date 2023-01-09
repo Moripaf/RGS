@@ -15,19 +15,16 @@ namespace MissionPlanner.CustomControls
     //TODO- rewrite using stopwatch
     public partial class TimerControl : UserControl
     {
-        Timer timer;
         private bool _isOn;
         long timeInSeconds = 0;
-        bool isRunning = false;
         TimeSpan time;
         public static event TimerAddDelegate _timerEventhandler;
         public TimerControl()
         {
             _timerEventhandler = new TimerAddDelegate(timerEventHandler);
-            timer = new Timer();
             InitializeComponent();
         }
-        public bool IsOn
+        public bool isOn
         {
             set
             {
@@ -35,79 +32,47 @@ namespace MissionPlanner.CustomControls
                 {
                     timerEventArgs args = new timerEventArgs(value);
                     _timerEventhandler.Invoke(args);
+                    _isOn = value;
                 }
 
             }
+            get { return _isOn; }
         }
+        System.Diagnostics.Stopwatch StopWatch = new System.Diagnostics.Stopwatch();
+        public void Timer1_Tick(System.Object sender, System.EventArgs e)
+        {
+            TimeSpan elapsed = this.StopWatch.Elapsed;
+            label.Text = string.Format("{0:00}:{1:00}:{2:00}", Math.Floor(elapsed.TotalHours), elapsed.Minutes, elapsed.Seconds);
+        }
+
         private void buttonStart_Click(object sender, EventArgs e)
         {
-            if (isRunning)
+            if(!StopWatch.IsRunning)
             {
-                startTimer();
-                buttonStart.Text = "Stop";
+                Timer1.Start();
+                this.StopWatch.Start();
+                buttonStart.Text = "توقف";
             }
             else
             {
-                stopTimer();
-                buttonStart.Text = "Start";
+                Timer1.Stop();
+                this.StopWatch.Stop();
+                buttonStart.Text = "شروع";
             }
-
         }
 
         private void buttonReset_Click(object sender, EventArgs e)
         {
-            if (isRunning)
-            {
-                stopTimer();
-            }
-            timeInSeconds = 0;
-            showTime();
-        }
-        public void startTimer()
-        {
-            try
-            {
-                timer.Start();
-            }
-            catch (NullReferenceException ex)
-            {
-                timer = createTimer();
-                timer.Start();
-            }
-            finally
-            {
-                isRunning = true;
-            }
-        }
-        public void stopTimer()
-        {
-            timer.Stop();
-            isRunning = false;
-        }
-        private void TimerCallback(object sender, EventArgs e)
-        {
-            timeInSeconds++;
-            showTime();
-        }
-        public Timer createTimer()
-        {
-            Timer t = new Timer();
-            t.Interval = 1000;
-            t.Tick += TimerCallback;
-            return t;
-        }
-        public void showTime()
-        {
-            time = TimeSpan.FromSeconds(timeInSeconds);
-            label.Text = time.ToString(@"hh\:mm\:ss");
+            this.StopWatch.Reset();
+            label.Text = "00:00:00";
         }
         public void timerEventHandler(timerEventArgs args)
         {
-            if (args.state)
+          /*  if (args.state)
                 startTimer();
             else
                 stopTimer();
-
+          */
         }
     }
 }

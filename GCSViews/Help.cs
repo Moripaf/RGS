@@ -54,8 +54,8 @@ namespace MissionPlanner.GCSViews
 
         private void Help_Load(object sender, EventArgs e)
         {
-            richTextBox1.Rtf = Resources.help_text;
-            ThemeManager.ApplyThemeTo(richTextBox1);
+            richTextBox1.Text = Resources.help_text;
+             ThemeManager.ApplyThemeTo(richTextBox1);
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

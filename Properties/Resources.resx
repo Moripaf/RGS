@@ -428,56 +428,16 @@
     <value>..\Resources\dark_help_icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="help_text" xml:space="preserve">
-    <value>{\rtf1\ansi\ansicpg1252\deff0\deflang3081\deflangfe3081{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}}
-{\colortbl ;\red0\green0\blue255;}
-{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\nowidctlpar\sa200\sl276\slmult1\f0\fs22\par
-\tab Welcome to the \b Mission Planner\b0 , mission planning for Unmanned Aerial Vehicles (\b UAV\b0 ).\par
-\pard\nowidctlpar\fi720\b Help:\par
-Arduplane: {\field{\*\fldinst{HYPERLINK "http://ardupilot.org/plane"}}{\fldrslt{\ul\cf1 http://ardupilot.org/plane}}}\f0\fs22\par
-ArduCopter: {\field{\*\fldinst{HYPERLINK "http://ardupilot.org/copter"}}{\fldrslt{\ul\cf1 http://ardupilot.org/copter}}}\f0\fs22\par
-ArduRover: {\field{\*\fldinst{HYPERLINK "http://ardupilot.org/rover"}}{\fldrslt{\ul\cf1 http://ardupilot.org/rover}}}\f0\fs22\par
-\par
-\pard\nowidctlpar\sa200\sl276\slmult1\tab Please visit {\field{\*\fldinst{HYPERLINK "http://ardupilot.org/planner"}}{\fldrslt{\ul\cf1 http://ardupilot.org/planner}}}\f0\fs22  further information.\b0\par
-\pard\nowidctlpar\b\tab Main Developer:\b0  Michael Oborne\par
-\tab\b Design:\b0  Samantha Nelson\par
-\tab\b Contributions from:\b0  Andrew Radford,  Marooned, Ryan Beall and {\field{\*\fldinst{HYPERLINK "https://github.com/ArduPilot/MissionPlanner/graphs/contributors"}}{\fldrslt{\ul\cf1 https://github.com/ArduPilot/MissionPlanner/graphs/contributors}}}\f0\fs22\par
-\pard\nowidctlpar\fi720\b ArduCopter Illustrations:\b0  Max Levine\par
-\b Librarys:\b0  Gmap.net, Sharpkml, SharpZipLib, IronPython, KMLib, OpenTK, ZedGraph, alglib, BouncyCastle, DotSpatial, LibVLC, netDXF\par
-\par
-\b Companys that have contributed to Mission Planners development: \b0 3D Robotics, Falcon Unmanned, UAV Solutions\b\par
-\par
-ShortCuts\par
-\par
-Main Screen\par
-F2 - FlightData\par
-F3 - FlightPlanner\par
-F4 - Tuning\par
-F5 - Refresh full param list\par
-Control-F - Temp screen\par
-Control-T - Blind connect\par
-\par
-FlightData\par
-Control-1 - tab 1\par
-Control-2 - tab 2\par
-Control-3 - tab 3\par
-Control-4 - tab 4\par
-Control-5 - tab 5\par
-Control-6 - tab 6\par
-Control-7 - tab 7\par
-Control-8 - tab 8\par
-Control-9 - tab 9\par
-Control-0 - tab 10\par
-\par
-FlightPlanner\par
-Control-Z - undo\par
-Control-O - open wp file\par
-Control-S - save wp file\par
-\par
-AutoWP Grid\par
-Control-O - open grid file\par
-Control-S - save grid file\par
-\par
-}</value>
+    <value>مجموعه رایا اوج پرواز متشکل از برخی  پیشکسوتان صنعت پهپاد و دانشجویان نخبه کشور می­باشد، که در زمینه تحقیقات، پژوهش ، طراحی ، ساخت ، تولید و آموزش در این صنعت فعالیت دارد.
+این مجموعه دارای بیش از 10 سال سابقه کار در زمینه طراحی و ساخت پرنده های هدایت پذیر از دور (پهپاد) می باشد . در سال های ابتدایی این مجموعه  به تحقیقات و پژوهش در زمینه پهپاد می‌پرداخت و در ادامه شروع به تولید نمونه‌های اولیه کار خود  و همچنین آموزش خلبانی پهپاد کرد .
+هم اکنون چندین محصول این مجموعه به نتیجه مطلوب رسیده و مقدمات تولید انبوه آماده شده است .
+این مجموعه تا به امروز با پشت سر گذاشتن مشکلات بسیار توانسته در انواع مدل ها (آموزشی ، شناسایی و هدف) ، محصولاتی را برای انواع کاربرد ها ارائه دهد که برخی به تولید انبوه رسیده و برخی هنوز در دست تحقیقات است
+فعالیت‌های اصلی این شرکت به‌صورت اختصاری عبارت است از:
+1- طراحی ، ساخت و تولید انواع پرنده‌های مدل و پهپاد اعمم از پرنده‌های بدون سرنشین ، مولتی رتور و …
+این شرکت در این زمینه طرح‌های متعدد و فراوانی را از مرحله طراحی تا تولید انبوه پیش برده و هم‌اکنون علاوه بر محصولات موجود در حال مطالعه و طراحی مدل‌های پیشرفته‌تر می‌باشد .
+2- ساخت و تولید انواع قطعات و قالب‌های صنعتی
+درزمینه طراحی و ساخت انواع قالب‌های کامپوزیتی باکیفیت قابل‌قبول و همچنین انواع قطعات کامپوزیتی و فلزی تلاش‌های بسیار کرده و دارای افراد باتجربه در این زمینه می‌باشد .
+3- فعالیت‌های تجاری و خدمات بازرگانی در داخل و خارج از کشور</value>
   </data>
   <data name="frames_plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\frames_plus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
