@@ -12,7 +12,15 @@ namespace MissionPlanner.GCSViews
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlightData));
             this.MainH = new System.Windows.Forms.SplitContainer();
             this.quickViewRight = new System.Windows.Forms.TableLayoutPanel();
+            this.myQuickView16 = new MissionPlanner.Controls.myQuickView();
             this.bindingSourceHud = new System.Windows.Forms.BindingSource(this.components);
+            this.myQuickView15 = new MissionPlanner.Controls.myQuickView();
+            this.myQuickView14 = new MissionPlanner.Controls.myQuickView();
+            this.myQuickView9 = new MissionPlanner.Controls.myQuickView();
+            this.myQuickView13 = new MissionPlanner.Controls.myQuickView();
+            this.myQuickView12 = new MissionPlanner.Controls.myQuickView();
+            this.myQuickView11 = new MissionPlanner.Controls.myQuickView();
+            this.myQuickView10 = new MissionPlanner.Controls.myQuickView();
             this.midSplitter = new System.Windows.Forms.SplitContainer();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.rightGuagePanel = new System.Windows.Forms.SplitContainer();
@@ -50,12 +58,15 @@ namespace MissionPlanner.GCSViews
             this.flare1Lbl = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.servoOptions3 = new MissionPlanner.Controls.ServoOptions();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.servoOptions2 = new MissionPlanner.Controls.ServoOptions();
             this.label9 = new System.Windows.Forms.Label();
             this.modeLabel = new System.Windows.Forms.Label();
             this.msgLabel = new System.Windows.Forms.TextBox();
             this.rpmLabel = new System.Windows.Forms.Label();
+            this.timerControl1 = new MissionPlanner.CustomControls.TimerControl();
             this.flare1State = new System.Windows.Forms.Label();
             this.errLabel = new System.Windows.Forms.Label();
             this.tableMap = new System.Windows.Forms.TableLayoutPanel();
@@ -65,7 +76,9 @@ namespace MissionPlanner.GCSViews
             this.BUT_speed2 = new MissionPlanner.Controls.MyButton();
             this.BUT_speed1_10 = new MissionPlanner.Controls.MyButton();
             this.BUT_log2kml = new MissionPlanner.Controls.MyButton();
+            this.distanceBar1 = new MissionPlanner.Controls.DistanceBar();
             this.but_disablejoystick = new MissionPlanner.Controls.MyButton();
+            this.servoOptions1 = new MissionPlanner.Controls.ServoOptions();
             this.tabControlactions = new System.Windows.Forms.TabControl();
             this.contextMenuStripactionstab = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.customizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -78,7 +91,10 @@ namespace MissionPlanner.GCSViews
             this.BUT_Homealt = new MissionPlanner.Controls.MyButton();
             this.BUTrestartmission = new MissionPlanner.Controls.MyButton();
             this.BUT_RAWSensor = new MissionPlanner.Controls.MyButton();
+            this.modifyandSetSpeed = new MissionPlanner.Controls.ModifyandSet();
             this.BUT_joystick = new MissionPlanner.Controls.MyButton();
+            this.modifyandSetLoiterRad = new MissionPlanner.Controls.ModifyandSet();
+            this.modifyandSetAlt = new MissionPlanner.Controls.ModifyandSet();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.CMB_mountmode = new System.Windows.Forms.ComboBox();
             this.CMB_modes = new System.Windows.Forms.ComboBox();
@@ -95,6 +111,7 @@ namespace MissionPlanner.GCSViews
             this.myButton2 = new MissionPlanner.Controls.MyButton();
             this.myButton3 = new MissionPlanner.Controls.MyButton();
             this.tabPagePreFlight = new System.Windows.Forms.TabPage();
+            this.checkListControl1 = new MissionPlanner.Controls.PreFlight.CheckListControl();
             this.tabGauges = new System.Windows.Forms.TabPage();
             this.tabTransponder = new System.Windows.Forms.TabPage();
             this.NACp_tb = new System.Windows.Forms.TextBox();
@@ -115,6 +132,21 @@ namespace MissionPlanner.GCSViews
             this.tabStatus = new System.Windows.Forms.TabPage();
             this.tabServo = new System.Windows.Forms.TabPage();
             this.flowLayoutPanelServos = new System.Windows.Forms.FlowLayoutPanel();
+            this.servoOptions4 = new MissionPlanner.Controls.ServoOptions();
+            this.servoOptions5 = new MissionPlanner.Controls.ServoOptions();
+            this.servoOptions6 = new MissionPlanner.Controls.ServoOptions();
+            this.servoOptions7 = new MissionPlanner.Controls.ServoOptions();
+            this.servoOptions8 = new MissionPlanner.Controls.ServoOptions();
+            this.servoOptions9 = new MissionPlanner.Controls.ServoOptions();
+            this.servoOptions10 = new MissionPlanner.Controls.ServoOptions();
+            this.servoOptions11 = new MissionPlanner.Controls.ServoOptions();
+            this.servoOptions12 = new MissionPlanner.Controls.ServoOptions();
+            this.relayOptions1 = new MissionPlanner.Controls.RelayOptions();
+            this.relayOptions2 = new MissionPlanner.Controls.RelayOptions();
+            this.relayOptions3 = new MissionPlanner.Controls.RelayOptions();
+            this.relayOptions4 = new MissionPlanner.Controls.RelayOptions();
+            this.relayOptions5 = new MissionPlanner.Controls.RelayOptions();
+            this.relayOptions6 = new MissionPlanner.Controls.RelayOptions();
             this.tabScripts = new System.Windows.Forms.TabPage();
             this.checkBoxRedirectOutput = new System.Windows.Forms.CheckBox();
             this.BUT_edit_selected = new MissionPlanner.Controls.MyButton();
@@ -193,6 +225,14 @@ namespace MissionPlanner.GCSViews
             this.TRK_zoom = new MissionPlanner.Controls.MyTrackBar();
             this.mainContainer = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanelQuick = new System.Windows.Forms.TableLayoutPanel();
+            this.myQuickView7 = new MissionPlanner.Controls.myQuickView();
+            this.myQuickView8 = new MissionPlanner.Controls.myQuickView();
+            this.myQuickView6 = new MissionPlanner.Controls.myQuickView();
+            this.myQuickView5 = new MissionPlanner.Controls.myQuickView();
+            this.myQuickView4 = new MissionPlanner.Controls.myQuickView();
+            this.myQuickView3 = new MissionPlanner.Controls.myQuickView();
+            this.myQuickView1 = new MissionPlanner.Controls.myQuickView();
+            this.myQuickView2 = new MissionPlanner.Controls.myQuickView();
             this.bindingSourceGaugesTab = new System.Windows.Forms.BindingSource(this.components);
             this.contextMenuStripQuickView = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.setViewCountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -221,46 +261,6 @@ namespace MissionPlanner.GCSViews
             this.bindingSourceQuickTab = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSourceStatusTab = new System.Windows.Forms.BindingSource(this.components);
             this.contextMenu1 = new System.Windows.Forms.ContextMenu();
-            this.myQuickView16 = new MissionPlanner.Controls.myQuickView();
-            this.myQuickView15 = new MissionPlanner.Controls.myQuickView();
-            this.myQuickView14 = new MissionPlanner.Controls.myQuickView();
-            this.myQuickView9 = new MissionPlanner.Controls.myQuickView();
-            this.myQuickView13 = new MissionPlanner.Controls.myQuickView();
-            this.myQuickView12 = new MissionPlanner.Controls.myQuickView();
-            this.myQuickView11 = new MissionPlanner.Controls.myQuickView();
-            this.myQuickView10 = new MissionPlanner.Controls.myQuickView();
-            this.servoOptions3 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions2 = new MissionPlanner.Controls.ServoOptions();
-            this.timerControl1 = new MissionPlanner.CustomControls.TimerControl();
-            this.distanceBar1 = new MissionPlanner.Controls.DistanceBar();
-            this.servoOptions1 = new MissionPlanner.Controls.ServoOptions();
-            this.modifyandSetSpeed = new MissionPlanner.Controls.ModifyandSet();
-            this.modifyandSetLoiterRad = new MissionPlanner.Controls.ModifyandSet();
-            this.modifyandSetAlt = new MissionPlanner.Controls.ModifyandSet();
-            this.checkListControl1 = new MissionPlanner.Controls.PreFlight.CheckListControl();
-            this.servoOptions4 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions5 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions6 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions7 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions8 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions9 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions10 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions11 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions12 = new MissionPlanner.Controls.ServoOptions();
-            this.relayOptions1 = new MissionPlanner.Controls.RelayOptions();
-            this.relayOptions2 = new MissionPlanner.Controls.RelayOptions();
-            this.relayOptions3 = new MissionPlanner.Controls.RelayOptions();
-            this.relayOptions4 = new MissionPlanner.Controls.RelayOptions();
-            this.relayOptions5 = new MissionPlanner.Controls.RelayOptions();
-            this.relayOptions6 = new MissionPlanner.Controls.RelayOptions();
-            this.myQuickView7 = new MissionPlanner.Controls.myQuickView();
-            this.myQuickView8 = new MissionPlanner.Controls.myQuickView();
-            this.myQuickView6 = new MissionPlanner.Controls.myQuickView();
-            this.myQuickView5 = new MissionPlanner.Controls.myQuickView();
-            this.myQuickView4 = new MissionPlanner.Controls.myQuickView();
-            this.myQuickView3 = new MissionPlanner.Controls.myQuickView();
-            this.myQuickView1 = new MissionPlanner.Controls.myQuickView();
-            this.myQuickView2 = new MissionPlanner.Controls.myQuickView();
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).BeginInit();
             this.MainH.Panel1.SuspendLayout();
             this.MainH.Panel2.SuspendLayout();
@@ -372,9 +372,65 @@ namespace MissionPlanner.GCSViews
             this.quickViewRight.Controls.Add(this.myQuickView10, 0, 0);
             this.quickViewRight.Name = "quickViewRight";
             // 
+            // myQuickView16
+            // 
+            this.myQuickView16.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "satcount", true));
+            resources.ApplyResources(this.myQuickView16, "myQuickView16");
+            this.myQuickView16.Name = "myQuickView16";
+            this.myQuickView16.title = "تعداد ماهواره ها GPS";
+            // 
             // bindingSourceHud
             // 
             this.bindingSourceHud.DataSource = typeof(MissionPlanner.CurrentState);
+            // 
+            // myQuickView15
+            // 
+            this.myQuickView15.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "lng", true));
+            resources.ApplyResources(this.myQuickView15, "myQuickView15");
+            this.myQuickView15.Name = "myQuickView15";
+            this.myQuickView15.title = "مختصات Long";
+            // 
+            // myQuickView14
+            // 
+            this.myQuickView14.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "lat", true));
+            resources.ApplyResources(this.myQuickView14, "myQuickView14");
+            this.myQuickView14.Name = "myQuickView14";
+            this.myQuickView14.title = "مختصات Lat";
+            // 
+            // myQuickView9
+            // 
+            this.myQuickView9.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "yaw", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N0"));
+            resources.ApplyResources(this.myQuickView9, "myQuickView9");
+            this.myQuickView9.Name = "myQuickView9";
+            this.myQuickView9.title = "زاویه Yaw";
+            // 
+            // myQuickView13
+            // 
+            this.myQuickView13.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "roll", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N0"));
+            resources.ApplyResources(this.myQuickView13, "myQuickView13");
+            this.myQuickView13.Name = "myQuickView13";
+            this.myQuickView13.title = " زاویه Roll";
+            // 
+            // myQuickView12
+            // 
+            this.myQuickView12.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "pitch", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N0"));
+            resources.ApplyResources(this.myQuickView12, "myQuickView12");
+            this.myQuickView12.Name = "myQuickView12";
+            this.myQuickView12.title = "زاویه Pitch";
+            // 
+            // myQuickView11
+            // 
+            this.myQuickView11.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "current", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N1"));
+            resources.ApplyResources(this.myQuickView11, "myQuickView11");
+            this.myQuickView11.Name = "myQuickView11";
+            this.myQuickView11.title = "شدت جریان باتری";
+            // 
+            // myQuickView10
+            // 
+            this.myQuickView10.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "battery_voltage", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N1"));
+            resources.ApplyResources(this.myQuickView10, "myQuickView10");
+            this.myQuickView10.Name = "myQuickView10";
+            this.myQuickView10.title = "ولتاژ باتری";
             // 
             // midSplitter
             // 
@@ -712,6 +768,7 @@ namespace MissionPlanner.GCSViews
             this.Gspeed.Value1 = 0F;
             this.Gspeed.Value2 = 0F;
             this.Gspeed.Value3 = 0F;
+            this.Gspeed.DoubleClick += new System.EventHandler(this.Gspeed_DoubleClick);
             // 
             // hudPanel
             // 
@@ -803,6 +860,7 @@ namespace MissionPlanner.GCSViews
             this.hud1.displayxtrack = false;
             this.hud1.disttowp = 0F;
             this.hud1.distunit = null;
+            resources.ApplyResources(this.hud1, "hud1");
             this.hud1.ekfstatus = 0F;
             this.hud1.failsafe = false;
             this.hud1.gpsfix = 0F;
@@ -815,7 +873,6 @@ namespace MissionPlanner.GCSViews
             this.hud1.heading = 0F;
             this.hud1.hudcolor = System.Drawing.Color.LightGray;
             this.hud1.linkqualitygcs = 0F;
-            resources.ApplyResources(this.hud1, "hud1");
             this.hud1.lowairspeed = false;
             this.hud1.lowgroundspeed = false;
             this.hud1.lowvoltagealert = false;
@@ -1252,6 +1309,12 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.label13, "label13");
             this.label13.Name = "label13";
             // 
+            // servoOptions3
+            // 
+            resources.ApplyResources(this.servoOptions3, "servoOptions3");
+            this.servoOptions3.Name = "servoOptions3";
+            this.servoOptions3.thisservo = 7;
+            // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
@@ -1261,6 +1324,12 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
+            // 
+            // servoOptions2
+            // 
+            resources.ApplyResources(this.servoOptions2, "servoOptions2");
+            this.servoOptions2.Name = "servoOptions2";
+            this.servoOptions2.thisservo = 6;
             // 
             // label9
             // 
@@ -1288,6 +1357,13 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.rpmLabel, "rpmLabel");
             this.rpmLabel.Name = "rpmLabel";
             this.rpmLabel.TextChanged += new System.EventHandler(this.rpmLabel_TextChanged);
+            // 
+            // timerControl1
+            // 
+            this.controlTableRight.SetColumnSpan(this.timerControl1, 2);
+            resources.ApplyResources(this.timerControl1, "timerControl1");
+            this.timerControl1.isOn = false;
+            this.timerControl1.Name = "timerControl1";
             // 
             // flare1State
             // 
@@ -1376,6 +1452,14 @@ namespace MissionPlanner.GCSViews
             this.BUT_log2kml.Name = "BUT_log2kml";
             this.BUT_log2kml.UseVisualStyleBackColor = true;
             // 
+            // distanceBar1
+            // 
+            resources.ApplyResources(this.distanceBar1, "distanceBar1");
+            this.distanceBar1.BackColor = System.Drawing.Color.Transparent;
+            this.distanceBar1.Name = "distanceBar1";
+            this.distanceBar1.totaldist = 100F;
+            this.distanceBar1.traveleddist = 0F;
+            // 
             // but_disablejoystick
             // 
             this.but_disablejoystick.ColorMouseDown = System.Drawing.Color.Empty;
@@ -1385,6 +1469,12 @@ namespace MissionPlanner.GCSViews
             this.but_disablejoystick.Name = "but_disablejoystick";
             this.but_disablejoystick.UseVisualStyleBackColor = true;
             this.but_disablejoystick.Click += new System.EventHandler(this.but_disablejoystick_Click);
+            // 
+            // servoOptions1
+            // 
+            resources.ApplyResources(this.servoOptions1, "servoOptions1");
+            this.servoOptions1.Name = "servoOptions1";
+            this.servoOptions1.thisservo = 5;
             // 
             // tabControlactions
             // 
@@ -1518,6 +1608,35 @@ namespace MissionPlanner.GCSViews
             this.BUT_RAWSensor.UseVisualStyleBackColor = true;
             this.BUT_RAWSensor.Click += new System.EventHandler(this.BUT_RAWSensor_Click);
             // 
+            // modifyandSetSpeed
+            // 
+            resources.ApplyResources(this.modifyandSetSpeed, "modifyandSetSpeed");
+            this.modifyandSetSpeed.ButtonText = "Change Speed";
+            this.modifyandSetSpeed.DecimalPlaces = 1;
+            this.modifyandSetSpeed.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.modifyandSetSpeed.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.modifyandSetSpeed.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.modifyandSetSpeed.Name = "modifyandSetSpeed";
+            this.modifyandSetSpeed.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.modifyandSetSpeed.Click += new System.EventHandler(this.modifyandSetSpeed_Click);
+            this.modifyandSetSpeed.ParentChanged += new System.EventHandler(this.modifyandSetSpeed_ParentChanged);
+            // 
             // BUT_joystick
             // 
             this.BUT_joystick.ColorMouseDown = System.Drawing.Color.Empty;
@@ -1528,6 +1647,62 @@ namespace MissionPlanner.GCSViews
             this.toolTip1.SetToolTip(this.BUT_joystick, resources.GetString("BUT_joystick.ToolTip"));
             this.BUT_joystick.UseVisualStyleBackColor = true;
             this.BUT_joystick.Click += new System.EventHandler(this.BUT_joystick_Click);
+            // 
+            // modifyandSetLoiterRad
+            // 
+            resources.ApplyResources(this.modifyandSetLoiterRad, "modifyandSetLoiterRad");
+            this.modifyandSetLoiterRad.ButtonText = "Set Loiter Rad";
+            this.modifyandSetLoiterRad.DecimalPlaces = 0;
+            this.modifyandSetLoiterRad.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.modifyandSetLoiterRad.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.modifyandSetLoiterRad.Minimum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            -2147483648});
+            this.modifyandSetLoiterRad.Name = "modifyandSetLoiterRad";
+            this.modifyandSetLoiterRad.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.modifyandSetLoiterRad.Click += new System.EventHandler(this.modifyandSetLoiterRad_Click);
+            // 
+            // modifyandSetAlt
+            // 
+            resources.ApplyResources(this.modifyandSetAlt, "modifyandSetAlt");
+            this.modifyandSetAlt.ButtonText = "Change Alt";
+            this.modifyandSetAlt.DecimalPlaces = 1;
+            this.modifyandSetAlt.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.modifyandSetAlt.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.modifyandSetAlt.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.modifyandSetAlt.Name = "modifyandSetAlt";
+            this.modifyandSetAlt.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.modifyandSetAlt.Click += new System.EventHandler(this.modifyandSetAlt_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -1681,6 +1856,11 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.tabPagePreFlight, "tabPagePreFlight");
             this.tabPagePreFlight.Name = "tabPagePreFlight";
             this.tabPagePreFlight.UseVisualStyleBackColor = true;
+            // 
+            // checkListControl1
+            // 
+            resources.ApplyResources(this.checkListControl1, "checkListControl1");
+            this.checkListControl1.Name = "checkListControl1";
             // 
             // tabGauges
             // 
@@ -1858,6 +2038,96 @@ namespace MissionPlanner.GCSViews
             this.flowLayoutPanelServos.Controls.Add(this.relayOptions5);
             this.flowLayoutPanelServos.Controls.Add(this.relayOptions6);
             this.flowLayoutPanelServos.Name = "flowLayoutPanelServos";
+            // 
+            // servoOptions4
+            // 
+            resources.ApplyResources(this.servoOptions4, "servoOptions4");
+            this.servoOptions4.Name = "servoOptions4";
+            this.servoOptions4.thisservo = 8;
+            // 
+            // servoOptions5
+            // 
+            resources.ApplyResources(this.servoOptions5, "servoOptions5");
+            this.servoOptions5.Name = "servoOptions5";
+            this.servoOptions5.thisservo = 9;
+            // 
+            // servoOptions6
+            // 
+            resources.ApplyResources(this.servoOptions6, "servoOptions6");
+            this.servoOptions6.Name = "servoOptions6";
+            this.servoOptions6.thisservo = 10;
+            // 
+            // servoOptions7
+            // 
+            resources.ApplyResources(this.servoOptions7, "servoOptions7");
+            this.servoOptions7.Name = "servoOptions7";
+            this.servoOptions7.thisservo = 11;
+            // 
+            // servoOptions8
+            // 
+            resources.ApplyResources(this.servoOptions8, "servoOptions8");
+            this.servoOptions8.Name = "servoOptions8";
+            this.servoOptions8.thisservo = 12;
+            // 
+            // servoOptions9
+            // 
+            resources.ApplyResources(this.servoOptions9, "servoOptions9");
+            this.servoOptions9.Name = "servoOptions9";
+            this.servoOptions9.thisservo = 13;
+            // 
+            // servoOptions10
+            // 
+            resources.ApplyResources(this.servoOptions10, "servoOptions10");
+            this.servoOptions10.Name = "servoOptions10";
+            this.servoOptions10.thisservo = 14;
+            // 
+            // servoOptions11
+            // 
+            resources.ApplyResources(this.servoOptions11, "servoOptions11");
+            this.servoOptions11.Name = "servoOptions11";
+            this.servoOptions11.thisservo = 15;
+            // 
+            // servoOptions12
+            // 
+            resources.ApplyResources(this.servoOptions12, "servoOptions12");
+            this.servoOptions12.Name = "servoOptions12";
+            this.servoOptions12.thisservo = 16;
+            // 
+            // relayOptions1
+            // 
+            resources.ApplyResources(this.relayOptions1, "relayOptions1");
+            this.relayOptions1.Name = "relayOptions1";
+            this.relayOptions1.thisrelay = 0;
+            // 
+            // relayOptions2
+            // 
+            resources.ApplyResources(this.relayOptions2, "relayOptions2");
+            this.relayOptions2.Name = "relayOptions2";
+            this.relayOptions2.thisrelay = 1;
+            // 
+            // relayOptions3
+            // 
+            resources.ApplyResources(this.relayOptions3, "relayOptions3");
+            this.relayOptions3.Name = "relayOptions3";
+            this.relayOptions3.thisrelay = 2;
+            // 
+            // relayOptions4
+            // 
+            resources.ApplyResources(this.relayOptions4, "relayOptions4");
+            this.relayOptions4.Name = "relayOptions4";
+            this.relayOptions4.thisrelay = 3;
+            // 
+            // relayOptions5
+            // 
+            resources.ApplyResources(this.relayOptions5, "relayOptions5");
+            this.relayOptions5.Name = "relayOptions5";
+            this.relayOptions5.thisrelay = 4;
+            // 
+            // relayOptions6
+            // 
+            resources.ApplyResources(this.relayOptions6, "relayOptions6");
+            this.relayOptions6.Name = "relayOptions6";
+            this.relayOptions6.thisrelay = 5;
             // 
             // tabScripts
             // 
@@ -2580,6 +2850,63 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanelQuick.Controls.Add(this.myQuickView2, 0, 1);
             this.tableLayoutPanelQuick.Name = "tableLayoutPanelQuick";
             // 
+            // myQuickView7
+            // 
+            this.myQuickView7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "rpm1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N0"));
+            resources.ApplyResources(this.myQuickView7, "myQuickView7");
+            this.myQuickView7.Name = "myQuickView7";
+            this.myQuickView7.title = "دور متور";
+            // 
+            // myQuickView8
+            // 
+            this.myQuickView8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "linkqualitygcs", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N0"));
+            resources.ApplyResources(this.myQuickView8, "myQuickView8");
+            this.myQuickView8.Name = "myQuickView8";
+            this.myQuickView8.title = "قدرت سیگنال";
+            // 
+            // myQuickView6
+            // 
+            this.myQuickView6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "wpno", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N0"));
+            resources.ApplyResources(this.myQuickView6, "myQuickView6");
+            this.myQuickView6.Name = "myQuickView6";
+            this.myQuickView6.title = "Waypoint بعدی";
+            // 
+            // myQuickView5
+            // 
+            this.myQuickView5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "wp_dist", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N0"));
+            resources.ApplyResources(this.myQuickView5, "myQuickView5");
+            this.myQuickView5.Name = "myQuickView5";
+            this.myQuickView5.title = "فاصله تا waypoint بعدی";
+            // 
+            // myQuickView4
+            // 
+            this.myQuickView4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "DistToHome", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N0"));
+            resources.ApplyResources(this.myQuickView4, "myQuickView4");
+            this.myQuickView4.Name = "myQuickView4";
+            this.myQuickView4.title = "فاصله تا خانه";
+            // 
+            // myQuickView3
+            // 
+            this.myQuickView3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "airspeed", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N1"));
+            resources.ApplyResources(this.myQuickView3, "myQuickView3");
+            this.myQuickView3.Name = "myQuickView3";
+            this.myQuickView3.title = "سرعت باد";
+            // 
+            // myQuickView1
+            // 
+            this.myQuickView1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "alt", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N1"));
+            resources.ApplyResources(this.myQuickView1, "myQuickView1");
+            this.myQuickView1.ForeColor = System.Drawing.Color.DarkRed;
+            this.myQuickView1.Name = "myQuickView1";
+            this.myQuickView1.title = "ارتفاع";
+            // 
+            // myQuickView2
+            // 
+            this.myQuickView2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "groundspeed", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N1"));
+            resources.ApplyResources(this.myQuickView2, "myQuickView2");
+            this.myQuickView2.Name = "myQuickView2";
+            this.myQuickView2.title = "سرعت زمینی";
+            // 
             // bindingSourceGaugesTab
             // 
             this.bindingSourceGaugesTab.DataSource = typeof(MissionPlanner.CurrentState);
@@ -2747,332 +3074,6 @@ namespace MissionPlanner.GCSViews
             // bindingSourceStatusTab
             // 
             this.bindingSourceStatusTab.DataSource = typeof(MissionPlanner.CurrentState);
-            // 
-            // myQuickView16
-            // 
-            this.myQuickView16.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "satcount", true));
-            resources.ApplyResources(this.myQuickView16, "myQuickView16");
-            this.myQuickView16.Name = "myQuickView16";
-            this.myQuickView16.title = "تعداد ماهواره ها GPS";
-            // 
-            // myQuickView15
-            // 
-            this.myQuickView15.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "lng", true));
-            resources.ApplyResources(this.myQuickView15, "myQuickView15");
-            this.myQuickView15.Name = "myQuickView15";
-            this.myQuickView15.title = "مختصات Long";
-            // 
-            // myQuickView14
-            // 
-            this.myQuickView14.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "lat", true));
-            resources.ApplyResources(this.myQuickView14, "myQuickView14");
-            this.myQuickView14.Name = "myQuickView14";
-            this.myQuickView14.title = "مختصات Lat";
-            // 
-            // myQuickView9
-            // 
-            this.myQuickView9.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "yaw", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N0"));
-            resources.ApplyResources(this.myQuickView9, "myQuickView9");
-            this.myQuickView9.Name = "myQuickView9";
-            this.myQuickView9.title = "زاویه Yaw";
-            // 
-            // myQuickView13
-            // 
-            this.myQuickView13.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "roll", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N0"));
-            resources.ApplyResources(this.myQuickView13, "myQuickView13");
-            this.myQuickView13.Name = "myQuickView13";
-            this.myQuickView13.title = " زاویه Roll";
-            // 
-            // myQuickView12
-            // 
-            this.myQuickView12.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "pitch", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N0"));
-            resources.ApplyResources(this.myQuickView12, "myQuickView12");
-            this.myQuickView12.Name = "myQuickView12";
-            this.myQuickView12.title = "زاویه Pitch";
-            // 
-            // myQuickView11
-            // 
-            this.myQuickView11.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "current", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N1"));
-            resources.ApplyResources(this.myQuickView11, "myQuickView11");
-            this.myQuickView11.Name = "myQuickView11";
-            this.myQuickView11.title = "شدت جریان باتری";
-            // 
-            // myQuickView10
-            // 
-            this.myQuickView10.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "battery_voltage", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N1"));
-            resources.ApplyResources(this.myQuickView10, "myQuickView10");
-            this.myQuickView10.Name = "myQuickView10";
-            this.myQuickView10.title = "ولتاژ باتری";
-            // 
-            // servoOptions3
-            // 
-            resources.ApplyResources(this.servoOptions3, "servoOptions3");
-            this.servoOptions3.Name = "servoOptions3";
-            this.servoOptions3.thisservo = 7;
-            // 
-            // servoOptions2
-            // 
-            resources.ApplyResources(this.servoOptions2, "servoOptions2");
-            this.servoOptions2.Name = "servoOptions2";
-            this.servoOptions2.thisservo = 6;
-            // 
-            // timerControl1
-            // 
-            this.controlTableRight.SetColumnSpan(this.timerControl1, 2);
-            resources.ApplyResources(this.timerControl1, "timerControl1");
-            this.timerControl1.isOn = false;
-            this.timerControl1.Name = "timerControl1";
-            // 
-            // distanceBar1
-            // 
-            resources.ApplyResources(this.distanceBar1, "distanceBar1");
-            this.distanceBar1.BackColor = System.Drawing.Color.Transparent;
-            this.distanceBar1.Name = "distanceBar1";
-            this.distanceBar1.totaldist = 100F;
-            this.distanceBar1.traveleddist = 0F;
-            // 
-            // servoOptions1
-            // 
-            resources.ApplyResources(this.servoOptions1, "servoOptions1");
-            this.servoOptions1.Name = "servoOptions1";
-            this.servoOptions1.thisservo = 5;
-            // 
-            // modifyandSetSpeed
-            // 
-            resources.ApplyResources(this.modifyandSetSpeed, "modifyandSetSpeed");
-            this.modifyandSetSpeed.ButtonText = "Change Speed";
-            this.modifyandSetSpeed.DecimalPlaces = 1;
-            this.modifyandSetSpeed.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.modifyandSetSpeed.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.modifyandSetSpeed.Minimum = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.modifyandSetSpeed.Name = "modifyandSetSpeed";
-            this.modifyandSetSpeed.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.modifyandSetSpeed.Click += new System.EventHandler(this.modifyandSetSpeed_Click);
-            this.modifyandSetSpeed.ParentChanged += new System.EventHandler(this.modifyandSetSpeed_ParentChanged);
-            // 
-            // modifyandSetLoiterRad
-            // 
-            resources.ApplyResources(this.modifyandSetLoiterRad, "modifyandSetLoiterRad");
-            this.modifyandSetLoiterRad.ButtonText = "Set Loiter Rad";
-            this.modifyandSetLoiterRad.DecimalPlaces = 0;
-            this.modifyandSetLoiterRad.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.modifyandSetLoiterRad.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.modifyandSetLoiterRad.Minimum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            -2147483648});
-            this.modifyandSetLoiterRad.Name = "modifyandSetLoiterRad";
-            this.modifyandSetLoiterRad.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.modifyandSetLoiterRad.Click += new System.EventHandler(this.modifyandSetLoiterRad_Click);
-            // 
-            // modifyandSetAlt
-            // 
-            resources.ApplyResources(this.modifyandSetAlt, "modifyandSetAlt");
-            this.modifyandSetAlt.ButtonText = "Change Alt";
-            this.modifyandSetAlt.DecimalPlaces = 1;
-            this.modifyandSetAlt.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.modifyandSetAlt.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.modifyandSetAlt.Minimum = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.modifyandSetAlt.Name = "modifyandSetAlt";
-            this.modifyandSetAlt.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.modifyandSetAlt.Click += new System.EventHandler(this.modifyandSetAlt_Click);
-            // 
-            // checkListControl1
-            // 
-            resources.ApplyResources(this.checkListControl1, "checkListControl1");
-            this.checkListControl1.Name = "checkListControl1";
-            // 
-            // servoOptions4
-            // 
-            resources.ApplyResources(this.servoOptions4, "servoOptions4");
-            this.servoOptions4.Name = "servoOptions4";
-            this.servoOptions4.thisservo = 8;
-            // 
-            // servoOptions5
-            // 
-            resources.ApplyResources(this.servoOptions5, "servoOptions5");
-            this.servoOptions5.Name = "servoOptions5";
-            this.servoOptions5.thisservo = 9;
-            // 
-            // servoOptions6
-            // 
-            resources.ApplyResources(this.servoOptions6, "servoOptions6");
-            this.servoOptions6.Name = "servoOptions6";
-            this.servoOptions6.thisservo = 10;
-            // 
-            // servoOptions7
-            // 
-            resources.ApplyResources(this.servoOptions7, "servoOptions7");
-            this.servoOptions7.Name = "servoOptions7";
-            this.servoOptions7.thisservo = 11;
-            // 
-            // servoOptions8
-            // 
-            resources.ApplyResources(this.servoOptions8, "servoOptions8");
-            this.servoOptions8.Name = "servoOptions8";
-            this.servoOptions8.thisservo = 12;
-            // 
-            // servoOptions9
-            // 
-            resources.ApplyResources(this.servoOptions9, "servoOptions9");
-            this.servoOptions9.Name = "servoOptions9";
-            this.servoOptions9.thisservo = 13;
-            // 
-            // servoOptions10
-            // 
-            resources.ApplyResources(this.servoOptions10, "servoOptions10");
-            this.servoOptions10.Name = "servoOptions10";
-            this.servoOptions10.thisservo = 14;
-            // 
-            // servoOptions11
-            // 
-            resources.ApplyResources(this.servoOptions11, "servoOptions11");
-            this.servoOptions11.Name = "servoOptions11";
-            this.servoOptions11.thisservo = 15;
-            // 
-            // servoOptions12
-            // 
-            resources.ApplyResources(this.servoOptions12, "servoOptions12");
-            this.servoOptions12.Name = "servoOptions12";
-            this.servoOptions12.thisservo = 16;
-            // 
-            // relayOptions1
-            // 
-            resources.ApplyResources(this.relayOptions1, "relayOptions1");
-            this.relayOptions1.Name = "relayOptions1";
-            this.relayOptions1.thisrelay = 0;
-            // 
-            // relayOptions2
-            // 
-            resources.ApplyResources(this.relayOptions2, "relayOptions2");
-            this.relayOptions2.Name = "relayOptions2";
-            this.relayOptions2.thisrelay = 1;
-            // 
-            // relayOptions3
-            // 
-            resources.ApplyResources(this.relayOptions3, "relayOptions3");
-            this.relayOptions3.Name = "relayOptions3";
-            this.relayOptions3.thisrelay = 2;
-            // 
-            // relayOptions4
-            // 
-            resources.ApplyResources(this.relayOptions4, "relayOptions4");
-            this.relayOptions4.Name = "relayOptions4";
-            this.relayOptions4.thisrelay = 3;
-            // 
-            // relayOptions5
-            // 
-            resources.ApplyResources(this.relayOptions5, "relayOptions5");
-            this.relayOptions5.Name = "relayOptions5";
-            this.relayOptions5.thisrelay = 4;
-            // 
-            // relayOptions6
-            // 
-            resources.ApplyResources(this.relayOptions6, "relayOptions6");
-            this.relayOptions6.Name = "relayOptions6";
-            this.relayOptions6.thisrelay = 5;
-            // 
-            // myQuickView7
-            // 
-            this.myQuickView7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "rpm1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N0"));
-            resources.ApplyResources(this.myQuickView7, "myQuickView7");
-            this.myQuickView7.Name = "myQuickView7";
-            this.myQuickView7.title = "دور متور";
-            // 
-            // myQuickView8
-            // 
-            this.myQuickView8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "linkqualitygcs", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N0"));
-            resources.ApplyResources(this.myQuickView8, "myQuickView8");
-            this.myQuickView8.Name = "myQuickView8";
-            this.myQuickView8.title = "قدرت سیگنال";
-            // 
-            // myQuickView6
-            // 
-            this.myQuickView6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "wpno", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N0"));
-            resources.ApplyResources(this.myQuickView6, "myQuickView6");
-            this.myQuickView6.Name = "myQuickView6";
-            this.myQuickView6.title = "Waypoint بعدی";
-            // 
-            // myQuickView5
-            // 
-            this.myQuickView5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "wp_dist", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N0"));
-            resources.ApplyResources(this.myQuickView5, "myQuickView5");
-            this.myQuickView5.Name = "myQuickView5";
-            this.myQuickView5.title = "فاصله تا waypoint بعدی";
-            // 
-            // myQuickView4
-            // 
-            this.myQuickView4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "DistToHome", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N0"));
-            resources.ApplyResources(this.myQuickView4, "myQuickView4");
-            this.myQuickView4.Name = "myQuickView4";
-            this.myQuickView4.title = "فاصله تا خانه";
-            // 
-            // myQuickView3
-            // 
-            this.myQuickView3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "airspeed", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N1"));
-            resources.ApplyResources(this.myQuickView3, "myQuickView3");
-            this.myQuickView3.Name = "myQuickView3";
-            this.myQuickView3.title = "سرعت باد";
-            // 
-            // myQuickView1
-            // 
-            this.myQuickView1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "alt", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N1"));
-            resources.ApplyResources(this.myQuickView1, "myQuickView1");
-            this.myQuickView1.ForeColor = System.Drawing.Color.DarkRed;
-            this.myQuickView1.Name = "myQuickView1";
-            this.myQuickView1.title = "ارتفاع";
-            // 
-            // myQuickView2
-            // 
-            this.myQuickView2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "groundspeed", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, "0", "N1"));
-            resources.ApplyResources(this.myQuickView2, "myQuickView2");
-            this.myQuickView2.Name = "myQuickView2";
-            this.myQuickView2.title = "سرعت زمینی";
             // 
             // FlightData
             // 

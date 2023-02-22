@@ -3536,8 +3536,6 @@ namespace MissionPlanner.Controls
                       return;
                   }
               } */
-            this.Height = 244;
-            this.Width = 311;
             graphicsObjectGDIP = new GdiGraphics(Graphics.FromImage(objBitmap));
 
             try

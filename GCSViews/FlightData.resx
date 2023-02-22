@@ -148,13 +148,13 @@
     <value>B Yekan, 7.8pt</value>
   </data>
   <data name="myQuickView16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 618</value>
+    <value>1, 494</value>
   </data>
   <data name="myQuickView16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="myQuickView16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 138</value>
+    <value>149, 110</value>
   </data>
   <data name="myQuickView16.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
@@ -178,13 +178,13 @@
     <value>B Yekan, 7.8pt</value>
   </data>
   <data name="myQuickView15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 479</value>
+    <value>1, 383</value>
   </data>
   <data name="myQuickView15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="myQuickView15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 136</value>
+    <value>149, 109</value>
   </data>
   <data name="myQuickView15.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
@@ -208,13 +208,13 @@
     <value>B Yekan, 7.8pt</value>
   </data>
   <data name="myQuickView14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 469</value>
+    <value>1, 375</value>
   </data>
   <data name="myQuickView14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="myQuickView14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 8</value>
+    <value>149, 6</value>
   </data>
   <data name="myQuickView14.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
@@ -238,13 +238,13 @@
     <value>B Yekan, 7.8pt</value>
   </data>
   <data name="myQuickView9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 421</value>
+    <value>1, 337</value>
   </data>
   <data name="myQuickView9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="myQuickView9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 45</value>
+    <value>149, 36</value>
   </data>
   <data name="myQuickView9.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
@@ -268,13 +268,13 @@
     <value>B Yekan, 7.8pt</value>
   </data>
   <data name="myQuickView13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 369</value>
+    <value>1, 295</value>
   </data>
   <data name="myQuickView13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="myQuickView13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 50</value>
+    <value>149, 40</value>
   </data>
   <data name="myQuickView13.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
@@ -298,13 +298,13 @@
     <value>B Yekan, 7.8pt</value>
   </data>
   <data name="myQuickView12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 244</value>
+    <value>1, 195</value>
   </data>
   <data name="myQuickView12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="myQuickView12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 123</value>
+    <value>149, 98</value>
   </data>
   <data name="myQuickView12.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
@@ -328,13 +328,13 @@
     <value>B Yekan, 7.8pt</value>
   </data>
   <data name="myQuickView11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 99</value>
+    <value>1, 79</value>
   </data>
   <data name="myQuickView11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="myQuickView11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 143</value>
+    <value>149, 114</value>
   </data>
   <data name="myQuickView11.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
@@ -364,7 +364,7 @@
     <value>1, 1, 1, 1</value>
   </data>
   <data name="myQuickView10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 95</value>
+    <value>149, 76</value>
   </data>
   <data name="myQuickView10.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
@@ -475,7 +475,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="Gvspeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 186</value>
+    <value>149, 149</value>
   </data>
   <data name="Gvspeed.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
@@ -520,7 +520,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="Gspeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 189</value>
+    <value>151, 151</value>
   </data>
   <data name="Gspeed.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
@@ -603,14 +603,17 @@
   <data name="hudPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="hud1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="hud1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 1</value>
+    <value>0, 0</value>
   </data>
   <data name="hud1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
   <data name="hud1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>389, 291</value>
+    <value>284, 301</value>
   </data>
   <data name="hud1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -667,7 +670,7 @@
     <value>0, 5, 0, 0</value>
   </data>
   <data name="Galt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 186</value>
+    <value>149, 149</value>
   </data>
   <data name="Galt.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
@@ -712,7 +715,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="Gheading.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 189</value>
+    <value>151, 151</value>
   </data>
   <data name="Gheading.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
@@ -862,10 +865,10 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_FBWA.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 116</value>
+    <value>3, 98</value>
   </data>
   <data name="BUT_FBWA.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 39</value>
+    <value>228, 32</value>
   </data>
   <data name="BUT_FBWA.TabIndex" type="System.Int32, mscorlib">
     <value>86</value>
@@ -901,7 +904,7 @@
     <value>3, 3</value>
   </data>
   <data name="BUT_quickauto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 50</value>
+    <value>228, 41</value>
   </data>
   <data name="BUT_quickauto.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -934,10 +937,10 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_Manual.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 59</value>
+    <value>3, 50</value>
   </data>
   <data name="BUT_Manual.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 51</value>
+    <value>228, 42</value>
   </data>
   <data name="BUT_Manual.TabIndex" type="System.Int32, mscorlib">
     <value>86</value>
@@ -970,10 +973,10 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_quickrtl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 161</value>
+    <value>3, 136</value>
   </data>
   <data name="BUT_quickrtl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 38</value>
+    <value>228, 31</value>
   </data>
   <data name="BUT_quickrtl.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -1006,10 +1009,10 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_setwp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 205</value>
+    <value>3, 173</value>
   </data>
   <data name="BUT_setwp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 40</value>
+    <value>228, 33</value>
   </data>
   <data name="BUT_setwp.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
@@ -1042,13 +1045,13 @@
     <value>0 (Home)</value>
   </data>
   <data name="CMB_setwp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 251</value>
+    <value>4, 212</value>
   </data>
   <data name="CMB_setwp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="CMB_setwp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 35</value>
+    <value>226, 35</value>
   </data>
   <data name="CMB_setwp.TabIndex" type="System.Int32, mscorlib">
     <value>72</value>
@@ -1078,7 +1081,7 @@
     <value>6</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>296, 301</value>
+    <value>234, 261</value>
   </data>
   <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
@@ -1105,7 +1108,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 342</value>
+    <value>240, 267</value>
   </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1168,7 +1171,7 @@
     <value>170, 34</value>
   </data>
   <data name="lbl_logpercent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 29</value>
+    <value>55, 23</value>
   </data>
   <data name="lbl_logpercent.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
@@ -1228,7 +1231,7 @@
     <value>180, -1</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 29</value>
+    <value>60, 23</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
@@ -1339,7 +1342,7 @@
     <value>3, 3</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>296, 336</value>
+    <value>234, 261</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
@@ -1363,7 +1366,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 342</value>
+    <value>240, 267</value>
   </data>
   <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1399,7 +1402,7 @@
     <value>0, 0</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>310, 374</value>
+    <value>248, 299</value>
   </data>
   <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>85</value>
@@ -3001,7 +3004,7 @@
     <value>Vertical</value>
   </data>
   <data name="txt_messagebox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81919, 81919</value>
+    <value>65521, 65481</value>
   </data>
   <data name="txt_messagebox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3025,7 +3028,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPagemessages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81909, 81859</value>
+    <value>65527, 65487</value>
   </data>
   <data name="tabPagemessages.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -3139,7 +3142,7 @@
     <value>4, 44</value>
   </data>
   <data name="tabActionsSimple.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81909, 81859</value>
+    <value>65527, 65487</value>
   </data>
   <data name="tabActionsSimple.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -3166,7 +3169,7 @@
     <value>3, 3</value>
   </data>
   <data name="checkListControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81919, 81919</value>
+    <value>65521, 65481</value>
   </data>
   <data name="checkListControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3190,7 +3193,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPagePreFlight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81909, 81859</value>
+    <value>65527, 65487</value>
   </data>
   <data name="tabPagePreFlight.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -3217,7 +3220,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabGauges.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81909, 81859</value>
+    <value>65527, 65487</value>
   </data>
   <data name="tabGauges.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3250,7 +3253,7 @@
     <value>39, 29</value>
   </data>
   <data name="NACp_tb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 18</value>
+    <value>26, 22</value>
   </data>
   <data name="NACp_tb.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -3271,7 +3274,7 @@
     <value>39, 24</value>
   </data>
   <data name="NIC_tb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 18</value>
+    <value>26, 22</value>
   </data>
   <data name="NIC_tb.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -3298,7 +3301,7 @@
     <value>16935, 23669</value>
   </data>
   <data name="NACp_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>43, 16</value>
   </data>
   <data name="NACp_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -3328,7 +3331,7 @@
     <value>16935, 16904</value>
   </data>
   <data name="NIC_lbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 20</value>
+    <value>29, 16</value>
   </data>
   <data name="NIC_lbl.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -3358,7 +3361,7 @@
     <value>59, 16</value>
   </data>
   <data name="Squawk_nud.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2, 24</value>
+    <value>2, 30</value>
   </data>
   <data name="Squawk_nud.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -3385,7 +3388,7 @@
     <value>39, 4</value>
   </data>
   <data name="FlightID_tb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 18</value>
+    <value>26, 23</value>
   </data>
   <data name="FlightID_tb.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -3481,7 +3484,7 @@
     <value>16935, 9974</value>
   </data>
   <data name="Squawk_label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 20</value>
+    <value>55, 16</value>
   </data>
   <data name="Squawk_label.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -3511,7 +3514,7 @@
     <value>16935, 3154</value>
   </data>
   <data name="FlightID_label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 20</value>
+    <value>52, 16</value>
   </data>
   <data name="FlightID_label.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -3700,7 +3703,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabTransponder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81909, 81859</value>
+    <value>65527, 65487</value>
   </data>
   <data name="tabTransponder.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -3730,7 +3733,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81909, 81859</value>
+    <value>65527, 65487</value>
   </data>
   <data name="tabStatus.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4048,7 +4051,7 @@
     <value>13</value>
   </data>
   <data name="relayOptions6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40959, 4</value>
+    <value>32767, 3</value>
   </data>
   <data name="relayOptions6.Size" type="System.Drawing.Size, System.Drawing">
     <value>16383, 1260</value>
@@ -4078,7 +4081,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="flowLayoutPanelServos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81919, 81919</value>
+    <value>65521, 65481</value>
   </data>
   <data name="flowLayoutPanelServos.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -4102,7 +4105,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabServo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81909, 81859</value>
+    <value>65527, 65487</value>
   </data>
   <data name="tabServo.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -4336,7 +4339,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabScripts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81909, 81859</value>
+    <value>65527, 65487</value>
   </data>
   <data name="tabScripts.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -4639,7 +4642,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPayload.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81909, 81859</value>
+    <value>65527, 65487</value>
   </data>
   <data name="tabPayload.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -4828,7 +4831,7 @@
     <value>4, 44</value>
   </data>
   <data name="tabTLogs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81909, 81859</value>
+    <value>65527, 65487</value>
   </data>
   <data name="tabTLogs.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -5074,7 +5077,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tablogbrowse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81909, 81859</value>
+    <value>65527, 65487</value>
   </data>
   <data name="tablogbrowse.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -5101,7 +5104,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabQuick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81909, 81859</value>
+    <value>65527, 65487</value>
   </data>
   <data name="tabQuick.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>

@@ -2907,7 +2907,7 @@ namespace MissionPlanner.GCSViews
 
         private void Gspeed_DoubleClick(object sender, EventArgs e)
         {
-            string max = "60";
+            string max = Gspeed.MaxValue.ToString();
             if (DialogResult.OK == InputBox.Show("Enter Max Speed", "Enter Max Speed", ref max))
             {
                 Gspeed.MaxValue = float.Parse(max);
